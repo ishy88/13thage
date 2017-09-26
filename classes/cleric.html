@@ -11,6 +11,7 @@
 
 			tabcontent = thisDoc.getElementsByClassName("tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
+				console.log ("1." + i);
 				if ( tabcontent[i].id == tabName) {
 					tabcontent[i].style.display = "block";
 				} else	{
@@ -20,6 +21,7 @@
 
 			tablinks = thisDoc.getElementsByClassName("tablinks");
 			for (i = 0; i < tablinks.length; i++) {
+				console.log ("2." + i);
 				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			}
 
