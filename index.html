@@ -80,7 +80,7 @@
 		function openTab(obj, tabName) {
 			var i, tabcontent, tablinks;
 
-			tabcontent = clone.getElementsByClassName("tabcontent");
+			tabcontent = document.querySelectorAll(".tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 				if ( tabcontent[i].id == tabName) {
 					tabcontent[i].style.display = "block";
@@ -89,7 +89,7 @@
 				}
 			}
 
-			tablinks = clone.getElementsByClassName("tablinks");
+			tablinks = document.querySelectorAll(".tablinks");
 			for (i = 0; i < tablinks.length; i++) {
 				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			}
