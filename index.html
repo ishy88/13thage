@@ -6,6 +6,7 @@
 	<title>
 	      13th Age
 	</title>
+	<script src="webcomponentsjs/webcomponents-loader.js"></script>
 	<link rel="import" id="home" href="home.html" />
 	<link rel="import" id="legal" href="legal.html" />
 	<link rel="import" id="characters" href="characters.html" />
@@ -51,7 +52,7 @@
 			}
 			clone = document.getElementById(hash).import;
 			doc = document.getElementsByClassName('contentPane')[0];
-			doc.innerHTML = clone.innerHTML;
+			doc.innerHTML = clone.getElementsByClassName('main')[0].innerHTML;
 			document.title = clone.getElementsByTagName('title')[0].innerHTML;
 
 			tabs = document.querySelectorAll('#defaultOpen');
