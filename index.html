@@ -38,11 +38,13 @@
 			updateContent();
 		});
 
+		var clone;
+
 		function changeContents(target) {
 			location.hash = target;
 		}
 		function updateContent() {
-			var i, hash, clone, doc, tabs, selected, withChild, link;
+			var i, hash, doc, tabs, selected, withChild, link;
 
 			hash = location.hash;
 			hash = hash.replace(/#/g, '');
