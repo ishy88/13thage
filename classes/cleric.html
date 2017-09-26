@@ -9,7 +9,7 @@
 		function openTab(obj, tabName) {
 			var i, tabcontent, tablinks;
 
-			tabcontent = document.currentScript.ownerDocument.getElementsByClassName("tabcontent");
+			tabcontent = document.getElementsByClassName("tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 				console.log ("1." + i);
 				if ( tabcontent[i].id == tabName) {
