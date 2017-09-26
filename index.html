@@ -53,6 +53,7 @@
 			clone = document.getElementById(hash).import;
 			doc = document.getElementsByClassName('contentPane')[0];
 			doc.innerHTML = clone.getElementsByClassName('main')[0].innerHTML;
+			console.log(clone.getElementsByClassName('main')[0].innerHTML);
 			document.title = clone.getElementsByTagName('title')[0].innerHTML;
 
 			tabs = document.querySelectorAll('#defaultOpen');
