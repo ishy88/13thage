@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Cleric
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<td>
+	<!-- main contents -->
+		<h2>CLERIC</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/cleric.jpg" alt="Cleric" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"When a cleric calls, the gods listen."
+		</p>
+
+		<p>
+			<b>Overview</b>: Clerics combine the rare gift of divine power with training in one religious tradition or another. Adventuring clerics learn to fight as a practical matter, if not as a sacred mission.<br/>
+			&emsp;Some clerics are syncretists, happily blending their own prayers and rites with those of their neighbors. They would rather speak of “the gods” than of any particular god. Other clerics follow the secret ways of occult clerical schools, devoted to one god or a handful. Most clerics, as with most religious people in general, speak of “the gods” to outsiders and speak of their own gods by name with insiders. For all the ages, the gods have watched over their creation. Each cleric has a good idea of who these gods are and what they’re about, though each cleric’s answer may be different.<br/>
+			&emsp;Will you protect what is sacred to your god, quest for legendary holy artifacts, pursue a life of evangelical adventuring, or attempt all these deeds and more?<br/>
+			<b>Play Style</b>: The decisions necessary to play a cleric skillfully as well as the responsibility of tracking your allies’ need for healing suggest that it is a better class for an experienced player. You can shape each battle using one of your invocations, but your choice of invocation won’t always be clear.<br/>
+			&emsp;The Justice, Trickery, and War domains require the most attention and should be chosen by players who love paying close attention to everyone else’s turn.<br/>
+			<b>Backgrounds</b>: Running from the ordinary to the idiosyncratic, here are some backgrounds that more than one cleric might possess: village healer, archivist, military chaplain, temple guard, bartender, reformed thief, abyssal survivor, wasteland prophet, dwarven hierophant, initiate of the Stellar Chorus, bishop of Foothold, multiversal pantheist, Cathedral guide, tutored by angels.
+		</p>
+
+		<p><b><a id="stats"></a>Stats</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" class="stat-table">
+			<tbody>
+				<tr class="odd-row">
+					<th style="width: 30%">Initiative</th>
+					<td>3 + level</td>
+				</tr>
+				<tr>
+					<th>Armor Class</th>
+					<td>Base AC + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Physical Defense</th>
+					<td>13 + level</td>
+				</tr>
+				<tr>
+					<th>Mental Defense</th>
+					<td>13 + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>HP Value</th>
+					<td>10</td>
+				<tr>
+					<th>Recoveries</th>
+					<td>8</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Recovery Value</th>
+					<td>7 x level</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5><a id="gear"></a>Gear</h5>
+		<p class="initial">
+			At 1st level, a cleric starts with a melee weapon, decent armor, a holy symbol, and other minor possessions suggested by their backgrounds. They might even have a crossbow.
+		</p>
+		<p><b>Gold Pieces</b>: Clerics may start with either 25 gp or 1d6 x 10 gp.</p>
+		<p><b><a></a>Armor</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+			<tbody>
+				<tr valign="bottom">
+					<th>Armor Type</th>
+					<th>Base AC</th>
+					<th>Attack Penalty</th>
+				</tr>
+				<tr class="odd-row">
+					<th>None</th>
+					<td>12</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th>Light</th>
+					<td>14</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Heavy</th>
+					<td>16</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th class="last-row">Shield</th>
+					<td class="last-row">+1</td>
+					<td class="last-row">&mdash;</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">
+			<tr>
+				<th style="width: 60%"><p><b>Melee Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Melee Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>One-Handed</th>
+								<th>Two-Handed</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d6 club</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 mace, shortsword</td>
+								<td>1d8 spear</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>1d8 (-2 atk) longsword, warhammer</td>
+								<td>1d10 (-2 atk) greatsword, dire flail</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: Damage equal to your level
+				</th>
+			</tr>
+		</table>
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">	
+			<tr>
+				<th style="width: 60%"><p><b>Ranged Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Ranged Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>Thrown</th>
+								<th>Crossbow</th>
+								<th>Bow</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d4 hand crossbow</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 javelin, axe</td>
+								<td>1d6 light crossbow</td>
+								<td>1d6 (-2 atk) shortbow</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>&mdash;</td>
+								<td>1d8 (-1 atk) heavy crossbow</td>
+								<td>1d8 (-5 atk) longbow</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: &mdash;
+				</th>
+			</tr>
+		</table>
+		<br/>
+
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+			<tbody>
+				<tr>
+					<th colspan="4"><h5>Table: The Cleric</h5></th>
+				</tr>
+				<tr valign="bottom">
+					<th rowspan="2" style="width: 10%">Cleric Level</th>
+					<th rowspan="2" style="width: 20%">Total Hit Points</th>
+					<th rowspan="2">Total Feats</th>
+					<th colspan="5">Spells</th>
+					<th rowspan="2" style="width: 10%">Weapon Damage Bonus</th>
+					<th rowspan="2" style="width: 10%">Spell Damage Bonus</th>
+				</tr>
+				<tr>
+					<th style="width: 5%">1st</th>
+					<th style="width: 5%">3rd</th>
+					<th style="width: 5%">5th</th>
+					<th style="width: 5%">7th</th>
+					<th style="width: 5%">9th</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>HP x 3</td>
+					<td>1 Adventurer</td>
+					<td>4</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>2nd</td>
+					<td>HP x 4</td>
+					<td>2 Adventurer</td>
+					<td>5</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>HP x 5</td>
+					<td>3 Adventurer</td>
+					<td>2</td>
+					<td>3</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>4th</td>
+					<td>HP x 6</td>
+					<td>4 Adventurer</td>
+					<td>1</td>
+					<td>5</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>HP x 8</td>
+					<td>4 Adventurer<br/>1 Champion</td>
+					<td>&mdash;</td>
+					<td>2</td>
+					<td>4</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+8</td>
+				</tr>
+				<tr class="odd-row">
+					<td>6th</td>
+					<td>HP x 10</td>
+					<td>4 Adventurer<br/>2 Champion</td>
+					<td>&mdash;</td>
+					<td>1</td>
+					<td>6</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+8</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>HP x 12</td>
+					<td>4 Adventurer<br/>3 Champion</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>2</td>
+					<td>5</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+8</td>
+				</tr>
+				<tr class="odd-row">
+					<td>8th</td>
+					<td>HP x 16</td>
+					<td>4 Adventurer<br/>3 Champion<br/>1 Epic</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>1</td>
+					<td>7</td>
+					<td>&mdash;</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>HP x 20</td>
+					<td>4 Adventurer<br/>3 Champion<br/>2 Epic</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>2</td>
+					<td>6</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+				<tr class="odd-row">
+					<td>10th</td>
+					<td>HP x 24</td>
+					<td>4 Adventurer<br/>3 Champion<br/>3 Epic</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>1</td>
+					<td>8</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
+			<button class="tablinks" onclick="openTab(this, 'spells')">Spells</button>
+		</div>
+
+		<div id="class-features" class="tabcontent" style="display: block">
+			<h5>Class Features</h5>
+
+			<p class="initial">There are certain abilities available to the cleric that can affect their powers:</p>
+			<div class="indent">
+				<p>&bull; Cast for power and cast for broad effect: The spell can be used one of two ways—either as a more powerful effect on one target (power) or as a weaker effect on multiple targets (broad). Spells cast for power cannot target the caster. Spells cast for broad effect can.</p>
+				<p>&bull; Free recovery: The target can recover hit points as if they were using a recovery without actually spending the recovery.</p>
+				<p>&bull; Heal using a recovery: The character targeted with a healing effect uses one of their recoveries and rolls their own recovery dice.</p>
+			</div>
+
+			<h7>Versatile Combatant</h7>
+			<p>At first level, a cleric chooses one of the following. Barring exceptional circumstances, this decision cannot be changed throughout their career, as with talents:</p>
+			<div class="indent">
+				<p>&bull; +1 to all weapon attack rolls, +1/tier to weapon damage rolls</p>
+				<p>&bull; +1 to all spell attack rolls, +1/tier to spell damage rolls</p>
+			</div>
+
+			<h7>Ritual Magic</h7>
+			<p>Take two additional points of backgrounds in a background that has to do with religion or magical knowledge.</p>
+
+			<h7>Heal/Inflict Wounds</h7>
+			<p>At first level, a cleric chooses either <i>heal</i> or <i>inflict wounds</i> to learn as a bonus spell (it does not count towards their maximum spells known as listed on Table: The Cleric). This choice cannot be changed throughout their career without some major event occuring, as with class talents.</p>
+
+			<p>
+				<b>Heal</b><br/>
+				Close-quarters spell<br/>
+				<b>Special</b>: You can use this spell twice per battle, but only once per round<br/>
+				Quick action to cast<br/>
+				<b>Target</b>: You or one ally you can touch<br/>
+				<b>Effect</b>: The target can heal using a recovery.<br/>
+				<p class="feat odd-row"><b><i>Adventurer Feat</i></b>: The target can now be a nearby ally instead of an ally you can touch</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: If the target of your heal spell is an ally with 0 hp or below, that ally also adds hit points equal to 1d10 x 4 to the recovery.</p>
+				<p class="feat odd-row"><b><i>Epic Feat</i></b>: When you cast heal on an ally you can touch, that ally adds +30 hp to the recovery.</p>
+			</p>
+			<p>
+				<b>Inflict Wounds</b><br/>
+				Close-quarters spell<br/>
+				<b>Special</b>: You can use this spell twice per battle, but only once per round<br/>
+				Quick action to cast<br/>
+				<b>Target</b>: One enemy that you are engaged with.<br/>
+				<b>Attack</b>: 4 + Level vs PD<br/>
+				<b>Hit</b>: 1d4 negative energy damage per level<br/>
+				<p class="feat odd-row"><b><i>Adventurer Feat</i></b>: On a miss, you deal half damage.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You gain temporary HP equal to the amount of damage inflicted.</p>
+				<p class="feat odd-row"><b><i>Epic Feat</i></b>: The damage increases to 1d6 per level.</p>
+			</p>
+
+			<h5>Class Talents</h5>
+
+			<p class="initial">Choose three of the following class talents. Cleric talents are phrased as divine domains, the spheres of power wielded by the god or gods the cleric worships. When domains are listed as One-Thing OR Another, we expect that you will choose the domain as one of the two choices, for example as either Death or Life, but we’re using the same basic mechanics for either option.</p>
+			<p><i>On Invocations</i>: Each cleric talent/domain comes with an invocation that you can use once per day as a quick action. Most invocations offer advantages you’ll want to have from the start of a battle, so you should use an invocation on your first turn, if possible. The same invocation cannot be used more than once by a side in the battle. If you have more than one cleric in your party, they’ll want to use different invocations.</p>
+
+			<h7>Domain: Artifice</h7>
+			<p>When you cast a daily cleric spell, you may attempt to recharge one of your magic items as a free action.</p>
+			<p><b>Invocation of Artifice</b>: You and each nearby ally may roll to recharge an item.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain a +1 bonus to item recharge rolls.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Increase your bonus to item recharge rolls to +2.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Increase the bonus to +4.</p>
+
+			<h7>Domain: Healing/Pain</h7>
+			<p>When you cast a spell that lets you or an ally heal using a recovery, the target also adds hit points equal to double your level to the recovery.</p>
+			<p><b>Invocation of Healing/Pain</b>: This battle, you gain an additional use of the <i>heal</i> spell (if you do not have any uses of the <i>heal</i> spell, you gain one use). The first <i>heal</i> spell you cast after using this invocation allows the target to heal using a free recovery instead of spending a recovery.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When you cast a spell that allows an ally to heal using a recovery, you can let them use one of your recoveries instead. If you also have the Protection/Community domain, any nearby ally can expend the recovery instead of you.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The <i>invocation of healing</i> gives you two additional uses of <i>heal</i> this battle instead of only one.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Increase the additional hit points the target heals to triple your level.</p>
+
+			<h7>Domain: Justice/Vengeance</h7>
+			<p>Once per turn when an enemy scores a critical hit against you or a nearby ally, or drops you or a nearby ally to 0 hp or below, you gain an attack-reroll blessing. Immediately choose a nearby ally and give them the blessing as a free action. An ally with this blessing can use it to reroll an attack as a free action this battle. An ally can only have one such blessing on them at a time.</p>
+			<p><b>Invocation of Justice/Vengeance</b>: This battle, add double your level to the miss damage of your attacks and the attacks of your nearby allies. (For example, your basic melee attack as a cleric will deal triple your level as miss damage while this invocation is active.)</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can take the attack-reroll blessing yourself.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When you gain an attack-reroll blessing to distribute, you gain two blessings to distribute instead.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Attacks rolls from your reroll blessings gain a +4 bonus.</p>
+
+			<h7>Domain: Knowledge/Lore</h7>
+			<p>Take two additional points of backgrounds in a background that has to do with knowledge or lore.</p>
+			<p><b>Invocation of Knowledge/Lore</b>: You must use this invocation during your first round of a battle. When you do, you get a quick glimpse of the battle’s future. Roll a d6; as a free action at any point after the escalation die equals the number you rolled, you can allow one of your allies to reroll a single attack roll with a +2 bonus thanks to your vision of this future.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Once per day, you can change one of your skill checks involving knowledge to a natural 20 instead. Interpret the word “knowledge” as loosely as your GM allows. GMs, be generous.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You now roll a d4 for the invocation, not a d6.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain a different positive relationship point each day with a random icon, purely because the icon has realized you know something they need to know. It changes every day and it might contradict your usual icon relationships. Work with your GM to determine which icon.</p>
+
+			<h7>Domain: Life/Death</h7>
+			<p>You and your nearby allies gain a +1 bonus to death saves.</p>
+			<p><b>Invocation of Life/Death</b>: This battle, you and each of your allies can each separately add the escalation die to a single save made by that character. In addition, you and your allies do not die from hit point damage when your negative hit points equal half your normal hit points. Instead, you die when your negative hit points equal your full hit points.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The death save bonus increases to +2. In addition, you and nearby allies gain negative energy resistance equal to your level.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Each battle, the first time an ally near you becomes staggered, that ally immediately heals hit points equal to twice your level.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: The negative energy resistance increases to twice your level. When a nearby ally is reduced to 0 HP or lower, you may grant that ally temporary HP equal to four times your level. Each ally many benefit from this effect only once per battle.</p>
+
+			<h7>Domain: Love/Beauty</h7>
+			<p>Once per level, you can generate a one-point conflicted relationship with a heroic or ambiguous icon you do not already have a relationship with. The relationship point remains with you until you gain a level, and then it’s time for another one-level relationship. You also gain a +2 bonus to all skill checks involving your force of personality.</p>
+			<p><b>Invocation of Love/Beauty</b>: As a free action, at some dramatic moment, you or an ally of your choice can roll for one icon relationship that might have an effect on the battle. Rolls of 5 and 6 are beneficial as usual, though the GM will have to improvise what that means in the middle of combat. The invocation’s advantage does not occur the moment you roll initiative; wait for a dramatic moment instead.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain two points in the relationship instead.</p>
+
+			<h7>Domain: Protection/Community</h7>
+			<p>Once per battle, you can affect two additional allies when you cast a spell for broad effect.</p>
+			<p><b>Invocation of Protection/Community</b>: This battle, critical hits against you and your nearby allies deal normal damage instead of critical damage. Unlike normal invocations, this invocation can be used as an interrupt action whenever an enemy scores a critical hit against you or a nearby ally. The other limitations on using invocations still apply.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</b></i>: Whenever you target one or more allies with a spell, one ally of your choice can roll a save against a save ends effect.</p>
+
+			<h7>Domain: Strength</h7>
+			<p>You can wield heavy weapons without an attack penalty.</p>
+			<p><b>Invocation of Strength</b>: This battle, you and your nearby allies deal triple damage instead of double damage on critical hits with melee attacks.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Once per battle, you can deal extra damage to one target you hit with a melee attack as a free action. The damage bonus is a number of d4 equal to your weapon attack bonus or to your level, whichever is higher.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You can use d8s instead of d4s for the bonus damage dice.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day, you can use d20s instead of d8s for the bonus damage dice.</p>
+
+			<h7>Domain: Sun/Anti-Undead</h7>
+			<p>Every attack you make deals holy damage instead of other types of damage unless you choose otherwise for a specific attack. If an attack would already deal holy damage, you instead inflict +1 holy damage per tier.</p>
+			<p><b>Invocation of Sun/Anti-Undead</b>: You imbue you and your ally’s attacks with holy power. Until the end of battle, you and your ally’s attacks deal +1 holy damage per level on a hit.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You may sacrifice the use of a cleric daily spell to spontaneously cast Turn Undead at a level equal to the sacrificed spell. You may also expend two uses of Heal to cast Turn Undead at the highest spell level you are capable of casting.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain a +2 bonus to all defenses and attacks against undead.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Spells you cast that normally inflict holy damage deal an extra point of damage per level. This stacks with the +1 damage/tier granted by the base talent.</p>
+
+			<h7>Domain: Trickery/Illusion</h7>
+			<p>Once per battle, as a quick action when you are engaged with an enemy, roll a d20 (your ‘trick die’). As a free action before the start of your next turn, give your trick die to a nearby ally or enemy who is about to make an attack roll. The trick die result becomes the natural result of their roll instead.</p>
+			<p><b>Invocation of Trickery/Illusion</b>: This battle, attacks against you by enemies that moved to engage you during their turn miss on natural odd rolls.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Your trick die can be used for any one d20 roll, not just an attack.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You get another trick die roll to use each battle the first time the escalation die reaches 3+.</p>
+
+			<h7>Domain: War/Leadership</h7>
+			<p>Once per turn when you make a melee attack against an enemy, hit or miss, your allies gain a +1 attack bonus against that enemy until the start of your next turn.</p>
+			<p><b>Invocation of War/Leadership</b>: Increase the escalation die by 1.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The attack no longer has to be a melee attack, close and ranged attacks also work.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The bonus now applies against all enemies you attack; you no longer have to single out one foe if you use a spell that attacks multiple enemies.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Allies now also get a +10 damage bonus against such enemies.</p>
+		</div>
+
+		<div id="spells" class="tabcontent">
+			<h5>1st Level Spells</h5>
+			<p>
+				<h7>Bless</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally gains a +2 attack bonus until the end of the battle.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target gains a +1 attack bonus until the end of the battle.<br/>
+				<p>3rd level spell: Each target also gains 1d10 temporary hit points per point of the attack bonus.</p>
+				<p>5th level spell: Each target gains 2d10 temporary hit points instead of 1d10 per point of the attack bonus.</p>
+				<p>7th level spell: All attack bonuses granted by the spell increase by +1.</p>
+				<p>9th level spell: Each target gains 3d10 temporary hit points instead of 2d10 per point of the attack bonus.</p>
+			</p>
+			<p>
+				<h7>Cure Wounds</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You or a nearby ally can heal using a free recovery.<br/>
+				<p>3rd level spell: The target can also roll a save against each save ends effect.</p>
+				<p>5th level spell: This spell is now recharge 16+ after battle instead of daily.</p>
+				<p>7th level spell: The target can heal using two free recoveries instead of one.</p>
+				<p>9th level spell: This spell is now recharge 11+ instead.</p>
+			</p>
+			<p>
+				<h7>Hammer of Faith</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Effect</b>: Until the end of the battle, your basic melee attacks use d12s as their base weapon damage dice.<br/>
+				<p>3rd level spell: The spell now requires only a quick action to cast.</p>
+				<p>5th level spell: You deal half damage on misses with basic melee attacks this battle.</p>
+				<p>7th level spell: Once during the battle, you can reroll a basic melee attack.</p>
+				<p>9th level spell: For the rest of the battle, change any of your basic melee attack damage dice rolls that are less than the escalation die to the escalation die value.</p>
+			</p>
+			<p>
+				<h7>Javelin of Faith</h7><br/>
+				Ranged spell<br/>
+				At-Will<br/>
+				<b>Target</b>: One nearby enemy<br/>
+				<b>Attack</b>: 4 + Level vs. PD<br/>
+				<b>Hit</b>: 1d6 + (4 x tier) holy damage.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p>3rd level spell: 3d6 damage.</p>
+				<p>5th level spell: 3d6 x 2 damage.</p>
+				<p>7th level spell: 3d10 x 2 damage.</p> 
+				<p>9th level spell: 4d10 x 2 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The spell deals +1d6 damage against an undamaged target. This increases to +2d6 at 5th level and +4d6 at 8th level</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can now target a far away enemy with the spell at a –2 attack penalty.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If your natural attack roll is an 18+, make the attack a second time against a different target as a free action.</p>
+			</p>
+			<p>
+				<h7>Shield of Faith</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally gains a +2 bonus to AC this battle.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target gains a +1 bonus to AC this battle.<br/>
+				<p>3rd level spell: The bonus also applies to PD.</p>
+				<p>5th level spell: The bonus increases by +1 while the target is staggered.</p>
+				<p>7th level spell: The bonus also applies to MD.</p>
+				<p>9th level spell: The bonus when cast for power increases to +4. The bonus when cast for broad effect increases to +2.</p>
+			</p>
+			<p>
+				<h7>Spirits of the Righteous</h7><br/>
+				Ranged spell<br/>
+				Once per battle<br/>
+				<b>Target</b>: One nearby enemy<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: 4d6 + (4 x tier) holy damage, and your nearby ally with the fewest hit points gains a +4 bonus to AC until the end of your next turn.<br/>
+				<b>Miss</b>: Your nearby ally with the fewest hit points gains a +2 bonus to AC until the end of your next turn.<br/>
+				<p>3rd level spell: 7d6 damage.</p>
+				<p>5th level spell: 7d10 damage.</p>
+				<p>7th level spell: 2d12 x 5 damage.</p>
+				<p>9th level spell: 4d8 x 5 damage.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You also gain the bonus to AC until the end of your next turn on a hit.</p>
+			</p>
+			<p>
+				<h7>Turn Undead</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Target</b>: 1d4 nearby undead creatures, each with 55 hp or fewer.<br/>
+				<b>Attack</b>: 7 + Level vs. MD<br/>
+				<b>Hit</b>: The target is dazed until end of your next turn.<br/>
+				<b>Hit by 4+</b>: 1d10 x your level holy damage, and the target is dazed until end of your next turn.<br/>
+				<b>Hit by 8+</b>: Against non-mooks, holy damage equal to half the target’s maximum hit points, and the target is dazed (save ends). Against mooks, the +8 result now deals 4d10 x your level holy damage.<br/>
+				<b>Hit by 12+ or Natural 20</b>: Against non-mooks, the target is destroyed. Against mooks, the +12 result now deals 4d20 x your level holy damage<br/>
+				<p>3rd level spell: Target with 90 hp or fewer.</p>
+				<p>5th level spell: Target with 150 hp or fewer.</p>
+				<p>7th level spell: Target with 240 hp or fewer.</p>
+				<p>9th level spell: Target with 400 hp or fewer.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can expend your daily use of turn undead to gain an additional use of <i>heal</i> or <i>inflict wounds</i> in one battle.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can choose to target either demons or undead with the spell (but not both with the same casting).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Increase the targeting limit by 100 hp.</p>
+			</p>
+
+			<h5>3rd Level Spells</h5>
+			<p>
+				<h7>Cause Fear</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: One nearby enemy with 75 hp or fewer<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: The target is weakened until the end of its next turn. On its next turn, if it’s unengaged, it does not attack and moves away from you. If it’s engaged, the target attempts to disengage as its first action, and moves away if it succeeds. If it fails, it moves away as its second action (drawing opportunity attacks). In either case, it will not attack unless it has no options for escape.<br/>
+				<b>Miss</b>: The target hates you for having tried to scare it, and it wants to hurt you most of all, but it won’t be any stupider than usual in pursuing that goal.<br/>
+				<p>5th level spell: Target with 120 hp or fewer.</p>
+				<p>7th level spell: Target with 190 hp or fewer.</p>
+				<p>9th level spell: Target with 300 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Combat Boon</h7><br/>
+				Close-quarters spell<br/>
+				At-Will<br/>
+				<b>Effect</b>: Make a basic melee attack. If the attack hits, you or one conscious nearby ally can roll a save against a save ends effect.<br/>
+				<p>5th level spell: The save gains a +1 bonus.</p>
+				<p>7th level spell: If the attack hits, you and your nearby conscious allies can roll a total of two saves (one per character).</p>
+				<p>9th level spell: The save bonus increases to +2.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If you score a critical hit with the combat boon attack, the save (or saves) automatically succeeds.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: One nearby conscious ally can roll a save even if your attack misses.</p>
+			</p>
+			<p>
+				<h7>Divine Endurance</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally gains 40 temporary hit points.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target gains 20 temporary hit points.<br/>
+				<p>5th level spell: Temporary hp = 60/30.</p>
+				<p>7th level spell: Temporary hp = 80/40.</p>
+				<p>9th level spell: Temporary hp = 100/50.</p>
+			</p>
+			<p>
+				<h7>Judgment</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: All nearby staggered enemies<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: 5d10 + (4 x tier) holy damage.<br/>
+				<b>Miss</b>: Holy damage equal to your level.<br/>
+				<p>5th level spell: 4d10 x 2 damage.</p>
+				<p>7th level spell: 2d6 x 10 damage.</p>
+				<p>9th level spell: 2d10 x 10 damage.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The spell now deals half damage on a miss.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The spell is now recharge 16+ after battle instead of daily.</p>
+			</p>
+			<p>
+				<h7>Mighty Healing</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally can heal using a single recovery and regain double the usual number of hit points.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target can heal using a recovery.<br/>
+				<b>5th level spell</b>: The spell can now target far away allies.<br/>
+				<b>7th level spell</b>: Power equals triple the usual hp for one recovery; broad equals 1.5 times the usual hp per recovery.<br/>
+				<b>9th level spell</b>: Recoveries provided by the spell are now free.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: This spell is now a close-quarters spell.<br/>
+			</p>
+			<p>
+				<h7>Strength of the Gods</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally deals +2d8 damage with melee attacks this battle.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target deals +1d8 damage with melee attacks this battle.<br/>
+				<p>5th level spell: Power +4d6, Broad +2d6.</p>
+				<p>7th level spell: Power +4d10, Broad +2d10.</p>
+				<p>9th level spell: Power +6d10, Broad +3d10.</p>
+			</p>
+
+			<h5>5th Level Spells</h5>
+			<p>
+				<h7>Crisis of Faith</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: For the rest of this battle, all enemies near you with 100 hp or fewer take a -3 penalty to their Mental Defense. Whenever one of those enemies misses with an attack roll, it takes holy damage equal to double your level.<br/>
+				<p>7th level spell: 160 hp or fewer.</p>
+				<p>9th level spell: 250 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Sanctuary</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Effect</b>: Choose yourself or a nearby ally. Enemies with 100 hp or fewer cannot attack the chosen target until that creature attacks or the escalation die reaches 6+.<br/>
+				<p>7th level spell: 160 hp or fewer.</p>
+				<p>9th level spell: 250 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Sphere of Radiance</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Effect</b>: You or one nearby ally can heal using a free recovery. Then make the following attack.<br/>
+				<b>Target</b>: Up to two nearby enemies<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: 7d8 + (4 x tier) holy damage.<br/>
+				<b>Miss</b>: Half damage.<br/>
+				<p>7th level spell: 4d6 x 4 damage.</p>
+				<p>9th level spell: 4d8 x 5 damage.</p>
+			</p>
+
+			<h5>7th Level Spells</h5>
+			<p>
+				<h7>Circle of Protection</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: Choose a defense: AC, PD, or MD. For the rest of the battle while you are conscious, you and each ally near you gains a +1 bonus to that defense. Each enemy that misses you or one of your nearby allies with an attack against the defense you chose is hampered until the end of its next turn.<br/>
+				<p>9th level spell: Attacks against the chosen defense cannot score critical hits.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The spell is now (recharge 16+) after battle instead of daily.</p>
+			</p>
+			<p>
+				<h7>Resurrection</h7><br/>
+				Ranged spell<br/>
+				<b>Special</b>: You can cast this spell only once per level, and a limited number of times in your life. You must have most of the corpse available to cast the spell. There’s no time limit on resurrecting a dead PC, so long as you have the corpse.<br/>
+				<b>Effect</b>: You can bring a creature back to life in more or less normal condition, with varying levels of recovery.<br/>
+				<b>Limited Casting</b>: The first time in your life that you use the spell, you can cast it with a single standard action. Using the spell removes one of your spell slots until you gain a level. (You get one less spell per full heal-up.) The person you are resurrecting comes back at roughly half strength, e.g. expending half their recoveries, being dazed (save ends), and, for each ability, having a 50% chance that it is expended.<br/>
+				&emsp;The second time in your life you cast the spell, it takes at least three or four rounds and costs you roughly half your hit points and daily powers/spells. The person you are resurrecting comes back at something like one-quarter strength.<br/>
+				&emsp;The third time you cast the spell it has to be as a ritual. The spell chews you up and leaves you with only a few hit points, then gnaws at the person you have resurrected, who takes days to recover well enough to qualify as an adventurer or combatant.<br/>
+				&emsp;The fourth time you cast the spell it nearly kills you. The resurrection succeeds but the person you’ve resurrected is going to be a mess for a month or more, regardless of any other magic you use.<br/>
+				&emsp;The fifth time you resurrect someone, that’s the end of your story and you die. There’s only a 50% chance that the resurrection spell works on the target. You’ve used up your quota of resurrection magic. You’re not coming back via this spell, either.<br/>
+				<b>Special</b>: If the target of your resurrection spell has been resurrected more times than you have cast the spell, there is a 50% chance that the experience will play out using their higher number of resurrections instead of the number of times you have cast the spell.<br/>
+				<p>9th level spell: You no longer need to have most of the corpse to perform this spell.</p>
+			</p>
+
+			<h5>9th Level Spells</h5>
+			<p>
+				<h7>Overworld Travel</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Special</b>: You must cast this spell outdoors. It enables you and a group of nearby allies to travel to most any location in the world that you can name. Travel takes between an hour and a day, depending on distance and the amount of effort the exerted. The destination can be anywhere above ground, underground locations are off limits.<br/>
+			</p>
+			<p>
+				<h7>Prayer for Readiness</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Targets</b>: Up to 5 nearby allies<br/>
+				<b>Effect</b>: You utter a powerful prayer upon your comrades, giving each a special blessing. At any point later this battle, each blessed ally can acknowledge the blessing by saying ‘thank you’ to your god, gods, or pantheon as a free action to reroll a d20 roll. That ally must take the reroll result. Note that you are giving the blessing and don’t receive it yourself.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: This spell is now a quick action to cast.</p>
+			</p>
+		</div>
+      </td>
+</div>
+</body>
+</html>

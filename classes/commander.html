@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Commander
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>Commander</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/commander.jpg" alt="Commander" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"You needn't wait until the bodies fall to know the victor. Simply find the eyes that first hold fear&mdash;those are the eyes that can never see victory."
+		</p>
+
+		<p>
+			<b>Overview</b>: Some people are born to fight. Others like giving orders. Put these
+two types of people together and you’ve got a commander.<br/>
+			Commanders are accomplished and competent battle leaders. They stand on the front line issuing commands and bolstering their allies while leading the battle with weapon in hand. Commanders know how to rally a team to win a fight.<br/>
+			&emsp;The weight of your armor is not a hindrance; it is a familiar comfort. The worn weapon grip molds to your hand as if it were a natural extension of your arm. It’s time to fight and to lead.<br/>
+			<b>Play Style</b>: Commanders tell other characters what to do. A commander who isn’t a team player is a lonely warrior who needs to get over it and rejoin their warband or adventuring party in order to do what they do best: dole out commands.<br/>
+			&emsp;The commander aims to tell other player characters what to do without interfering too often in the turn-by-turn structure of the round. That’s why commands take effect on the turn of an ally who is already taking their turn. Tactics are usually used on the commander’s turn, but they’re limited by how many times they can be used each day.<br/>
+			&emsp;Choosing how and when you’ll spend command points to help your allies may be challenging for a novice player. Actually, that’s not entirely true. The challenge level of the class might not be so bad. But straightforward characters usually work best for novice players and the commander’s options are laced with subtleties, starting with how you’ll choose between commands and tactics as you create your character.<br/>
+			<b>Backgrounds</b>: Commanders have backgrounds similar to fighters and some paladins and rangers.<br/>
+			&emsp;Some backgrounds include: Frost Range mercenary, historical re-enactor, sergeant of the city guard, street gang survivor, ex-gladiator, wilderness scout, cobbler, bouncer, exotic dancer, Queen’s Wood patroller, Axis wargame veteran, Imperial squad leader, reformed drunk, and officer of the Crusader’s Guard.
+		</p>
+
+		<p><b>Stats</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" class="stat-table">
+			<tbody>
+				<tr class="odd-row">
+					<th style="width: 30%">Initiative</th>
+					<td>5 + level</td>
+				</tr>
+				<tr>
+					<th>Armor Class</th>
+					<td>Base AC + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Physical Defense</th>
+					<td>12 + level</td>
+				</tr>
+				<tr>
+					<th>Mental Defense</th>
+					<td>14 + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>HP Value</th>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>Recoveries</th>
+					<td>8</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Recovery Value</th>
+					<td>6 x level</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5>Gear</h5>
+		<p class="initial">
+			At 1st level, commanders start with a melee weapon or two, a ranged weapon, a shield, light armor of some type (or heavy armor if they chose the Armor Skills talent), and other minor odds-and-ends suggested by their backgrounds. 
+		</p>
+		<p><b>Gold Pieces</b>: Commanders may start with either 25 gp or 1d6 x 10 gp.</p>
+		<p><b><a></a>Armor</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+			<tbody>
+				<tr valign="bottom">
+					<th>Armor Type</th>
+					<th>Base AC</th>
+					<th>Attack Penalty</th>
+				</tr>
+				<tr class="odd-row">
+					<th>None</th>
+					<td>12</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th>Light</th>
+					<td>14</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Heavy</th>
+					<td>16</td>
+					<td>-2</td>
+				</tr>
+				<tr>
+					<th class="last-row">Shield</th>
+					<td class="last-row">+1</td>
+					<td class="last-row">&mdash;</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">
+			<tr>
+				<th style="width: 60%"><p><b>Melee Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Melee Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>One-Handed</th>
+								<th>Two-Handed</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d6 club</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 hand-axe, warclub</td>
+								<td>1d8 spear</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>1d8 (-2 atk) longsword, battleaxe</td>
+								<td>1d10 (-3 atk) greatsword, greataxe</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 5 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (5 x tier) damage<br/>
+					<b>Miss</b>: Damage equal to your level
+				</th>
+			</tr>
+		</table>
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">	
+			<tr>
+				<th style="width: 60%"><p><b>Ranged Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Ranged Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>Thrown</th>
+								<th>Crossbow</th>
+								<th>Bow</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d4 hand crossbow</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 javelin, axe, spear</td>
+								<td>1d6 light crossbow</td>
+								<td>1d6 shortbow</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>&mdash;</td>
+								<td>1d8 (-2 atk) heavy crossbow</td>
+								<td>1d8 (-2 atk) longbow</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: &mdash;
+				</th>
+			</tr>
+		</table>
+		<br/>
+
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+			<tbody>
+				<tr>
+					<th colspan="5"><h5>Table: The Commander</h5></th>
+				</tr>
+				<tr valign="bottom">
+					<th style="width: 10%">Commander Level</th>
+					<th style="width: 20%">Total Hit Points</th>
+					<th>Total Feats</th>
+					<th>Class Talents</th>
+					<th>Commands and Tactics</th>
+					<th style="width: 10%">Weapon Damage Bonus</th>
+					<th style="width: 10%">Ranged Weapon Damage Bonus</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>HP x 3</td>
+					<td>1 Adventurer</td>
+					<td>3</td>
+					<td>4</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>2nd</td>
+					<td>HP x 4</td>
+					<td>2 Adventurer</td>
+					<td>3</td>
+					<td>5, up to 1st level</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>HP x 5</td>
+					<td>3 Adventurer</td>
+					<td>3</td>
+					<td>6, up to 3rd level</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>4th</td>
+					<td>HP x 6</td>
+					<td>4 Adventurer</td>
+					<td>3</td>
+					<td>7, up to 3rd level</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>HP x 8</td>
+					<td>4 Adventurer<br/>1 Champion</td>
+					<td>4</td>
+					<td>7, up to 5th level</td>
+					<td>+10</td>
+					<td>+9</td>
+				</tr>
+				<tr class="odd-row">
+					<td>6th</td>
+					<td>HP x 10</td>
+					<td>4 Adventurer<br/>2 Champion</td>
+					<td>4</td>
+					<td>8, up to 5th level</td>
+					<td>+10</td>
+					<td>+9</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>HP x 12</td>
+					<td>4 Adventurer<br/>3 Champion</td>
+					<td>4</td>
+					<td>8, up to 7th level</td>
+					<td>+10</td>
+					<td>+9</td>
+				</tr>
+				<tr class="odd-row">
+					<td>8th</td>
+					<td>HP x 16</td>
+					<td>4 Adventurer<br/>3 Champion<br/>1 Epic</td>
+					<td>4</td>
+					<td>9, up to 7th level</td>
+					<td>+15</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>HP x 20</td>
+					<td>4 Adventurer<br/>3 Champion<br/>2 Epic</td>
+					<td>4</td>
+					<td>9, up to 9th level</td>
+					<td>+15</td>
+					<td>+12</td>
+				</tr>
+				<tr class="odd-row">
+					<td>10th</td>
+					<td>HP x 24</td>
+					<td>4 Adventurer<br/>3 Champion<br/>3 Epic</td>
+					<td>4</td>
+					<td>10, up to 9th level</td>
+					<td>+15</td>
+					<td>+12</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
+			<button class="tablinks" onclick="openTab(this, 'commands')">Commands</button>
+			<button class="tablinks" onclick="openTab(this, 'tactics')">Tactics</button>
+		</div>
+
+		<div id="class-features" class="tabcontent" style="display: block">
+			<h5>Class Features</h5>
+
+			<p class="initial">All commanders have class features associated with commands and tactics. Commands allow you to help your allies fight better. You issue them as interrupt actions during their turn. To issue a command, the ally must be conscious, but line of sight isn’t required. All commands are at-will powers, though they do cost command points, and are usually limited to once per round (as an interrupt).</p>
+			<p>You start each battle with 1 command point and generally gain more via the two standard commander features: Fight from the Front and Weigh the Odds. Excess command points go away at the end of the battle.</p>
+			<p>Your powers also include tactics that have immediate effect during your turn. Tactics, as opposed to commands, don’t use command points. You also don’t have to wait around for an ally’s turn to use them. However, tactics don’t always recharge after a battle. You can choose the commands and tactics you want to use. A 1st-level commander starts with a total of 4 commands and tactics. An effective commander should choose a good balance of commands and tactics.</p>
+
+			<h7>Fight from the Front</h7>
+			<p>When you hit with a commander melee attack during your turn, gain 1d3 command points.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You now gain 1d4 command points when you hit with a melee attack during your turn instead of 1d3.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When you make a melee attack during your turn and miss with a natural even roll, gain 1 command point.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Twice per day when you hit with a melee attack, you can gain additional command points equal to double your Strength modifier.</p>
+
+			<h7>Weigh the Odds</h7>
+			<p>Standard action<br/>
+			<b>Effect</b>: Gain 1d4 command points.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Once per day, add a +4 bonus to the number of command points you gain when you use this action.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per battle while the escalation die is 3+, you can gain 1d4 command points as a quick action.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You now gain 1d6 command points instead of 1d4 when you use this action.</p>
+
+			<h5>Class Talents</h5>
+
+			<p class="initial">Choose three of the following class talents. You get an additional commander talent at 5th level.</p>
+
+			<h7>Armor Skills</h7>
+			<p>Unlike other commanders, you take no attack penalties for fighting in heavy armor. (As indicated on your class chart, your base AC in heavy armor is 14.)</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When an enemy misses you with a melee attack and rolls a natural 1 or 2, you gain 1 command point.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per day as a free action when you are hit by an attack that targets AC, you can take half damage from that attack instead.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day as a free action, you can gain a bonus to AC equal to the current escalation die until the end of the battle. (The AC bonus increases or decreases as the escalation die increases or decreases.)</p>
+
+			<h7>Battle Captain</h7>
+			<p>Once per battle when you have 2 or more command points left after giving a command, you can use another interrupt action on a different ally’s turn before the start of your next turn.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You now only need to have 1 or more command points left instead of 2.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You can use this talent twice per battle.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain an additional command point at the start of each round while the escalation die is 4+.</p>
+
+			<h7>Combat Maneuver</h7>
+			<p>Choose a fighter maneuver of your level or lower. You can use it like a fighter. You can also switch it for a different maneuver each time you level up.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain the adventurer feat for the maneuver you chose, if any.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Choose a second fighter maneuver of your level or lower to use.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain the adventurer and champion tier feats, if any, for both your fighter maneuvers.</p>
+
+			<h7>Destined to Lead</h7>
+			<p>When you roll a 5 or 6 on an icon relationship die, you gain 2 bonus command points that last until the end of the current game session, no matter what events occur due to the advantage gained with that icon. When you use one or more of these bonus command points, tell a story about how something related to the icon (or icons!) comes into play to make you a better/luckier/destined commander.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You now gain the 2 bonus command points when you roll a 4 with an icon relationship die as well.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per session when you roll icon relationship dice, you can reroll one die that isn’t a 5 or a 6.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: When you roll icon relationship dice, for each 6 you get, you and each nearby ally gain a +1 bonus to death saves until the next full heal-up.</p>
+
+			<h7>Forceful Command</h7>
+			<p>When you give a command that lets an ally roll a d20 (an attack, a save, etc.), you can spend additional command points before the roll up to the escalation die value, or 1 point if the escalation die is still 0. That ally gains a +2 bonus to the roll for each point you spend this way.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You begin each battle with 1 additional command point.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per battle, you can use a command on a far away ally.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day when you use this talent to grant an ally a bonus to a d20 roll, you can also allow that ally to reroll that roll once as a free action.</p>
+
+			<h7>Into the Fray</h7>
+			<p>At the start of each battle before you and your allies roll initiative, roll a d4. A number of your allies equal to the roll gain the following benefit of your choice: a +4 bonus to initiative that battle; OR a +2 bonus to AC until the end of the first round.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You also gain the chosen bonus.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The +2 bonus to AC also applies to PD and MD.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You and the chosen allies now gain both bonuses (+2 to all defenses for the first round and +4 to initiative this battle).</p>
+
+			<h7>Martial Training</h7>
+			<p>Unlike other commanders, you don’t take a –2 attack penalty when fighting with heavy weapons.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain 1 command point whenever you roll a natural 19 or 20 with a melee attack.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Twice per day as a free action (once per turn), you can reroll one of your melee attack rolls.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Twice per day as free action (once per turn) when you hit with a melee attack, you can deal 1d10 extra damage to the target for each positive or conflicted icon relationship point you have with warrior or leader icons in your game.</p>
+
+			<h7>Moment of Glory</h7>
+			<p>When you roll initiative, also roll a d4 and record the result. As a free action, you can add the result to a single attack roll made by one of your nearby allies later this battle. (It’s a free action, so you can add the result after seeing the roll.)</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can also add the d4 result to a save or dicey-move roll made by an ally.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Roll a d6 instead of a d4.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: In addition to the d6 you roll with initiative, roll a d4. You can also use that roll the same way, but not during the same turn you use the d6 result.</p>
+
+			<h7>Never Say Die</h7>
+			<p>Once per battle when an enemy scores a critical hit against you or a nearby ally, you can increase the escalation die by 1.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Once per day, you can use this talent twice in the same battle.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When you use this talent, the target of the critical hit can heal using a recovery.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: When you use this talent, you and each of your nearby allies gains a +2 bonus to all defenses until the end of your next turn.</p>
+
+			<h7>Strategist</h7>
+			<p>You start every battle with 1 additional command point. In addition, you gain 1 additional point in a background related to military history, strategy, command, or warfare. You can use this background point to raise that background beyond the normal maximum of 5.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When you roll a die to find out how many allies one of your commands, tactics, or talents targets, add +1 to the result.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day as a free action, you can gain 4 command points.</p>
+
+			<h7>Sword of Victory</h7>
+			<p>When your melee attack drops a non-mook enemy to 0 hp, or drops three or more mooks, you gain 1 command point.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You only have to drop 2 or more mooks instead of 3 to gain the command point.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain 2 command points instead of 1 when you drop a non-mook enemy or 2 or more mooks to 0 hp.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day as a free action, you can gain 4 command points.</p>
+
+			<h7>Tactician</h7>
+			<p>One battle per day, you and up to two nearby allies can reroll their initiative if they don’t like the first result. They must take the re-rolled result. In addition, you gain 1 additional point in a background related to military history, strategy, command, or warfare. You can use this background point to raise that background beyond the normal maximum of 5.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per day after a battle, you can gain a +4 bonus to all recharge rolls you make for your expended tactics.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day as a free action, you can choose a tactic you don’t normally possess and use it as if you did (you don’t get any feats associated with it).</p>
+		</div>
+
+		<div id="commands" class="tabcontent">
+			<h5>1st Level Commands</h5>
+			<p>
+				<h7>Get Out of There!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn)<br/>
+				<b>Effect</b>: The target can use a quick action this turn to pop free from one enemy.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If you spend an additional command point, the target (or targets) can pop free from all enemies instead of only one enemy.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: If you spend an additional command point, you can now target one additional nearby ally with this command.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: When targets of this command are stuck, that condition ends on them.</p>
+			</p>
+			<p>
+				<h7>Rally Now!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn)<br/>
+				<b>Special</b>: If you spend an additional command point on this command, you can target an unconscious ally with it.<br/>
+				<b>Effect</b>: The target can rally as a free action this turn. (If it’s their second or a subsequent rally, they still need to succeed on the save.)<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The target adds a bonus 5 hit points to the recovery. (10 at 5th level; 15 at 8th level.)</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: When the target has to roll a save to rally, you can grant them a +2 bonus to the roll as a free action after seeing it for each additional command point you spend on the command.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The target of this command also gains a +2 bonus to all defenses until the end of its next turn.</p>
+			</p>
+			<p>
+				<h7>Save Now!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn)<br/>
+				<b>Effect</b>: The target can roll a save against a save ends effect.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: For each additional 2 command points you spend when you make the command (before the save roll), the target can roll another d20 for the save, choosing the best result.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: If the save fails, you gain 1 command point.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Whether or not the save succeeds, the target of your command heals 20 hit points.</p>
+			</p>
+			<p>
+				<h7>Try Again!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 2 command points<br/>
+				<b>Target</b>: One nearby ally that made an attack roll (on that ally’s turn)<br/>
+				<b>Effect</b>: The target can reroll the attack but must use the new result.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If the escalation die is 3+, the target gains a +4 bonus to the reroll.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: If the rerolled attack scores a critical hit, you gain 1 command point.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use this command before an ally makes an attack roll for 3 command points (instead of 2) for an entirely different effect: The target can make an additional basic attack this turn as a free action if the attack hits.</p>
+			</p>
+			<p>	
+				<h7>You Set Them Up, I'll Finish Them Off!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 4 command points<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn) that hits an enemy you can see with an attack this turn.<br/>
+				<b>Effect</b>: Add a +5 bonus to the damage dealt by your ally (+10 at 5th level; +15 at 8th level). In addition, during your next turn, you gain a +2 attack bonus with melee attacks against the enemy that your ally hit.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The target ally also gains the damage bonus with any other attacks it makes against the same enemy this turn.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The command now costs 3 command points to use.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Your attacks that benefit from the +2 attack bonus against that enemy also add a +15 bonus to your damage on a hit.</p>
+			</p>
+
+			<h5>3rd Level Commands</h5>
+			<p>
+				<h7>Charge!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn)<br/>
+				<b>Effect</b>: As a standard action this turn, the target can both move and make a basic attack.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If you spend an additional command point, the target can use a melee attack instead of a basic attack.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The target gains a +4 bonus to the melee attack it makes with this command.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: This turn, if the target moves to attack an enemy you are also engaged with, that enemy is vulnerable to the attack.</p>
+			</p>
+			<p>
+				<h7>Hit Harder!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby ally who hits with an attack (on the ally’s turn)<br/>
+				<b>Effect</b>: The target can reroll any of the damage dice. They must accept the rerolled result.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The target gains a +5 bonus to the damage roll (+10 at 5th level; +15 at 8th level).</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can spend an additional command point (1 max) to add another damage die of the same type to the damage roll of the triggering attack. (You only roll the extra damage die once.)</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can also use this command as a free action (instead of as an interrupt action) when an ally hits with an opportunity attack.</p>
+			</p>
+			<p>
+				<h7>You Are A Precious Snowflake!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby non-human ally using a once-per-battle racial power (on the ally’s turn)<br/>
+				<b>Effect</b>: Roll a d20. On a 11+, the target doesn’t expend the use of its racial power and can use it again later this battle.<br/>
+			</p>
+
+			<h5>5th Level Commands</h5>
+			<p>
+				<h7>Hit ’Em From Here!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn)<br/>
+				<b>Effect</b>: This turn, the target ally can target one far away enemy with a power, spell, or attack that normally only targets or affects nearby enemies.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: The target can now be a far away ally.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The target ally’s power, spell, or attack can now target multiple far away creatures (if it can target multiple creatures normally).</p>
+			</p>
+			<p>
+				<h7>Strike Here!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 4 command points<br/>
+				<b>Target</b>: One ally engaged with an enemy you are engaged with (on the ally’s turn)<br/>
+				<b>Effect</b>: The target can take an extra standard action this turn.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: This command costs 3 command points instead of 4.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the extra standard action is an attack, the crit range of that attack expands by an amount equal to the escalation die.</p>
+			</p>
+			<p>
+				<h7>We’ve Got Your Back!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: One nearby confused, dazed, or weakened ally (at the start of the ally’s turn)<br/>
+				<b>Effect</b>: Roll a d20. On a 11+, the target ignores the effects of one of those conditions (confused, dazed, weakened) this turn. On a 16+, the condition ends instead.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: After the first time in a round you use this command as an interrupt action, you can use it as a free action until the start of your next turn if you have the command points for the cost. You can still only use the command once per ally’s turn.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Add hampered and stunned to the list of conditions the effect includes.</p>
+			</p>
+
+			<h5>7th Level Commands</h5>
+			<p>
+				<h7>Chain of Commands</h7><br/>
+				Free action<br/>
+				<b>Cost</b>: 1 command point<br/>
+				<b>Target</b>: You<br/>
+				<b>Effect</b>: The next interrupt action you use to make a command doesn’t prevent you from using another interrupt action later in the round.<br/>
+			</p>
+			<p>
+				<h7>You Know What to Do!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 4 command points<br/>
+				<b>Target</b>: One nearby ally (on that ally’s turn<br/>
+				<b>Effect</b>: The target can take an extra standard action this turn.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: This command costs 3 command points instead of 4.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The target also gains 3d10 + 15 temporary hit points.</p>
+			</p>
+
+			<h5>9th Level Commands</h5>
+			<p>
+				<h7>Natural Command</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: 2 command points<br/>
+				<b>Target</b>: One nearby ally (on the ally’s turn)<br/>
+				<b>Effect</b>: Count a natural odd roll the target rolls as natural even, or count a natural even roll the target rolls as natural odd (without actually changing the numerical result).<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: This command costs 1 command point instead of 2 while the escalation die is 3+.</p>
+			</p>
+			<p>
+				<h7>You’ll Die When I Tell You to Die!</h7><br/>
+				Interrupt action<br/>
+				<b>Cost</b>: Your remaining command points<br/>
+				<b>Target</b>: One nearby ally about to roll a death save (on the ally’s turn)<br/>
+				<b>Effect</b>: The target gains a +2 bonus to the death save for each command point spent on this command.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the target succeeds on its death save, it can take its turn normally as if it rolled a natural 20.</p>
+			</p>
+		</div>
+
+		<div id="tactics" class="tabcontent">
+			<h5>1st Level Tactics</h5>
+			<p>
+				<h7>Basic Tactical Strike</h7><br/>
+				Quick action<br/>
+				Recharge 11+ after battle<br/>
+				<b>Target</b>: One nearby ally<br/>
+				<b>Effect</b>: The target can make a basic attack as a free action.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: On a hit, the attack gains a +5 damage bonus (+10 at 5th level; +15 at 8th level).</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The target gains an +4 attack bonus with that attack.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The recharge roll is now 6+.</p>
+			</p>
+			<p>
+				<h7>Enforce Clarity</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Target</b>: One nearby ally<br/>
+				<b>Effect</b>: One non-last gasp effect on the target ends (including effects that don’t require a save).<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The recharge roll is now 11+.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can now target one additional nearby ally with this tactic.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The recharge roll is now 6+.</p>
+			</p>
+			<p>
+				<h7>Just Stay Calm</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Special</b>: You can only use this tactic when the escalation die is 2+<br/>
+				<b>Effect</b>: Decrease the escalation die by 1. Then 1d3 of your nearby allies can heal using a recovery.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The tactic now affects 1d3 + 1 nearby allies.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can include yourself as one of the targets.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: When you use this tactic, you can spend an additional command point to avoid decreasing the escalation die.</p>
+			</p>
+			<p>
+				<h7>Outmaneuver</h7><br/>
+				Quick action<br/>
+				Close-quarters attack<br/>
+				At-Will<br/>
+				<b>Special</b>: You can only use this tactic when you have 0 command points, and only once per round.<br/>
+				<b>Target</b>: The nearby enemy with the highest Mental Defense<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: You gain 1 command point.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When you are engaged with one or more enemies, you can target the enemy with the highest MD you are engaged with instead of the nearest enemy.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: When you attack with this tactic and roll a natural even hit, you gain 2 command points instead of 1.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per battle as a free action when you hit with this tactic, the target also takes 1d10 psychic damage for each point on the escalation die.</p>
+			</p>
+
+			<h5>3rd Level Tactics</h5>
+			<p>
+				<h7>Finish This!</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Special</b>: You can only use this tactic when one enemy is left in the battle and the escalation die is 4+.<br/>
+				<b>Effect</b>: You can spend between 1 and 3 command points. The crit range of your allies’ attacks against the remaining enemy expands by the number of command points you spent. This effect lasts until the end of the battle.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can now use this tactic when the escalation die is 3+.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can now use this tactic when one or two enemies are left in the battle. The effect applies to both enemies.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now spend between 1 and 5 command points on the effect.</p>
+			</p>
+			<p>
+				<h7>Scramble</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Targets</b>: You and 1d3 nearby allies<br/>
+				<b>Effect</b>: Each target can take a move action as a free action, starting with you and proceeding in the order of your choice.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Disengage checks made using this free action gain a +5 bonus.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The recharge roll is now 11+.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Each target can also make a basic attack as a free action after taking the move action.</p>
+			</p>
+			<p>
+				<h7>Swordwork</h7><br/>
+				Free action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Special</b>: You can only use this tactic when the escalation die is 4+<br/>
+				<b>Effect</b>: You can make a basic melee attack as a quick action once each turn until the end of the battle. You can’t gain command points from your Fight from the Front class feature using the extra attacks granted by this tactic.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can now use this tactic when the escalation die is 3+.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You can now gain command points from your Fight from the Front class feature using swordwork attacks.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The recharge roll is now 11+.</p>
+			</p>
+
+			<h5>5th Level Tactics</h5>
+			<p>
+				<h7>Advanced Tactical Strike</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Target</b>: One nearby ally<br/>
+				<b>Effect</b>: The target can make an at-will attack as a free action.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: The first time you use this tactic each battle, make a recharge roll for it at the start of your next turn, adding the escalation die to the roll. The recharge roll after the battle, if any, doesn’t gain a bonus from the escalation die.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The recharge roll is now 11+.</p>
+			</p>
+			<p>
+				<h7>Buck Up!</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Targets</b>: You and 1d4 nearby allies<br/>
+				<b>Effect</b>: Each target gains temporary hit points equal to the number of hit points it gains when it heals using a recovery.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: Add 10 to the temporary hit points each target gains (15 at 8th level).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: One of the targets can also heal using a recovery.</p>
+			</p>
+
+			<h5>7th Level Tactics</h5>
+			<p>
+				<h7>Climactic Battle</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Effect</b>: Until the end of the battle, the escalation die becomes a d8 instead of a d6. Then roll a d20. If you roll 11+, increase the escalation die by 1.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: If the d20 roll is 16+, increase the escalation die by 2 instead of 1.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: When the escalation die reaches 8, you gain 1d6 command points and can make recharge rolls for all your tactics.</p>
+			</p>
+			<p>
+				<h7>On Your Feet, Maggots!</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Targets</b>: Up to two allies who are staggered or at 0 hit points or below.<br/>
+				<b>Effect</b>: The targets can each heal using two recoveries but is dazed until the end of its next turn.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: If the escalation die is 3+, there is no dazed effect.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: This tactic now targets up to 1d4 + 1 allies.</p>
+			</p>
+			<p>
+				<h7>Saving Will</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Target</b>: One nearby ally<br/>
+				<b>Effect</b>: The target gains a +5 bonus to all saves until the end of your next turn.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: This tactic can now be used as a free action.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now target a far away ally.</p>
+			</p>
+
+			<h5>9th Level Tactics</h5>
+			<p>
+				<h7>Force a Conclusion</h7><br/>
+				Free action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Special</b>: You can use this tactic only when the escalation die is 2+<br/>
+				<b>Effect</b>: Roll the escalation die and use the new result.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain command points equal to the newly rolled escalation die value.</p>
+			</p>
+			<p>
+				<h7>Now, Not Later</h7><br/>
+				Free action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Target</b>: One nearby ally using a recharge power<br/>
+				<b>Effect</b>: The target can make a recharge roll for that power immediately after using the power. (If the recharge roll fails, the target can still make a recharge roll for it after the battle.)<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The target gains a +4 bonus to the recharge roll.</p>
+			</p>
+			<p>
+				<h7>Supreme Tactical Strike</h7><br/>
+				Quick action<br/>
+				Recharge 16+ after battle<br/>
+				<b>Target</b>: One nearby ally<br/>
+				<b>Effect</b>: The target can make a standard action attack as a free action.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the attack hits, it’s a critical hit.</p>
+			</p>
+		</div>
+</div>
+</body>
+</html>

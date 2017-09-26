@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - High Elf
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>HIGH ELF</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/high-elf.jpg" alt="High Elf" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"Graceful warriors and wizards at home in the eldritch twilight of the deep forests."
+		</p>
+
+		<h7>Racial Traits</h7>
+		<p><b>Low-Light Vision</b>: You do not suffer penalties due to dim light.</p>
+		<p><b>Elven Awareness</b>: You gain a +2 bonus to skill checks involving perception and sensing magic.</p>
+
+		<h7>Highblood Teleport (Racial Power)</h7>
+		<p>Once per battle, as a move action, place yourself in a nearby location you can see. When the escalation die turns to an odd number, you regain the use of Highblood Teleport.</p>
+		<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Deal damage equal to twice your level to one enemy engaged with you before or after you teleport.</p>
+		<p class="feat"><b><i>Champion Feat</i></b>: When you teleport, you gain a +2 bonus to your defenses until the start of your next turn.</p>
+
+
+</p>
+</div>
+</body>
+</html>

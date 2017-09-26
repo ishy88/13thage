@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Character Creation
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h1>Character Creation Rules</h1>
+
+		<p class="initial">These rules are for the character you create, your PC (player character).</p>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'race')" id="defaultOpen">Choose a Race</button>
+			<button class="tablinks" onclick="openTab(this, 'class')">Choose a Class</button>
+			<button class="tablinks" onclick="openTab(this, 'unique')">Choose Your Unique</button>
+			<button class="tablinks" onclick="openTab(this, 'backgrounds')">Assign Background Points</button>
+			<button class="tablinks" onclick="openTab(this, 'approaches')">Choose Your Approaches</button>
+			<button class="tablinks" onclick="openTab(this, 'combat-stats')">Determine Your Combat Stats</button>
+			<button class="tablinks" onclick="openTab(this, 'icons')">Assign Your Relationships</button>
+
+		</div>
+
+		<div id="race" class="tabcontent">
+			<h3>Choose a Race</h3>
+			<p>Choose your character’s race. This game is less restrictive than other d20 games, and your racial choice won’t limit your class selection.</p>
+			<p>The standard races are <a href="#dwarf">Dwarf</a>, <a href="#gnome">Gnome</a>, <a href="#half-elf">Half-Elf</a>, <a href="#halfling">Halfling</a>, <a href="#high-elf">High Elf</a>, <a href="#human">Human</a>, <a href="#lizardfolk">Lizardfolk</a>, <a href="#orc">Orc</a>, and <a href="#wood-elf">Wood Elf</a>. More information about these races can be found on the <a href="#races">Races</a> page.</p>
+			<p>Nonstandard races: If you want to play a different race from ones listed here, pitch the idea to your GM. You might find your pitch easier to make if your new choice lines up closely to the mechanical features of a supported race even if its flavor is very different. For example, if you want to be a one-off, half-successful experiment in artificial life, you can bolster your case if you say you’ll take the racial features of a supported race. “Half-orc” would be an obvious choice, but it could be anything.</p>
+		</div>
+
+		<div id="class" class="tabcontent">
+			<h3>Choose a Class</h3>
+			<p>Every character has a class (see <a href="#classes">Classes</a>). Pick one of these too.</p>
+			<p>The classes are <a href="#barbarian">Barbarian</a>, <a href="#bard">Bard</a>, <a href="#cleric">Cleric</a>, <a href="#commander">Commander</a>, <a href="#fighter">Fighter</a>, <a href="#monk">Monk</a>, <a href="#necromancer">Necromancer</a>, <a href="#occultist">Occultist</a>, <a href="#paladin">Paladin</a>, <a href="#ranger">Ranger</a>, <a href="#rogue">Rogue</a>, <a href="#seeker">Seeker</a>, <a href="#sorceror">Sorceror</a>, <a href="#swordmage">Swordmage</a>, <a href="#warden">Warden</a>, and <a href="#wizard">Wizard</a>.</p>
+		</div>
+
+		<div id="unique" class="tabcontent">
+			<h3>Choose Your One Unique Thing</h3>
+			<p>Your character’s One Unique Thing (their <i>unique</i>) is a special feature invented by you, the player, which sets your character apart from every other hero. It is a unique and special trait to your player, and markedly unusual. The intent is that it provides a special flavor to the campaign and can assist the GM in determining how your character can interact with characters and story in the campaign. Your character’s unique should not provide general practical value in combat. That is not the intent. The intent is to open up story arcs and fun roleplaying opportunities.</p>
+		</div>
+
+		<div id="backgrounds" class="tabcontent">
+			<h3>Assign Background Points</h3>
+			<p>Backgrounds represent pieces of your character’s history that contributes to your character’s history as well as their ability to succeed with non-combat skills.</p>
+			<p>Each character has a 8 background points at first level, plus any more your class may award.. These are broad categories of experience (cat burglar, for example) rather than specific implementations of that experience (climbing and hiding). Assign your background points to as many backgrounds as you want, up to your total points. You can assign a maximum of 5 points to a single background (and minimum of 1).</p>
+
+			<h7>Choosing Your Backgrounds</h7>
+			<p>Choose backgrounds that help you make sense of your characters past, jobs, and settings. Background and skill use is meant to be about fun in-character methods of attempting to advance the plot.</p>
+			<p>A few possible backgrounds include: acrobat, alchemist, animal trainer, architect, aristocratic noble, assassin, chef, con-woman, goblin exterminator, hunted outlaw, knight errant, magecraft, priest, refugee, scout, shepherd, soldier, spy, temple acolyte, thief, torturer, transformed animal, traveling martial arts pupil, tribal healer, tunnel scout, wandering minstrel, warrior poet, and so on.</p>
+
+			<h7>Background/Skill Advancement</h7>
+			<p>All your skill checks increase by 1 when you level up. If you want even better skill checks, take the Further Backgrounding <a href="#feats">feat</a>.</p>
+			<p>If you just want to move around the bonuses you already have to show how your character is changing, with the GM’s permission you can move one background point around among your current backgrounds each time you gain a level, or swap the point into an entirely new background.</p>
+		</div>
+
+		<div id="approaches" class="tabcontent">
+			<h3>Choose Your Approaches</h3>
+			<p>In addition to your backgrounds, your character's natural aptitudes and inclinations can contribute to how successful you are in your out of combat actions. These additional measures of a character's abilities are represented in-game by approaches. Which approach you apply to any given situation describes both how you perform the action and what is likely to happen if you succeed. The six approaches are as follows:</p>
+			<div class="indent">
+				<p>&bull; <b>Careful</b>: A Careful action is when you pay close attention to detail and take your time to do the job right. Lining up a long-range arrow shot. Attentively standing watch. Disarming a difficult trap.</p>
+				<p>&bull; <b>Clever</b>: A Clever action requires that you think fast, solve problems, or account for complex variables. Finding the weakness in an enemy swordsman’s style. Finding the weak point in a fortress wall. Fixing a broken down wagon.</p>
+				<p>&bull; <b>Flashy</b>: A Flashy action draws attention to you; it’s full of style and panache. Delivering an inspiring speech to your army. Embarrassing your opponent in a duel. Producing a magical fireworks display.</p>
+				<p>&bull; <b>Forceful</b>: A Forceful action isn’t subtle—it’s brute strength. Wrestling a bear. Staring down a thug. Blowing up a farmhouse with a magical spell</p>
+				<p>&bull; <b>Quick</b>: A Quick action requires that you move quickly and with dexterity. Dodging a falling boulder. Warning the king of his impending assassination. Disarming a bomb as it ticks 3... 2... 1...</p>
+				<p>&bull; <b>Sneaky</b>: A Sneaky action is done with an emphasis on misdirection, stealth, or deceit. Talking your way out of getting arrested. Picking a pocket. Feinting in a sword fight.</p>
+			</div>
+			<p>Each approach is rated with a bonus. Choose one at Good (+3), two at Fair (+2), two at Average (+1), and one at Mediocre (+0). You can improve these as you adventure (see <a href="#classes">Leveling Up</a>).</p>
+			<p>Your first instinct is probably to pick the action that gives you the greatest bonus, but it doesn’t always work like that. You have to base your choice of approach on the description of your action, and you can’t describe an action that doesn’t make any sense. Would you Forcefully creep through a dark room, hiding from the guards? No, that’s being Sneaky. Would you Quickly push that big rock out of the way of the wagon? No, that’s being Forceful. Circumstances constrain what approach you can use, so sometimes you have to go with an approach that might not play directly to your strengths.</p>
+			<p>Furthermore, even when you aren't necessarily constrained in your choice of approach, adding one approach to your roll means the other approaches have been pushed to the background. If your roll succeeds, but with a cost, you might fail to accomplish one of those other approaches. For example, if you try to Sneakily get into the Elvish embassy, you go over the wall at night. If you succeed at a cost, you are still in, and you're still Sneaky, but maybe you aren't Careful, and somebody finds your footprints outside the wall. Or maybe you're not Clever, and you get lost.</p>
+
+			<h7>Making Skill Checks</h7>
+			<p>When you roll a skill check to find out if you succeed at a task or trick, the GM tells you what you are rolling to attempt. Then you choose the background you think is relevant to gain the points you have in that background as a bonus to the skill check. Most skill checks require you to equal or beat a Difficulty Class (DC), set by the environment you are operating in, to succeed. If you beat the DC by less than 5, you succeed, but the DM may choose to impose additional costs.</p>
+			<p>To make a skill check, use this formula:</p>
+			<p>&emsp;<i>D20 + + level + relevant background points + relevant approach + other bonuses</i> vs <i>DC set by the environment</i></p>
+			<p>You can’t apply multiple backgrounds to the same check; the background with the highest (or tied for highest) bonus applies.</p>
+
+			<h7>Natural 20s and Fumbles with Skill Checks</h7>
+			<p>When a PC rolls a natural 20 with a skill check, the GM should feel free to give that character much more success than the player expected.</p>
+			<p>When a PC rolls a 1 with a skill check, the skill check fumbles and fails, perhaps, but not always, in a particularly dramatic way.</p>
+			<h7>Fail Forward!</h7>
+			<p>Outside of battle, when failure would tend to slow action down rather than move the action along, instead interpret it as a near-success or event that happens to carry unwanted consequences or side effects. The character probably still fails to achieve the desired goal, but that’s because something happens on the way to the goal rather than because nothing happens. In any case, the story and action still keep moving.</p>
+		</div>
+
+		<div id="combat-stats" class="tabcontent">
+			<h3>Determine Your Combat Stats</h3>
+			<p>For details on how combat works, see <a href="#combat">Combat Rules</a>.</p>
+
+			<h7>Determine Your 1st Level Hit Points</h7>
+			<ol>
+				<li>Find your hitpoint value (HP value) in your class' stats chart.</li>
+				<li>Multiply your hit point value by 3 to get your total hit points at 1st level.</li>
+			</ol>
+			<h7>Determine Your Armor Class</h7>
+			<ol>
+				<li>Find the base AC value for your class and armor type (12 to 18) in your class' armor chart.</li>
+				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
+			</ol>
+			<h7>Determine Your Physical Defense</h7>
+			<ol>
+				<li>Find the base PD for your class (12 to 14) in your class' stats chart.</li>
+				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
+			</ol>
+			<h7>Determine Your Mental Defense</h7>
+			<ol>
+				<li>Find the base MD for your class (12 to 14) in your class' stats chart.</li>
+				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
+			</ol>
+			<h7>Determine Your Initiative Bonus</h7>
+			<p>Your initiative modifier is added to a d20 check, rather than existing as a static value</p>
+			<ol>
+				<li>Find the base initiative bonus in your class' stats chart.</li>
+				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
+			</ol>
+			<h7>Determine Your Recoveries and Recovery Value</h7>
+			<p>Most characters start the game with 8 recoveries. Some classes and talent choices may give you more recoveries. Each class also has a different recovery value, as specified in the class write-up. When you heal using a recovery, you'll add this value to your current HP total.</p>
+			<h7>Determine Your Attacks and Powers</h7>
+			<p>You calculate attack and damage rolls based on your class or by the specific powers you choose within your class. Attack bonuses are usually equal to some number + your level, and damage bonuses are usually equal to some number x your tier. See <a href="#classes">Classes</a> for more information.</p>
+		</div>
+
+		<div id="icons" class="tabcontent">
+			<h3>Assign Your Relationship Points</h3>
+			<p>At 1st level, each character gets 3 relationship points. Each point represents one d6 to be used when trying to leverage your connection to the <a href="#icons">icon</a>.</p>
+			<p>The number of points you invest in a relationship with an icon doesn’t necessarily correlate with the closeness of the connection or the strength of the relationship. It does correlate with the utility of the relationship. It’s not necessarily about how well the icon knows you or how strong the icon feels about you. Instead, the points reflect the chance that your relationship will be helpful to you.</p>
+			<p>The Icon Relationships Chart summarizes the likely roleplaying and story-oriented consequences of positive, conflicted, and negative relationships with heroic, ambiguous, and villainous icons.</p>
+
+			<h7>The Icon Relationships Chart</h7>
+			<table border="0" cellpadding="1" cellspacing="0" style="width: 100%">
+				<tr>
+					<th style="width: 10%">Icon</th>
+					<th style="width: 30%">Positive Relationship</th>
+					<th style="width: 30%">Conflicted Relationship</th>
+					<th style="width: 30%">Negative Relationship</th>
+				</tr>
+				<tr class="odd-row">
+					<th>Heroic Icon</th>
+					<td>Spend 1, 2, or 3 points. As far as this icon is concerned, you’re one of the good guys, a white-hat hero. Authorities often help you, and civilians often trust you. On the down side, you may be called on to serve representatives of the icon even when you have other plans. You might also be a target of villainous icons or this heroic icon’s rivals.</td>
+					<td>Spend 1, 2, or 3 points. You’re probably one of the good guys, but for some reason you’re suspect to the icon Maybe you’re a convict who has served his time, or an imperial soldier who was too good and got drummed out of his legion. You have insider knowledge and allies who are in good with the icon but you also have enemies associated with the icon.</td>
+					<td>Spend 1 point. In the icon’s eyes, you’re a dissident, opponent, rival, or foe. You may have contacts or inside knowledge that you can use to your advantage, but some form of trouble waits for you wherever this heroic icon has influence.</td>
+				</tr>
+				<tr>
+					<th>Ambiguous Icon</th>
+					<td>Spend 1, 2, or 3 points. Thanks to your relationship with the icon you are a hero to some, a villain to others, and possibly even a monster to a few. The enemies of your friends may turn out to be your friends, and vice versa. Advantages and complications will come from all sides.</td>
+					<td>Spend 1, 2, or 3 points. Your relationship with the icon is complex, an uneven relationship with an icon who’s a hero to some and a villain to others. One way or another, you can find help or hostility anywhere. You don’t just live in interesting times—you create them.</td>
+					<td>Spend 1 or 2 points. Your enmity with this icon makes you some enemies, but it also makes you some useful friends. You may be a dissenter, unwanted family member, or even a traitor in some way.</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Villanous Icon</th>
+					<td>Spend 1 point. You are able to gain secrets or secretive allies, but your connection to this icon brings trouble from people associated with the heroic icons who oppose the villain. Be prepared to justify why you’re not imprisoned, interrogated, or otherwise harassed by the heroic icons and their representatives whenever they encounter you. Or for that matter, by the other PCs.</td>
+					<td>Spend 1 or 2 points. You mostly work against the icon but you’re also connected to the icon in a way you can’t deny. Your connection sometimes gives you special knowledge or contacts, but it also makes you suspect in the eyes of many right-minded would-be heroes.</td>
+					<td>Spend 1 or 2 points. You mostly work against the icon but you’re also connected to the icon in a way you can’t deny. Your connection sometimes gives you special knowledge or contacts, but it also makes you suspect in the eyes of many right-minded would-be heroes.</td>
+				</tr>
+			</table>
+
+			<h7>Rolling Icon Relationship Dice</h7>
+			<p>To check your icon relationship (your relationship with a particular icon , roll a d6 for each point you have in the relationship. This means that you will usually roll 1, 2, or 3 dice. (At epic level, it may be 4.)</p>
+			<p>If any die is a 6, you get some meaningful advantage from the relationship without having complications. If two or three dice come up 6, that’s even better.</p>
+			<p>If any die is a 5, your connection to the icon is going to work out as well as a 6 would, but with some unexpected complication. If it’s a good icon you might be drawn into some obligation. If it’s a villainous icon, you might attract unwanted attention.</p>
+			<p>Rolling 5s when you also rolled 6s should make life both interesting and advantageous!</p>
+
+			<h7>Icons' Organizations</h7>
+			<p>Icons are usually not directly part of the campaign. They rarely make an appearance personally, except perhaps at epic level. Most of the time, interacting with an icon means that you’re actually interacting with his or her lower-level functionaries, acolytes, disciples, bureaucrats, lieutenants, barons, priests, etc. In fact, any level of relationship with an icon can be enough to get you noticed by other people who are connected to that icon.</p>
+
+			<h7>Using Your Icon Relationships</h7>
+			<p>The most straightforward way to use your relationship points is on positive or conflicted connections that generally provide you with outright assistance and useful information.</p>
+			<p>Negative relationships usually provide inside knowledge, special skills, opportunistic allies, and possibly some sort of supernatural advantage against a villain.</p>
+			<p>Often you might find that enemies of your rival see you as an opportunity to strike against that mutual enemy. You might get help, wealth and resources, and even magic items from quite unexpected sources, some of which may not be entirely to your liking.</p>
+			<p>In addition to aid from others, icon relationships provide characters with special knowledge.</p>
+			<p>A negative relationship with a thoroughly villainous icon is more in keeping with the heroic lifestyle, but you should expect that the assistance you get from a negative relationship may end up being more directly confrontational than more conventional conflicted and positive relationships.</p>
+
+			<h7>Changing Relatioships</h7>
+			<p>When your character achieves champion tier (5th level), you gain an extra relationship point. Use it to increase an existing relationship by one die or gain a 1-point relationship with a new icon to match your character’s story thus far. You can save the extra relationship die and decide to apply it later.</p>
+			<p>At 5th level, or any time thereafter, you can switch an existing relationship point from one icon to another, including to a new icon. You owe the GM and other players an entertaining explanation of what this big change represents for your character personally, of course.</p>
+			<p>When you reach epic tier (8th level), you gain another relationship point, which you can use to increase an existing icon relationship by one die, including up to 1 point over maximum. As at 5th level, if switching a relationship point from one icon to another makes sense for your 8th level character, go for it.</p>
+		</div>
+</div>
+</body>
+</html>

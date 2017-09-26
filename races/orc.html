@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Orc
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>ORC</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/orc.jpg" alt="Orc" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"Fierce warriors imbued with primal savagery."
+		</p>
+
+		<h7>Racial Traits</h7>
+		<p><b>Low-Light Vision</b>: You do not suffer penalties due to dim light.</p>
+		<p><b>Orcish Visage</b>: You gain a +2 bonus to skill checks involving being intimidating or threatening..</p>
+
+		<h7>Lethal (Racial Power)</h7>
+		<p>Once per battle, reroll a melee attack roll and use the roll you prefer as a result.</p>
+		<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When the escalation die turns to 3, you gain one additional use of Lethal.</p>
+</p>
+
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Rogue
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<td>
+	<!-- main contents -->
+		<h2>ROGUE</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/rogue.jpg" alt="Rogue" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"You look surprised to see me. If you’d been paying attention, you might still be alive."
+		</p>
+
+		<p>
+			<b>Overview</b>: Rogues are a mixed bag. Some are thugs who have learned enough tricks to get a step ahead of the other thugs. A few are mad, driven by a reckless sense of adventure. Most are quick with a smile, a blade, and a getaway. They receive various sorts of training: from a spymaster’s school, a thieves’ guild, a cult of the Black dragon, an independent operator, or an ambitious ogre mage. Rogues prefer never to be called assassins. And you know very well what
+will happen to you if do.<br/>
+			&emsp;With a blade up your sleeve and a concealing cloak across your shoulders, you stride forth, eyes alight with anticipation. What worldly wonders and rewards are yours for the taking?<br/>
+			<b>Play Style</b>: The rogue is a bit of a challenge to play thanks to Sneak Attack requiring the character to team up with
+allies and Momentum powers that depend heavily on whether you last hit an enemy or were hit yourself. If the newbie in the group plays the rogue, give them props for skilled play.<br/>
+			<b>Backgrounds</b>: Possible backgrounds include: street thug, cat burglar, diplomat, professional gambler, courtier, jewel thief, acrobat, con artist, bartender, spy master, pirate, dandy, and rat catcher.
+		</p>
+
+		<p><b><a id="stats"></a>Stats</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" class="stat-table">
+			<tbody>
+				<tr class="odd-row">
+					<th style="width: 30%">Initiative</th>
+					<td>6 + level</td>
+				</tr>
+				<tr>
+					<th>Armor Class</th>
+					<td>Base AC + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Physical Defense</th>
+					<td>14 + level</td>
+				</tr>
+				<tr>
+					<th>Mental Defense</th>
+					<td>10 + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>HP Value</th>
+					<td>8</td>
+				<tr>
+					<th>Recoveries</th>
+					<td>8</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Recovery Value</th>
+					<td>6 x level</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5><a id="gear"></a>Gear</h5>
+		<p class="initial">
+			At 1st level, rogues start with the clothes on their back and the dice in their pockets. They also start with various bladed weapons and some armor. Plus various oddments suggested by their backgrounds.
+		</p>
+		<p><b>Gold Pieces</b>: Rogues may start with either 25 gp or 1d6 x 10 gp.</p>
+		<p><b><a></a>Armor</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+			<tbody>
+				<tr valign="bottom">
+					<th>Armor Type</th>
+					<th>Base AC</th>
+					<th>Attack Penalty</th>
+				</tr>
+				<tr class="odd-row">
+					<th>None</th>
+					<td>13</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th>Light</th>
+					<td>14</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Heavy</th>
+					<td>15</td>
+					<td>-2</td>
+				</tr>
+				<tr>
+					<th class="last-row">Shield</th>
+					<td class="last-row">+1</td>
+					<td class="last-row">-2</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">
+			<tr>
+				<th style="width: 60%"><p><b>Melee Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Melee Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>One-Handed</th>
+								<th>Two-Handed</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d8 dagger</td>
+								<td>1d6 club</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d8 shortsword, wicked knife</td>
+								<td>1d8 spear</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>1d8 (-2 atk) longsword, scimitar</td>
+								<td>1d10 (-2 atk) greatsword</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 5 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (5 x tier) damage<br/>
+					<b>Miss</b>: Damage equal to your level
+				</th>
+			</tr>
+		</table>
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">	
+			<tr>
+				<th style="width: 60%"><p><b>Ranged Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Ranged Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>Thrown</th>
+								<th>Crossbow</th>
+								<th>Bow</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d4 hand crossbow</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 javelin, axe</td>
+								<td>1d6 light crossbow</td>
+								<td>1d6 shortbow</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>&mdash;</td>
+								<td>1d8 (-1 atk) heavy crossbow</td>
+								<td>1d8 (-2 atk) longbow</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 5 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (5 x tier) damage<br/>
+					<b>Miss</b>: Damage equal to your level
+				</th>
+			</tr>
+		</table>
+		<br/>
+
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+			<tbody>
+				<tr>
+					<th colspan="5"><h5>Table: The Rogue</h5></th>
+				</tr>
+				<tr valign="bottom">
+					<th style="width: 10%">Rogue Level</th>
+					<th style="width: 20%">Total Hit Points</th>
+					<th>Total Feats</th>
+					<th>Powers Known</th>
+					<th style="width: 10%">Weapon Damage Bonus</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>HP x 3</td>
+					<td>1 Adventurer</td>
+					<td>4</td>
+					<td>+5</td>
+				</tr>
+				<tr class="odd-row">
+					<td>2nd</td>
+					<td>HP x 4</td>
+					<td>2 Adventurer</td>
+					<td>5, up to 1st level</td>
+					<td>+5</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>HP x 5</td>
+					<td>3 Adventurer</td>
+					<td>5, up to 3rd level</td>
+					<td>+5</td>
+				</tr>
+				<tr class="odd-row">
+					<td>4th</td>
+					<td>HP x 6</td>
+					<td>4 Adventurer</td>
+					<td>6, up to 3rd level</td>
+					<td>+5</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>HP x 8</td>
+					<td>4 Adventurer<br/>1 Champion</td>
+					<td>6, up to 5th level</td>
+					<td>+10</td>
+				</tr>
+				<tr class="odd-row">
+					<td>6th</td>
+					<td>HP x 10</td>
+					<td>4 Adventurer<br/>2 Champion</td>
+					<td>7, up to 5th level</td>
+					<td>+10</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>HP x 12</td>
+					<td>4 Adventurer<br/>3 Champion</td>
+					<td>7, up to 7th level</td>
+					<td>+10</td>
+				</tr>
+				<tr class="odd-row">
+					<td>8th</td>
+					<td>HP x 16</td>
+					<td>4 Adventurer<br/>3 Champion<br/>1 Epic</td>
+					<td>8, up to 7th level</td>
+					<td>+15</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>HP x 20</td>
+					<td>4 Adventurer<br/>3 Champion<br/>2 Epic</td>
+					<td>8, up to 9th level</td>
+					<td>+15</td>
+				</tr>
+				<tr class="odd-row">
+					<td>10th</td>
+					<td>HP x 24</td>
+					<td>4 Adventurer<br/>3 Champion<br/>3 Epic</td>
+					<td>9, up to 9th level</td>
+					<td>+15</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
+			<button class="tablinks" onclick="openTab(this, 'powers')">Powers</button>
+		</div>
+
+		<div id="class-features" class="tabcontent" style="display: block">
+			<h5>Class Features</h5>
+
+			<p class="initial">All rogues fight better when they gain momentum, are good at stabbing enemies in the back, and have a knack for avoiding the traps that their clueless allies would stumble into.</p>
+
+			<h7>Momentum</h7>
+			<p>Many of the rogue’s powers function only when the rogue has momentum.</p>
+			<p>You gain momentum by hitting an enemy with an attack.</p>
+			<p>You lose momentum when you are hit by an attack.</p>
+			<p>The default is that you can use momentum powers without losing momentum, but a few powers specify that you must spend your momentum to use them. You don’t have to use attacks that require momentum against the foe you hit to gain that momentum.</p>
+			<p>Momentum powers that do not require you to spend your momentum are generally classified as interrupt actions. You can only use one interrupt action a round, which keeps your momentum powers from dominating the battle.</p>
+
+			<h7>Sneak Attack</h7>
+			<p>Once per round when you make a rogue melee weapon attack against an enemy engaged with one or more of your allies, you can deal extra damage if your attack hits.</p>
+			<table border="0" cellpadding="1" cellspacing="0" style="width: 30%; text-align: center">
+				<tr>
+					<th>Rogue Level</th>
+					<th>Extra Damage</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>+1d4</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>+1d6</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>+2d6</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>+3d6</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>+5d6</td>
+				<tr>
+					<td>10</td>
+					<td>+7d6</td>
+				</tr>
+			</table>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your Sneak Attack feature also works the first round of combat against enemies with a lower initiative than you.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Your Sneak Attack feature also works against enemies who are confused, dazed, stunned, vulnerable to your attack, or weakened.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per battle when you miss with an attack that would have allowed you to deal Sneak Attack damage, replace the normal miss damage with your full Sneak Attack damage.</p>
+
+			<h7>Trap Sense</h7>
+			<p>Even rogues whose backgrounds don’t have anything to do with noticing, avoiding, or disarming traps have a unique knack for dealing with traps.</p>
+			<p>If a rogue’s skill check involving a trap is a natural even failure, the rogue can reroll the skill check once. If a trap’s attack roll against a rogue is a natural odd roll, the rogue can force the trap to reroll the attack once.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The trap attack reroll can also apply to a nearby ally of the rogue as the rogue shouts a warning or acts to prevent the trap from hitting.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain a +3 bonus to skill check rerolls you make against traps.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You only take half damage from trap attacks.</p>
+
+			<h5>Class Talents</h5>
+
+			<p class="initial">Choose three of the following class talents.</p>
+
+			<h7>Combat Reflexes</h7>
+			<p>You gain a +2 bonus to PD and Initiative.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Once per battle, you may add 2d6 to your AC or PD against an attack that hit you.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: During the first round of combat, you gain a +4 bonus to attack against enemies who have a lower initiative than you.</p>
+			<p class="odd-row feat">Epic Feat: Your bonus to PD and Initiative increases to +4.</p>
+
+			<h7>Cunning</h7>
+			<p>You gain two extra points of backgrounds to spend on knowledge-related backgrounds and gain a +2 bonus to skill checks involving traps.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain a +1 bonus to Mental Defense.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per battle, reroll a save against an effect from an attack that originally hit your Mental Defense.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Your once-per-battle save reroll is now once per save.</p>
+
+			<h7>Improved Sneak Attack</h7>
+			<p>Your Sneak Attack damage is better than other rogues. Use the following Sneak Attack bonus damage progression instead.</p>
+			<table border="0" cellpadding="1" cellspacing="0" style="width: 30%; text-align: center">
+				<tr>
+					<th>Rogue Level</th>
+					<th>Extra Damage</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>+1d6</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>+1d8</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>+2d8</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>+3d8</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>+5d8</td>
+				<tr>
+					<td>10</td>
+					<td>+7d8</td>
+				</tr>
+			</table>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Once per day as a free action, you can add your Sneak Attack damage to any hit against one target that would not otherwise have qualified for the damage.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per day, roll d20s for your Sneak Attack damage instead of d8s.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: One battle per day, ignore the limitation that you can use Sneak Attack damage only once per round.</p>
+
+			<h7>Murderous</h7>
+			<p>Against staggered enemies, your crit range with rogue attacks expands by 2.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain a +2 attack bonus against staggered enemies.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Your crit range against staggered enemies expands by 2 (now +4)</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Whenever a staggered enemy misses you with a melee attack, it’s vulnerable to your attacks for the rest of the battle.</p>
+
+			<h7>Shadow Walk</h7>
+			<p>You gain the shadow walk at-will power:</p>
+			<p>As a move action before you have used your standard action this turn, if you are not engaged, you can make the following ‘attack’ against all nearby enemies, targeting the enemy among them with the highest Mental Defense.</p>
+			<p>
+				<b>Shadow Walk</b><br/>
+				Close-quarters power<br/>
+				At-Will<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: Remove yourself from play. At the start of your next turn, return anywhere nearby that you could have moved to normally during your turn, and deal double damage with your first rogue attack that turn.<br/>
+				<b>Miss</b>: No effect. You can’t attempt to shadow walk again until your next turn, but you still have your standard action this turn.<br/>
+			</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: On a miss, you can still use your move action normally (but still can’t shadow walk this turn).</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Twice per day, you can reroll the rogue attack that follows your successful use of shadow walk.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Twice per day, you can reappear from your shadow walk in a nearby location you wouldn’t have been able to reach unimpeded physically, for instance, on the other side of a portcullis or door, or high up a wall.</p>
+
+			<h7>Smooth Talk</h7>
+			<p>Once per day, convince your GM with an amazing line of patter while you are using social skills to speak or interact with NPCs associated with a particular icon. If the GM is convinced by your patter, roll a normal save (11+). If you succeed, for the rest of the day you can function as if you have a 2-point positive relationship with the icon who seems to be in play. Thanks to your amazing gift of gab, for a short time, it’s more or less true. (Note that these points replace any points you normally have with the icon rather than adding to them.)</p>
+			<p>Failure on the Smooth Talk save generally arouses suspicions.</p>
+			<p>You also gain a +2 bonus to skill checks to lie to or persuade others.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You get a +4 bonus to your Smooth Talk save rolls.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Success with your Smooth Talk talent gives you a 3-point positive relationship instead.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Even if you fail your Smooth Talk save, you get a 2-point conflicted relationship with the icon because the people you’re speaking with can’t be sure.</p>
+
+			<h7>Swashbuckle</h7>
+			<p>Once per battle as a quick action, you can spend your momentum to pull off a daring stunt the likes of which others could scarcely conceive. You may make an attack as part of the stunt, but you’ll need to roll normally for the attack. This is an improvisational talent.</p>
+			<p>As a swashbuckler, you do not need a difficult skill check to pull the stunt off.</p>
+
+			<h7>Thievery</h7>
+			<p>You have the 'thief' background at its full possible bonus of +5, without having to spend your normal background points on it.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Regardless of your level, you gain the bonus power thief’s strike in addition to your normal number of powers.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Once per day, you can deal full damage with thief’s strike instead of half damage.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Twice per level, you can steal something with a successful thief’s strike that you would not be able to steal ordinarily, but that would require a bit of magic, e.g. a dream, a spell, someone’s hope, a memory. The theft won’t be permanent. Every day, roll a hard save to determine whether you can keep what you stole for that day. Also, you can never steal the same thing twice.</p>
+
+			<h7>Trapper</h7>
+			<p>You gain a +2 bonus to skill checks related to traps. In addition, once per battle, when you are not engaged, you may lay a trap as a quick action. Until the end of battle, the first time an unengaged enemy attempts to move, the trap triggers and attacks the enemy (roll 4 + Level vs PD). You may choose which trap to lay when you use Trapper, which determines the effect of the trap when it hits.</p>
+			<div class="indent">
+				<p>&bull; Bear Trap: The enemy receives ongoing damage equal to twice your level, and is stuck (save ends).</p>
+				<p>&bull; Tripwire: The enemy is knocked prone, and it must stop its movement. This trap may trigger twice, against two different enemies, before being expended.</p>
+				<p>&bull; Fire Trap: You instead make the attack against 1d3+1 nearby enemies, centered around the enemy that triggered the trap. Enemies hit by the trap receive ongoing fire damage equal to twice your level.</p>
+			</div>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When the escalation die reaches 3, you gain an additional use of Trapper this battle.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The save to end bear trap’s stuck condition becomes hard (16+). Tripwire may trigger three times, against three different enemies, before being expended. The save to end fire trap’s ongoing fire damage becomes hard (16+).</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Your bear trap makes the target vulnerable for as long as it is stuck. When an enemy is knocked prone by your trip wire, it is also dazed (save ends). You may maximize the number of targets with your fire trap (4 nearby enemies), and on a miss, you instead deal ongoing fire damage equal to your level.</p>
+
+			<h7>Tumble</h7>
+			<p>You gain a +5 bonus to disengage checks. In addition, while you are moving, if an enemy moves to intercept you, you can make one disengage roll per intercepting enemy as a free action to avoid that enemy, but you must stop the first time you fail any of those disengage checks.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You ignore the penalty for disengaging from more than one enemy at a time.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: One battle per day as a free action, you can declare that you’re a tumbling fool and automatically succeed on your first disengage check each turn.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Whenever you take critical hit damage, roll a hard save (16+). If you succeed, you somehow tumbled out of the way of whatever was about to hit you, and instead only take damage equal to the attacker’s level.
+</p>
+		</div>
+
+		<div id="powers" class="tabcontent">
+			<h5>1st Level Powers</h5>
+			<p>
+				<h7>Evasive Strike</h7><br/>
+				Melee attack<br/>
+				At-Will<br/>
+				<b>Target</b>: One enemy<br/>
+				<b>Attack</b>: 5 + Level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage, and you can pop free from the target.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If you drop the target with your evasive strike attack, you can pop free from all enemies instead.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: If you hit with evasive strike and the natural attack roll was even, you gain a +2 bonus to AC and PD against the next attack that targets you this battle.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Thanks to your slippery mind, the champion feat benefit also provides a +2 bonus to MD.</p>
+			</p>
+			<p>
+				<h7>Deadly Thrust</h7><br/>
+				Melee attack<br/>
+				At-Will<br/>
+				<b>Target</b>: One staggered non-mook enemy<br/>
+				<b>Attack</b>: 8 + Level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Expand the critical hit range with this attack by 1 (normally 19+).</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Add your a +4 bonus to the hit and miss damage.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: On a critical hit, add twice your level to the damage.</p>
+			</p>
+			<p>
+				<h7>Flying Blade</h7><br/>
+				Ranged attack<br/>
+				At-Will<br/>
+				<b>Special</b>: You must use a small bladed weapon with this attack<br/>
+				<b>Target</b>: One nearby enemey<br/>
+				<b>Attack</b>: 5 + Level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage, and if your natural attack roll is even and one of your allies is engaged with the target, you can use your Sneak Attack damage for the round.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If you score a critical hit with flying blade, the target is also dazed (–4 attack) until the end of your next turn.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: As long as one of your allies is engaged with the target, your flying blade attack rolls no longer need to be even to add your Sneak Attack damage.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use flying blade with any ranged weapon.</p>
+			</p>
+			<p>
+				<h7>Roll With It</h7><br/>
+				Momentum power<br/>
+				At-Will (once per round)<br/>	
+				Interrupt action; requires momentum<br/>
+				<b>Trigger</b>: A melee attack that targets AC hits you.<br/>
+				<b>Effect</b>: You take half damage from that attack.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The power also triggers on an attack against PD.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The power also triggers on a ranged attack.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day, you can use roll with it to take damage equal to the attacker’s level instead of half damage.</p>
+			</p>
+			<p>
+				<h7>Sure Cut</h7><br/>
+				Melee attack<br/>
+				At-Will<br/>
+				<b>Special</b>: You must have momentum and be able to deal your Sneak Attack damage to the target if you hit.<br/>
+				<b>Target</b>: One enemy<br/>
+				<b>Attack</b>: 5 + Level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage.<br/>
+				<b>Miss</b>: Deal your Sneak Attack damage + damage equal to your level.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: Missing with sure cut no longer counts as a use of Sneak Attack for the round.</p>
+			</p>
+			<p>
+				<h7>Tumbling Strike</h7><br/>
+				Melee attack<br/>
+				At-Will<br/>
+				<b>Special</b>: You gain a +5 bonus to all disengage checks you attempt this turn. You can also move to engage an enemy, make this attack against it, and then use a quick action to attempt to disengage from it (the quick action disengage lets you move again if you succeed).<br/>
+				<b>Attack</b>: 5 + Level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+			</p>
+
+			<h5>3rd Level Powers</h5>
+			<p>
+				<h7>Bleeding Strike</h7><br/>
+				Melee or Ranged Attack<br/>
+				At-Will<br/>
+				<b>Target</b>: One enemy who is not taking ongoing damage<br/>
+				<b>Attack</b>: 5 + Level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage, and you deal ongoing damage equal to twice your level.<br/>
+				<b>Miss</b>: Damage equal to your level<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The ongoing damage against large or huge creatures increases to three times your level.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Ongoing damage that you deal with this power requires a hard (16+) save to end.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now use bleeding strike against enemies taking from ongoing damage. In addition, you deal the ongoing damage even on a miss.</p>
+			</p>
+			<p>
+				<h7>Deflection</h7><br/>
+				Momentum power<br/>
+				At-Will (once per round)<br/>
+				Interrupt action; you must spend your momentum<br/>
+				<b>Trigger</b>: A melee attack misses you.<br/>
+				<b>Effect</b>: The attack hits a enemy (other than the attacker) you are engaged with instead, but deals only half damage.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The power also triggers on a ranged attack against AC.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: The deflected attack now deals full damage instead of half damage.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Using deflection no longer spends your momentum.<br/>
+			</p>
+			<p>
+				<h7>Poison Weapon</h7><br/>
+				Daily<br/>
+				Quick Action<br/>
+				<b>Effect</b>: Until the end of battle, your basic attacks with one weapon of your choice have a chance of poisoning enemies. On a natural even hit, you inflict 10 ongoing poison damage.<br/>
+				At 5th level, this increases to 15.<br/>
+				At 8th level, this increases to 25.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The power now recharges on a roll of 16+.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The power now recharges on a roll of 11+, and enemies must make a hard (16+) save to end the ongoing poison damage.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You now inflict ongoing poison damage on any hit, instead of only a natural even.</p>
+			<p>
+				<h7>Slick Feint</h7><br/>
+				Melee attack</br/>
+				At-Will<br/>
+				<b>First Target</b>: One enemy engaged with you<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: The target is dazed until the end of your next turn, and you can make an improved attack against a second target.<br/>
+				<b>Miss (First Target)</b>: Your attack action is over; the feint was a screw-up.<br/>
+				<b>Second Target</b>: A different enemy from the first target that is engaged with you<br/>
+				<b>Attack</b>: 8 + level vs. AC<br/>
+				<b>Hit</b>: WEAPON + (5 x tier) damage.<br/>
+				<b>Miss (Second Target)</b>: Damage equal to your level.<br/>
+			</p>
+			<p>
+				<h7>Thief’s Strike</h7><br/>
+				<b>Special</b>: This is a bonus 3rd-level power for rogues with the Thievery talent. Other rogues can choose it if they like.<br/>
+				Melee attack<br/>
+				At-Will<br/>
+				<b>Target</b>: One enemy<br/>
+				<b>Attack</b>: 5 + Level vs. PD<br/>
+				<b>Hit</b>: Half of WEAPON + (5 x tier) damage (including Sneak Attack damage if any), and roll a normal save. If you succeed, you can pickpocket an item from the target that they are not holding. (If you roll 16+, the target doesn’t realize you pickpocketed them.)<br/>
+				<b>Miss</b>: &mdash;</br>
+			</p>
+
+			<h5>5th Level Powers</h5>
+			<p>
+				<h7>Harmless Misdirection</h7><br/>
+				Momentum power<br/>
+				At-Will (once per round)<br/>
+				Interrupt action; requires momentum<br/>
+				<b>Trigger</b>: You miss with a melee attack while an ally is engaged with the target.<br/>
+				<b>Effect</b>: You can pop free from the target, and the target can’t attack you during its next turn as long as your ally remains engaged with it.<br/>
+			</p>
+			<p>
+				<h7>Spiky Bastard</h7><br/>
+				Daily<br/>
+				Quick Action<br/>
+				<b>Effect</b>: For the rest of the battle, while you are conscious, not stunned, and using at least one bladed weapon, you deal damage equal to 10 + twice your level to each enemy that makes a melee attack against you. The damage hits the enemy before their attack damages you.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: If the escalation die is 3+, double the damage you deal with this power.<br/>
+			</p>
+			<p>
+				<h7>Swift Dodge</h7><br/>
+				Momentum power<br/>
+				At-Will (once per round)<br/>
+				Interrupt action; requires momentum<br/>
+				<b>Trigger</b>: You are hit by an attack against AC.<br/>
+				<b>Effect</b>: The attacker must reroll the attack.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: The power also triggers on an attack against PD.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The attack reroll takes a –2 penalty.<br/>
+			</p>
+
+			<h5>7th Level Powers</h5>
+			<p>
+				<h7>Assassin’s Gambit</h7><br/>
+				Melee attack<br/>
+				At-Will<br/>
+				<b>Target</b>: One enemy<br/>
+				<b>Attack</b>: 5 + Level vs. AC<br/>
+				<b>Hit</b>: Half of WEAPON + (5 x tier) damage (including Sneak Attack damage if any), and if you drop a non-mook target to 0 hp, you can take another standard action this turn.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once a turn, you can get the extra standard action when this attack drops a mook target.</p>
+			</p>
+			<p>
+				<h7>Momentum power</h7><br/>
+				At-Will (once per round)<br/>
+				Interrupt action; you must spend your momentum<br/>
+				<b>Trigger</b>: An enemy targets you with a melee attack<br/>
+				<b>Effect</b>: You can make a basic attack against your attacker. You resolve your basic attack against the enemy first.<br/>
+				<b>Special</b>: You can’t gain momentum from hitting with swift riposte.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: You gain a +2 attack bonus with swift riposte attacks.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If you critically hit with swift riposte, your momentum is not spent, and you do not lose momentum if your attacker hits you.<br/>
+			</p>
+
+
+			<h5>9th Level Powers</h5>
+			<p>
+				<h7>Death’s Twin</h7>
+				Momentum power<br/>
+				At-Will<br/>
+				Standard action on your turn; you must spend your momentum<br/>
+				<b>Effect</b>: You can make two basic attacks at any point during your turn, each against a different target. You only regain momentum if your second attack hits.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If your attack against your first death’s twin target is a natural 18+, you can make your second basic attack against that same target.</p>
+			</p>
+			<p>
+				<h7>Second Sight</h7>
+				Momentum power<br/>
+				At-Will<br/>
+				Interrupt action OR free action on your turn; you must spend your momentum<br/>
+				<b>Trigger</b>: An invisible or otherwise hidden enemy attacks you, or you try to attack an invisible or hidden enemy.<br/>
+				<b>Effect</b>: The attacker’s invisibility isn’t going to work on you. It might work against your allies, but you see through it and can tell where the creature is well enough to target it normally or be aware of its imminent attack.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the enemy’s attack misses, you regain momentum.</p>
+		</div>
+      </td>
+</div>
+</body>
+</html>

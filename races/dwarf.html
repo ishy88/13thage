@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Dwarf
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>DWARF</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/dwarf.jpg" alt="Dwarf" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"Masters of stone and iron, dauntless and unyielding in the face of adversity."
+		</p>
+
+		<h7>Racial Traits</h7>
+		<p><b>Darkvision</b>: Dwarves can see up to 60 ft away in total darkness.</p>
+		<p><b>Stonecunning</b>: Dwarves gain a +2 bonus to skill checks involving architecture or stonework.</p>
+
+		<h7>Is That Your Best Shot? (Racial Power)</h7>
+		<p>Once per battle as a free action after you have been hit by an enemy attack, you can heal using a recovery. If the escalation die is less than 2, you only get half the usual healing from the recovery. Note that you can’t use this ability if the attack drops you to 0 hp or below. You’ve got to be on your feet to sneer at their attack and recover.</p>
+		<p class="feat"><b><i>Champion Feat</i></b>: If the escalation die is 2+ when you use this power, the recovery is free.</p>
+</div>
+</body>
+</html>

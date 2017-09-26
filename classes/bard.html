@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Bard
+	</title>
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>BARD</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/bard.jpg" alt="Bard" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"The clash of blades, a note. A battle fought, a verse. The hero's war, a song."
+		</p>
+
+		<p>
+			<b>Overview</b>: Bards are artists first and foremost, and they practice magic just as they practice song, drama, or poetry. They have a clear sense of how people perceive reality, so they master charm magic and some illusions. Sagas of great heroes are part of a bard's repertoire, and most bards follow the example of many fables and become skilled in a variety of fields. A bard's artistic ability, knowledge of lore, and arcane might are widely respected, particularly among the world's rulers.<br/>
+			&emsp;Art and magic share a sublime beauty, and, as a bard, you seek the place where the two meet. You might be a naturally talented wanderer who casts impressive spells almost instinctively, a student of a bardic college who learned ordered systems of magic and epic poetry, a warrior skald who mixes skill at arms with thundering music, a dashing performer known for putting on a good show even for your enemies, or a perfectionist who seeks the consummate formula that blends art and magic into a higher force.<br/>
+			&emsp;A steady rhythm beats in the back of your mind as you brandish your sword. Your eyes and ears pick up the motion of the villains that surround you, and one glance tells you everything you need to know to defeat them. You whistle three staccato notes, letting your allies know the symphony of battle is about to begin.<br/>
+			<b>Play Style</b>: Bards are flexible characters with many options in roleplaying situations and in combat. They’re not the best character choice for beginning players, but can be a lot of fun for experienced and extroverted players who enjoy mastering different types of abilities and performing as jacks or jills of all trades.<br/>
+			<b>Backgrounds</b>: Music, swordplay, and arcana offer diverse paths that lead to becoming a bard. If you’re stuck for inspiration after the
+sample backgrounds that follow, look at the sample lists for fighters, rogues, sorcerers, and wizards&mdash;most could apply.<br/>
+			&emsp;Possible backgrounds include wandering minstrel, cathedral musician, court jester, mercenary, tavern owner, failed hedge wizard, diplomat, spy, royal taster, caravan guide, smuggler, and battle skald.
+		</p>
+
+		<p><b>Stats</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" class="stat-table">
+			<tbody>
+				<tr class="odd-row">
+					<th style="width: 30%">Initiative</th>
+					<td>4 + level</td>
+				</tr>
+				<tr>
+					<th>Armor Class</th>
+					<td>Base AC + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Physical Defense</th>
+					<td>12 + level</td>
+				</tr>
+				<tr>
+					<th>Mental Defense</th>
+					<td>13 + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>HP Value</th>
+					<td>9</td>
+				</tr>
+				<tr>
+					<th>Recoveries</th>
+					<td>8</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Recovery Value</th>
+					<td>6 x level</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5>Gear</h5>
+		<p class="initial">
+			At 1st level, bards start with a non-magical musical instrument, a melee and ranged weapon of their choice, some form of light armor, and any other minor elements of gear their backgrounds suggest.
+		</p>
+		<p><b>Gold Pieces</b>: Bards may start with either 25 gp or 1d6 x 10 gp.</p>
+		<p><b><a></a>Armor</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+			<tbody>
+				<tr valign="bottom">
+					<th>Armor Type</th>
+					<th>Base AC</th>
+					<th>Attack Penalty</th>
+				</tr>
+				<tr class="odd-row">
+					<th>None</th>
+					<td>12</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th>Light</th>
+					<td>14</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Heavy</th>
+					<td>15</td>
+					<td>-2</td>
+				</tr>
+				<tr>
+					<th class="last-row">Shield</th>
+					<td class="last-row">+1</td>
+					<td class="last-row">-1</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">
+			<tr>
+				<th style="width: 60%"><p><b>Melee Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Melee Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>One-Handed</th>
+								<th>Two-Handed</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d6 club</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 mace, shortsword</td>
+								<td>1d8 spear</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>1d8 longsword, scimitar</td>
+								<td>1d10 (-2 atk) greatsword, dire flail</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: Damage equal to your level
+				</th>
+			</tr>
+		</table>
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">	
+			<tr>
+				<th style="width: 60%"><p><b>Ranged Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Ranged Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>Thrown</th>
+								<th>Crossbow</th>
+								<th>Bow</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d4 hand crossbow</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 javelin, axe</td>
+								<td>1d6 light crossbow</td>
+								<td>1d6 shortbow</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>&mdash;</td>
+								<td>1d8 (-1 atk) heavy crossbow</td>
+								<td>1d8 (-2 atk) longbow</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: &mdash;
+				</th>
+			</tr>
+		</table>
+		<br/>
+
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+			<tbody>
+				<tr>
+					<th colspan="4"><h5>Table: The Bard</h5></th>
+				</tr>
+				<tr valign="bottom">
+					<th rowspan="2" style="width: 10%">Bard Level</th>
+					<th rowspan="2" style="width: 20%">Total Hit Points</th>
+					<th rowspan="2">Total Feats</th>
+					<th rowspan="2">Battle Cries</th>
+					<th colspan="5">Spells and Songs</th>
+					<th rowspan="2" style="width: 10%">Weapon Damage Bonus</th>
+					<th rowspan="2" style="width: 10%">Spell Damage Bonus</th>
+				</tr>
+				<tr>
+					<th style="width: 5%">1st</th>
+					<th style="width: 5%">3rd</th>
+					<th style="width: 5%">5th</th>
+					<th style="width: 5%">7th</th>
+					<th style="width: 5%">9th</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>HP x 3</td>
+					<td>1 Adventurer</td>
+					<td>2</td>
+					<td>2</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>2nd</td>
+					<td>HP x 4</td>
+					<td>2 Adventurer</td>
+					<td>2, up to 1st level</td>
+					<td>3</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>HP x 5</td>
+					<td>3 Adventurer</td>
+					<td>3, up to 3rd level</td>
+					<td>1</td>
+					<td>2</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>4th</td>
+					<td>HP x 6</td>
+					<td>4 Adventurer</td>
+					<td>3, up to 3rd level</td>
+					<td>&mdash;</td>
+					<td>4</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>HP x 8</td>
+					<td>4 Adventurer<br/>1 Champion</td>
+					<td>3, up to 5th level</td>
+					<td>&mdash;</td>
+					<td>3</td>
+					<td>2</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+8</td>
+				</tr>
+				<tr class="odd-row">
+					<td>6th</td>
+					<td>Hp x 10</td>
+					<td>4 Adventurer<br/>2 Champion</td>
+					<td>4, up to 5th level</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>5</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+8</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>HP x 12</td>
+					<td>4 Adventurer<br/>3 Champion</td>
+					<td>4, up to 7th level</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>3</td>
+					<td>3</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+8</td>
+				</tr>
+				<tr class="odd-row">
+					<td>8th</td>
+					<td>HP x 16</td>
+					<td>4 Adventurer<br/>3 Champion<br/>1 Epic</td>
+					<td>5, up to 7th level</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>6</td>
+					<td>&mdash;</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>HP x 20</td>
+					<td>4 Adventurer<br/>3 Champion<br/>2 Epic</td>
+					<td>5, up to 9th level</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>4</td>
+					<td>3</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+				<tr class="odd-row">
+					<td>10th</td>
+					<td>HP x 24</td>
+					<td>4 Adventurer<br/>3 Champion<br/>3 Epic</td>
+					<td>6, up to 9th level</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>7</td>
+					<td>+12</td>
+					<td>+12</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
+			<button class="tablinks" onclick="openTab(this, 'battle-cries')">Battle Cries</button>
+			<button class="tablinks" onclick="openTab(this, 'songs')">Songs</button>
+			<button class="tablinks" onclick="openTab(this, 'spells')">Spells</button>
+		</div>
+
+		<div id="class-features" class="tabcontent" style="display: block">
+			<h5>Class Features</h5>
+
+			<h7 class="initial">Versatile Combatant</h7>
+			<p>At first level, a bard chooses one of the following. Barring exceptional circumstances, this decision cannot be changed throughout their career, as with talents:</p>
+			<div class="indent">
+				<p>&bull; +1 to all weapon attack rolls, +1/tier to weapon damage rolls</p>
+				<p>&bull; +1 to all spell and song attack rolls, +1/tier to spell and song damage rolls</p>
+			</div>
+
+			<h7>Bardic Songs</h7>
+			<p>Bardic songs last for one or more rounds and end with a final verse that carries a big payoff. Although magical, bardic songs don't count as spells; they don't force the bard to suffer opportunity attacks from engaged enemies, and they can't be canceled by effects that can cancel spells. In fact, bards can cast spells while in the middle of singing a bardic song.</p>
+			<p>Each song specifies what type of action starts it. To sustain it during the next round, it requires an action and a d20 check against its sustain target. If successful, the song can continue with its sustained effect for that round. (The next round will require another sustain check.) If your attempt to sustain a song fails, the song's final verse effect resolves immediately, and then the song's power ends. You can start another song on your next round.</p>
+			<p>You don't have to try to sustain the song at the start of your turn. If you choose not to sustain a song, its effects end immediately and you choose whether to use the song's final verse effect in the current round or to start a new song. You can't do both.</p>
+			<p>Some songs have an immediate effect that happens each time you start or sustain the song. Others have effects that continue throughout the entire round.</p>
+			<p>Most songs stop when a bard is knocked unconscious, silenced, or stunned. Having your song stopped this way prevents you from getting the final verse effect.</p>
+			<p>You can only sing one bardic song at a time. If you are singing a song (or spend an action to try to sustain a song), you can't start another song that round.</p>
+			<p>Bardic songs are loud, and cancel any of stealth effects you may have.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your bardic songs don't stop immediately when you are knocked unconscious, stunned, or silenced. Instead, they continue for one round, giving you the chance to sustain the song on your next turn.</p>
+
+			<h7>Battle Cries</h7>
+			<p>Bards use battle cries to encourage, inspire, warn, and magically aid their allies. Battle cries are triggered by flexible melee attacks. The bard makes a melee attack and is able to use a battle cry that corresponds to the attack's natural result, sometimes whether or not the attack hits.</p>
+			<p>Bonuses provided by battle cries can help a bard's allies but not the bard.</p>
+			<p class="odd-row" style="width:40%; margin: 0 15px"><b>Adventurer Feat</b>: You can generate the effect of any 1st or 3rd level battle cry you know as a standard action (instead of making a flexible melee attack to see which battle cry you are able to trigger). This allows you to choose the particular battle cry you want, at the expense of taking your standard action.</p>
+
+			<h7>Spells</h7>
+			<p>Bards use arcane spells that function like those of other spell-casting classes. Some spells are daily, some recharge, and others are at-will.</p>
+
+			<h5>Class Talents</h5>
+
+			<p class="initial">Choose three of the following class talents.</p>
+
+			<h7>Balladeer</h7>
+			<p>At each level, including 1st level, you may learn a great ballad of your choice. Each day you can sing one of these songs to give you a positive relationship with an icon that you would not ordinarily have as well as increasing a negative relationship with another icon.</p>
+			<p>Song choices for the great ballad are up to the role-player.</p>
+			<p>It takes at least a few rounds to sing a great ballad, so ideally it happens outside of combat. As you sing the ballad, it's an opportunity to tell the GM what's special about the story you are telling.</p>
+			<p>Make a skill check using your best singing or musical background. If you succeed, you gain 2 points of positive relationship with the chosen icon for the rest of the day (until the next full heal-up). The DC depends on the environment:</p>
+			<p>&emsp;DC 10: Adventurer environment</p>
+			<p>&emsp;DC 15: Champion environment</p>
+			<p>&emsp;DC 20: Epic environment</p>
+			<p>You can use these points to roll relationship dice the way you roll your normal icon relationships (see Icon Relationships). If you already have positive or conflicted dice with the icon you've sung about, add them to your new bonus dice. If you have negative dice with the icon you've sung a ballad to, they can be temporarily overruled by the ballad, but the GM should feel free to interpret any 5s rolled with a heavy hand.</p>
+			<p>When your great ballad magically compliments an icon, another icon should take a hit. As you explain the story of your ballad to the GM, you should account for at least one icon who is being mocked, vilified, or referred to in unflattering terms. You get an equal number of cursed dice for that icon. Cursed dice aren't like negative relationship dice—they never help you. At the GM's option, you'll have to roll these cursed dice at least once and interpret them as possible problems for you: rolls of 1 are a definite problem; rolls of 2 mean there are story complications connected to the temporary enemy icon.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The first time you use your ballad-created relationship, any 5s you roll become 6s. You also gain a +2 bonus to your Balladeer checks.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You can sing two great songs a day. You can't sing positively about an icon that you've already sung about as an enemy earlier in the day.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: If you are willing to gain an equal number of cursed relationship dice with all of the listed enemies for a song, increase the positive bonus dice you gain from a successful ballad to 3 or 4.</p>
+
+			<h7>Battle Skald</h7>
+			<p>You cannot take this talent if you have taken the <i>Spellsinger</i> talent.</p>
+			<p>Increase the number of battle cries you know by one. The bonus battle cry can be from your highest possible level. In addition, you do not suffer a penalty to attack when wielding a shield.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When the escalation die is odd, you can use your battle cries to help yourself. When the escalation die is odd, you may also subtract one from the natural rolls of your battle cries.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When you use a battle cry on yourself, it also helps an ally.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain a +1 bonus to AC and PD. When the escalation die is 6, you can use your battle cries to help yourself.</p>
+
+			<h7>Jack of Spells</h7>
+			<p>Choose Cleric, Necromancer, Sorceror, or Wizard. You can choose one spell from the spell list (but not the talent list) of that class, of your own level or lower, as an extra spell you know how to cast. Use your spell attack bonus - 1 to determine any effects of the spell, including attack and damage. You can even take its feats up to your tier, if it has any. You may only choose from the spell list, not from talents.</p>
+			<p>This spell is a bonus spell, not included in your bard class count.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You use your spell attack bonus, instead of your spell attack bonus -1, to determine the effects of the spell.<br/>
+			If the spell is a wizard spell, you also gain three cantrips of your choice from the wizard. You can cast them like a wizard who lacks the Cantrip Mastery talent.<br/>
+			If you choose a spell from the sorcerer class, you also gain the sorcerer's dancing lights class feature.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Choose a second spell-casting class. Gain a spell from that class as well.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Choose a third spell-casting class. Gain a spell from that class as well.</p>
+
+			<h7>Mythkenner</h7>
+			<p>Take a single point of relationship with an icon. Add the point to a relationship you already have up to your normal maximum, or start a new one—positive, conflicted, or negative.</p>
+			<p>Choose one:</p>
+			<div class="indent">
+				<p>&bull; Take two additional points of backgrounds. You can use these additional points to raise a background that has something to do with history, bardic lore, or magical knowledge up to the usually impossible rating of +6.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain +1 bonus to all skill checks relating to history, bardic lore, or magical knowledge.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +2, and you gain an additional point of relationship with the Archmage or Lich King.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The bonus increases to +4, and you gain an additional point of relationship with the Archmage or Lich King. You may go beyond the maximum relationship allowed for these icons.</p>
+				<p>&bull; Take two additional points of backgrounds. You can use these additional points to raise a background that has something to do with religion, mythology, or history up to the usually impossible rating of +6.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain +1 bonus to all skill checks relating to religion, mythology, or history.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +2, and you gain an additional point of relationship with the Priestess or the Great Gold Worm.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The bonus increases to +4, and you gain an additional point of relationship with the Priestess or the Great Gold Worm. You may go beyond the maximum relationship allowed for these icons.</p>
+			</div>
+
+			<h7>Songmaster</h7>
+			<p>When you attempt to maintain a bardic song, if you describe it in a fashion that entertains the GM, or at least a couple of the players, you get a bonus of +1 to +3 to maintain the song.</p>
+			<p>This talent is for those that enjoy improvisation.</p>
+
+			<h7>Spellsinger</h7>
+			<p>You cannot take this talent if you have taken the <i>Battle Skald</i> talent.</p>
+			<p>You can choose an extra bardic song or bard spell at the highest level you know. When you use a daily bard spell, you gain a +1 bonus to sustain rolls for the rest of the battle. This bonus is cumulative.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: While at least one of your bardic songs is active, you and nearby allies gain a +1 bonus to PD and MD.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When the escalation die is odd and you successfully sustain a bardic song, you may choose to end your bardic song without generating the final verse effect. In return, you regain the use of the bardic song, but you cannot active a new bardic song this turn.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain a +1 bonus to sustain rolls for your bardic songs. You may have two active bardic songs at a time, but you must sustain each one separately.</p>
+
+			<h7>Storyteller</h7>
+			<p>Once per scene when one of your allies rolls relationship dice for an icon, you can roleplay a one or two sentence story (usually related to the icon, but perhaps otherwise pivotal) that allows them to reroll the relationship check if they don't like the first result.</p>
+		</div>
+
+		<div id="battle-cries" class="tabcontent">
+			<h5>1st Level Battle Cries</h5>
+			<p>
+				<h7>Move It!</h7><br/>
+				Flexible Melee Attack<br/>
+				<b>Triggering Roll</b>: Natural even<br/>
+				<b>Effect</b>: Either one of your disengaged allies can move as a free action, or one of your engaged allies can make a disengage check as a free action.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The disengage check gains a +2 bonus.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +5.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: An engaged ally you target with this battle cry can pop free from one enemy as a free action before making the disengage check.</p>
+			</p>
+			<p>
+				<h7>Pull It Together!</h7><br/>
+				Flexible Melee Attack<br/>
+				<b>Triggering Roll</b>: Natural 11+; use only twice per battle<br/>
+				<b>Effect</b>: One nearby ally can heal using a recovery.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The target adds +1d4 healing per point on the escalation die.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The attack can now also trigger on any natural even roll; the extra healing is now +1d6 per point.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use pull it together three times per battle; the extra healing is now +1d10 per point.</p>
+			</p>
+			<p>
+				<h7>Stay Strong!</h7><br/>
+				Flexible Melee Attack<br/>
+				<b>Triggering Roll</b>: Natural 16+<br/>
+				<b>Effect</b>: Give a nearby ally a +2 bonus to AC until the start of your next turn.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Bonus also applies to PD.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Bonus also applies to MD.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The bonus is now +4.</p>
+			</p>
+			<p>
+				<h7>We Need You!</h7><br/>
+				Flexible Melee Attack<br/>
+				<b>Triggering Roll</b>: Natural even hit<br/>
+				<b>Effect</b>: A nearby conscious ally can roll a save against a save ends effect.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The save gains a +1 bonus.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +2.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the escalation die is 3+, two nearby conscious allies (instead of one) can each roll a save (with bonuses).</p>
+			</p>
+
+			<h5>3rd Level Battle Cries</h5>
+			<p>
+				<h7>Hang Tough!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Triggering Roll</b>: Natural odd<br/>
+				<b>Effect</b>: Give a nearby ally temporary hit points equal to your spell attack bonus. This becomes 2 x your spell attack bonus at level 5 and 3 x your spell attack bonus at level 8.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If the ally is staggered, double the temporary hit points.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Add your level to the temporary hit points given (add before any doubling).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can choose yourself instead of an ally as the target of the battle cry.</p>
+			</p>
+			<p>
+				<h7>It’s All Yours!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Triggering Roll</b>: Natural even miss<br/>
+				<b>Effect</b>: This battle, your next ally to attack the target you missed gains a +2 attack bonus with that attack.<br/>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: That ally’s attack also deals +1d6 damage. In addition, the attack bonus increases to +3.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The damage bonus increases to +3d6. The attack bonus increases to +4</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The damage bonus increases to +3d12. The attack bonus increases to +5</p>
+			</p>
+			<p>
+				<h7>Take Heart!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Triggering Roll</b>: Any hit<br/>
+				<b>Effect</b>: Choose a nearby ally. That ally can either roll a save against a save ends effect or roll a normal save against a condition that has a duration that lasts until the end or beginning of a turn.<br/>
+			</p>
+
+			<h5>5th Level Battle Cries</h5>
+			<p>
+				<h7>Stay True!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Triggering Roll</b>: Natural 16+ if the escalation die is 3+; otherwise natural 20<br/>
+				<b>Effect</b>: A nearby ally regains the use of a once-per-battle racial ability that was expended this battle.<br/>
+			</p>
+			<p>
+				<h7>Victory Is Ours!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Triggering Roll</b>: Natural 16+ if the escalation die is 5+; otherwise natural 20<br/>
+				<b>Effect</b>: A nearby ally can heal using a recovery, and three nearby allies gain a +3d6 damage bonus to their next damage roll this battle.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: The battle cry now triggers on a 16+ when the escalation die is 3+ instead of 5+.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b> The damage bonus is now +3d12.</p>
+			</p>
+
+			<h5>7th Level Battle Cries</h5>
+			<p>
+				<h7>They Fall Before Us!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Special</b>: You can use this battle cry only on your turn.<br/>
+				<b>Triggering Roll</b>: Natural 20<br/>
+				<b>Effect</b>: A nearby ally can make a basic attack as a free action.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The battle cry can now trigger on a natural 19+.</p>
+			</p>
+
+			<h5>9th Level Battle Cries</h5>
+			<p>
+				<h7>The Time Is Now!</h7><br/>
+				Flexible melee attack<br/>
+				<b>Triggering Roll</b>: Natural 19+<br/>
+				<b>Effect</b>: Choose one nearby ally. That ally can expend a recovery to regain a daily power or spell.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The battle cry can now trigger on natural 18+.</p>
+			</p>
+		</div>
+
+		<div id="songs" class="tabcontent">
+			<h5>1st Level Songs</h5>
+			<p>
+				<h7>Song of Heroes</h7><br/>
+				Bardic Song<br/>
+				Recharge 11+ after battle<br/>
+				Quick action each turn; 11+ to sustain<br/>
+				<b>Opening and sustained effect</b>: You and your nearby allies gain a +1 attack bonus until the start of your next turn.<br/>
+				<b>Final Verse</b>: The effect ends immediately, but one ally of your choice gains a +2 bonus to their next attack roll this battle.<br/>
+				<p>3rd level song: The effect also provides a +1 bonus to saves.</p>
+				<p>5th level song: Sustain the song on a 9+.</p>
+				<p>7th level song: Recharge check is now 6+.</p>
+				<p>9th level song: The effect also provides a +1 bonus to Mental Defense.</p>
+			</p>
+			<p>
+				<h7>Song of Spilt Blood</h7><br/>
+				Bardic Song<br/>
+				Daily<br/>
+				Quick action each turn; 6+ to sustain<br/>
+				<b>Opening and sustained effect</b>: Any attack against you takes a penalty equal to the number of your allies in the battle who have more hit points than you.<br/>
+				<b>Final Verse</b>: The effect ends immediately, and you or one ally of your choice can heal using a recovery.<br/>
+				<p>3rd level song: Sustain the song on a 4+.</p>
+				<p>5th level song: Add +5 hp to the recovery.</p>
+				<p>7th level song: Add +10 hp to the recovery.</p>
+				<p>9th level song: Add +15 hp to the recovery.</p>
+			</p>
+
+			<h5>3rd Level Songs</h5>
+			<p>
+				<h7>Song of Aid</h7><br/>
+				Bardic song<br/>
+				Daily<br/>
+				Quick action each turn; 11+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: You or a nearby ally gains 3d6 temporary hit points.<br/>
+				<b>Final Verse</b>: One target that gained temporary hit points can also heal using a recovery.<br/>
+				<p>5th level song: 5d6 temporary hit points; sustain the song on a 9+.</p>
+				<p>7th level song: 7d6 temporary hit points, and the recovery from the final verse is free.</p>
+				<p>9th level song: 9d8 temporary hit points; sustain the song on a 7+.</p>
+			</p>
+			<p>
+				<h7>Song of Thunder</h7><br/>
+				Bardic song<br/>
+				Daily<br/>
+				Standard action each turn; 11+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: Make the following attack against 1d4 + 1 nearby enemies.<br/>
+				<b>Attack</b>: 4 + Level vs. PD<br/>
+				<b>Hit</b>: 5d6 + (4 x tier) thunder damage.<br/>
+				<b>Miss</b>: &mdash;<br/>
+				<b>Final Verse</b>: Make the attack again, but this time it deals half damage on a miss.<br/>
+				<p>5th level song: 7d6 damage.</p>
+				<p>7th level song: 3d8 x 3 damage.</p>
+				<p>9th level song: 3d12 x 4 damage.</p>
+				<p class="feat"><b><i>Champion Feat</b></i>: The number of targets increases to 2d4.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</b></i>: Two of the targets can now be far away instead of nearby.</p>
+			</p>
+
+			<h5>5th Level Songs</h5>
+			<p>
+				<h7>Song of Magic</h7><br/>
+				Bardic song<br/>
+				Daily<br/>
+				Quick action each turn; 16+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: Until the start of your next turn, you and your nearby allies who cast spells that are normally expended by being cast can roll a d20 after casting the spell. On a 16+, the spell is not expended.<br/>
+				<b>Final Verse</b>: All spells you and your allies cast before the start of your next turn gain a +2 attack bonus.<br/>
+				<p>7th level song: Gain a bonus to song of magic’s sustain check equal to the escalation die.</p>
+				<p>9th level song: Rolls to retain expended spells gain a bonus equal to the escalation die.</p>
+			</p>
+
+			<h5>7th Level Songs</h5>
+			<p>
+				<h7>Song of Blood & Legends</h7><br/>
+				Bardic song<br/>
+				Daily<br/>
+				Standard action each turn; 16+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: Each nearby ally who hits at least one enemy with an attack during their turn can heal using a recovery.<br/>
+				<b>Final Verse</b>: One nearby ally can make a basic attack as a free action and heal using a recovery if the attack hits at least one target.<br/>
+				<p>9th level song: The recovery granted by the final verse attack is free.</p>
+			</p>
+			<p>
+				<h7>Song of Victory</h7><br/>
+				Bardic song<br/>
+				Daily<br/>
+				Quick action each turn; 16+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: Each nearby enemy that has fewer hit points than you is dazed until the end of your next turn.<br/>
+				<b>Final Verse</b>: Each nearby enemy takes 5d6 + (4 x tier) psychic damage.<br/>
+				<p>9th level song: 7d6 damage.</p>
+			</p>
+
+			<h5>9th Level Songs</h5>
+			<p>
+				<h7>Song of Destinies</h7><br/>
+				Bardic song<br/>
+				Daily<br/>
+				Quick action each turn; 11+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: Later this turn, you can add 1 to the natural result of one ally’s d20 roll. Then, afterwards, you can subtract 1 from the natural result of an enemy’s d20 roll.<br/>
+				<b>Final Verse</b>: The GM chooses an icon relevant to the situation; you choose the PC who will make an icon relationship check. That player makes the check and joins the GM in a duet of improvisation as to how the icon relationship roll has some impact on the current battle.<br/>
+			</p>
+		</div>
+
+		<div id="spells" class="tabcontent">
+			<h5>1st Level Spells</h5>
+			<p>
+				<h7>Battle Chant</h7><br/>
+				Ranged spell<br/>
+				At-Will<br/>
+				<b>Special:</b> When you use battle chant, you can choose any battle cry effect you know as if you were making a basic melee attack, with the battle chant attack roll taking the place of the basic melee attack roll.<br/>
+				<b>Target:</b> One nearby enemy<br/>
+				<b>Attack:</b> 4 + Level vs. MD<br/>
+				<b>Hit:</b> 1d4 + (4 x tier) thunder damage.<br/>
+				<p>3rd level spell: 2d4 damage.</p>
+				<p>5th level spell: 2d4 x 2 damage.</p>
+				<p>7th level spell: 2d4 x 3 damage.</p>
+				<p>9th level spell: 2d4 x 5 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your battle chant damage dice are now d6s instead of d4s.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>:Champion Feat Once per day, you can expend one of your recoveries to reroll a battle chant attack roll.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b> One battle per day, your battle chant damage dice become d10s.</p>
+			</p>
+			<p>
+				<h7>Befuddle</h7><br/>
+				Ranged spell<br/>
+				Recharge 11+ after battle<br/>
+				<b>Target</b>: One nearby creature with 40 hp or fewer<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: The target is confused until the end of your next turn.<br/>
+				<b>Natural Even Miss</b>: The target is dazed until the end of your next turn.<br/>
+				<p>3rd level spell: Target with 64 hp or fewer.</p>
+				<p>5th level spell: Target with 96 hp or fewer.</p>
+				<p>7th level spell: Target with 160 hp or fewer.</p>
+				<p>9th level spell: Target with 266 hp or fewer.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Recharge check is now 6+.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The target of the spell doesn’t have to be nearby, just in line of sight.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: On a hit, the confusion effect is now save ends.</p>
+			</p>
+			<p>
+				<h7>Charm Person</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: One nearby creature with 40 hp or fewer<br/>
+				<b>Special</b>: This spell cannot be cast during combat or on a target that has rolled initiative to fight.<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: The target believes you are their friend until you or your allies take hostile action against them. (Attacking their normal allies is okay.) If you or your allies attack the target or order the target to attack its normal allies, the target can roll a normal save to break the charm effect during its turn each round.<br/>
+				<b>Special</b>: On a miss, the spell is not detectible by most others unless you miss by 4+ or roll a natural 1, in which case the target and its allies knows what you tried to do and will usually be angry about it.<br/>
+				<p>3rd level spell: Target with 64 hp or fewer.</p>
+				<p>5th level spell: Target with 96 hp or fewer.</p>
+				<p>7th level spell: Target with 160 hp or fewer.</p>
+				<p>9th level spell: Target with 266 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Soundburst</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: 1d4 nearby enemies in a group<br/>
+				<b>Attack</b>: 4 + Level vs. PD<br/>
+				<b>Hit</b>: 5d6 + (4 x tier) thunder damage, and the target is dazed until end of your next turn.<br/>
+				<b>Miss</b>: Half damage, and deal thunder damage equal to your level to each of your allies engaged with the target.<br/>
+				<p>3rd level spell: 3d8 x 2 damage.</p>
+				<p>5th level spell: 2d10 x 4 damage.</p>
+				<p>7th level spell: 2d6 x 10 damage.</p>
+				<p>9th level spell: 3d6 x 10 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: On a natural even hit, the dazed effect is now save ends.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The spell is now recharge 16+ after battle instead of daily.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now target 1d4 + 1 enemies in a group with the spell.</p>
+			</p>
+
+			<h5>3rd Level Spells</h5>
+			<p>
+				<h7>Vicious Mockery</h7><br/>
+				Ranged spell<br/>
+				Recharge 11+ after battle<br/>
+				<b>Target</b>: One nearby enemy<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: (3d6 x 2) + (4 x tier) psychic damage, and until the end of your next turn, when the target misses with one of its attacks, it takes half the damage its attack would have dealt.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p>5th level spell: 3d6 x 3 damage.</p>
+				<p>7th level spell: 2d8 x 5 damage.</p>
+				<p>9th level spell: 2d8 x 10 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: On a hit, the effect that damages the target when it misses is now save ends.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Recharge check is now 6+.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: A natural even miss does not expend the spell.</p>
+			</p>
+			<p>
+				<h7>Wild Heal</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Targets</b>: Two random nearby allies. Choose the targets randomly from all nearby allies (including you) who are damaged.<br/>
+				<b>Effect</b>: Each target can heal using a recovery.<br/>
+				<p>5th level spell: Add +5 hp to the recovery.</p>
+				<p>7th level spell: Add +15 hp to the recovery.</p>
+				<p>9th level spell: Add +25 hp to the recovery.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The spell is now recharge 16+ after battle instead of daily.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Add a third random target.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The recoveries the targets use are now free.</p>
+			</p>
+
+			<h5>5th Level Spells</h5>
+			<p>
+				<h7>Arrow of Verse</h7><br/>
+				Ranged spell<br/>
+				Recharge 16+ after battle<br/>
+				<b>Target</b>: One nearby enemy<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: (2d8 x 4) + (4 x tier) psychic damage + Xd6 bonus damage, where X = escalation die.<br/>
+				<b>Miss</b>: Xd6 psychic damage, where X = escalation die.<br/>
+				<p>7th level spell: 2d10 x 5 damage.</p>
+				<p>9th level spell: 2d10 x 10 damage.</p>
+				<p class="feat"><b><i>Champion Feat</b></i>: Recharge check is now 11+. Bonus dice and miss dice are now d8s. Recharge check is now 11+.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</b></i>: Recharge check is now 6+. Bonus dice and miss dice are now d12s.</p>
+			</p>
+			<p>
+				<h7>Discombobulate</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: One nearby creature with 100 hp or fewer<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: The target is confused until it rolls two successful saves.<br/>
+				<b>Miss</b>: The target is dazed until the end of your next turn.<br/>
+				<p>7th level spell: Target with 140 hp or fewer.</p>
+				<p>9th level spell: Target with 240 hp or fewer.</p>
+			</p>
+
+			<h5>7th Level Spells</h5>
+			<p>
+				<h7>The Overworld Two-Step</h7><br/>
+				Close-quarters spell<br/>
+				Quick action to cast<br/>
+				Recharge 16+ after battle<br/>
+				<b>Effect</b>: You can swap your position and the positions of all your nearby allies, even if you can’t see them when you cast the spell. Each position presently occupied by you or an ally must end up occupied after the swap, but otherwise you can swap freely.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: Recharge check is now 11+.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now also swap the positions of far-away allies you can see, up to a maximum of 9 creatures.</p>
+			</p>
+
+			<h5>9th Level Spells</h5>
+			<p>
+				<h7>Inspire Legends</h7><br/>
+				Close-quarters spell<br/>
+				<b>Special</b>: Escalation die must be 4+.<br/>
+				Daily<br/>
+				<b>Targets</b>: You and all nearby allies<br/>
+				<b>Effect</b>: Each target can roll a d20 for each of its expended daily, recharge, and per battle powers and spells other than inspire legends. If the roll is 11+, the character regains the use of that power or spell.<br/>
+			</p>
+		</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Lizardfolk
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>LIZARDFOLK</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/lizardfolk.jpg" alt="Lizardfolk" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"Proud, honorable warriors, born from the blood of an ancient snake-headed god."
+		</p>
+
+		<h7>Racial Traits</h7>
+		<p><b>Low-Light Vision</b>: You do not suffer penalties due to dim light.</p>
+		<p><b>Claws and Jaws</b>: You do not take a -2 penalty to your unarmed attacks. In addition, your unarmed attacks deal 1d6 damage per level, not 1d6 damage per ever other level.</p>
+
+		<h7>Taste for Blood (Racial Power)</h7>
+		<p>Once per battle, deal ongoing damage to a target you hit with a natural even attack roll as a free action. The ongoing damage equals 5 times your level. A normal save (11+) ends the damage.</p>
+		<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When the escalation die reaches 3, you gain one additional use of Taste for Blood.</p>
+		<p class="feat"><b><i>Champion Feat</i></b>: The target must succeed on a hard save (16+) to end the ongoing damage.</p>
+</p>
+
+
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		thisDoc = document.currentScript.ownerDocument;
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = thisDoc.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Necromancer
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="main">
+	<td>
+	<!-- main contents -->
+		<h2>NECROMANCER</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/necromancer.jpg" alt="Necromancer" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"I bring death to the living, and life to the dead."
+		</p>
+
+		<p>
+			<b>Overview</b>: Necromancers and their magic are gist for terrible stories. Legends speak of mad wizards leading vast, rotting hordes, waging war against the living. These infamous figures are the rare few exceptions among necromancers, despite their prominence in the public attention. Most necromancers have little interest in conquest, instead using their art to examine the secrets of life, death, and the connections between them. It is true that necromancers can raise undead creatures, wield dread magic that rots f lesh and sunders souls, and snuff out life with a whisper, but those who defend the art offer comparisons to other magic: How, they ask, can these abilities be considered more destructive than an evoker’s fireball or more insidious than an enchanter’s charms?<br/>
+			&emsp;Do you believe your dark magic can be used for positive ends? Are there sacrifices that are too great, no matter what the reward? Is that skeleton someone you used to know?<br/>
+			<b>Play Style</b>: Some of your talent powers and spells are straightforward, while others require weighing the odds whether they will hurt your enemies more than they will hurt you and your friends. There are sacrifices to choose—power that has to be paid for somehow. We’d say that necromancers are better for experienced players, but maybe that’s not true. Maybe newcomers should be handed the keys to summoning and unholy energies. What could possibly go wrong?<br/>
+			<b>Backgrounds</b>: Necromancers could be rare in some campaigns, but commonplace in others. Depending on that choice, possible backgrounds for necromancers include: failed village priest, archeologist, fortress defender, swamp baron, judge and executioner, living dungeon escapee, former Necropolis acolyte, death giant servitor, former mummy, reformed outlaw, dreamweed addict, resurrected Imperial hero,and burnt-out wizard.
+		</p>
+
+		<p><b><a id="stats"></a>Stats</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" class="stat-table">
+			<tbody>
+				<tr class="odd-row">
+					<th style="width: 30%">Initiative</th>
+					<td>3 + level</td>
+				</tr>
+				<tr>
+					<th>Armor Class</th>
+					<td>Base AC + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Physical Defense</th>
+					<td>12 + level</td>
+				</tr>
+				<tr>
+					<th>Mental Defense</th>
+					<td>13 + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>HP Value</th>
+					<td>7</td>
+				<tr>
+					<th>Recoveries</th>
+					<td>8</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Recovery Value</th>
+					<td>5 x level</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5><a id="gear"></a>Gear</h5>
+		<p class="initial">
+			At 1st level, a necromancer starts with various dark robes or traveling clothes, a dagger, a staff, a few treasured bones or funerary urns, and other miscellaneous items suggested by their backgrounds.
+		</p>
+		<p><b>Gold Pieces</b>: Necromancers may start with either 25 gp or 1d6 x 10 gp.</p>
+		<p><b><a></a>Armor</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+			<tbody>
+				<tr valign="bottom">
+					<th>Armor Type</th>
+					<th>Base AC</th>
+					<th>Attack Penalty</th>
+				</tr>
+				<tr class="odd-row">
+					<th>None</th>
+					<td>10</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th>Light</th>
+					<td>10</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Heavy</th>
+					<td>11</td>
+					<td>-2</td>
+				</tr>
+				<tr>
+					<th class="last-row">Shield</th>
+					<td class="last-row">+1</td>
+					<td class="last-row">-2</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">
+			<tr>
+				<th style="width: 60%"><p><b>Melee Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Melee Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>One-Handed</th>
+								<th>Two-Handed</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d6 club,staff</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 (-2 atk) mace, shortsword</td>
+								<td>1d8 (-4 atk) spear</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>1d8 (-5 atk) longsword, warhammer</td>
+								<td>1d10 (-6 atk) greatsword</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: &mdash;
+				</th>
+			</tr>
+		</table>
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">	
+			<tr>
+				<th style="width: 60%"><p><b>Ranged Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Ranged Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>Thrown</th>
+								<th>Crossbow</th>
+								<th>Bow</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger, star</td>
+								<td>1d4 hand crossbow</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 (-2 atk) javelin</td>
+								<td>1d6 (-1 atk) light crossbow</td>
+								<td>1d6 (-2 atk) shortbow</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>&mdash;</td>
+								<td>1d8 (-4 atk) heavy crossbow</td>
+								<td>1d8 (-5 atk) longbow</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: &mdash;
+				</th>
+			</tr>
+		</table>
+		<br/>
+
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+			<tbody>
+				<tr>
+					<th colspan="4"><h5>Table: The Necromancer</h5></th>
+				</tr>
+				<tr valign="bottom">
+					<th rowspan="2" style="width: 10%">Necromancer Level</th>
+					<th rowspan="2" style="width: 20%">Total Hit Points</th>
+					<th rowspan="2">Total Feats</th>
+					<th colspan="5">Spells</th>
+					<th rowspan="2" style="width: 10%">Weapon Damage Bonus</th>
+					<th rowspan="2" style="width: 10%">Spell Damage Bonus</th>
+				</tr>
+				<tr>
+					<th style="width: 5%">1st</th>
+					<th style="width: 5%">3rd</th>
+					<th style="width: 5%">5th</th>
+					<th style="width: 5%">7th</th>
+					<th style="width: 5%">9th</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>HP x 3</td>
+					<td>1 Adventurer</td>
+					<td>4</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+5</td>
+				</tr>
+				<tr class="odd-row">
+					<td>2nd</td>
+					<td>HP x 4</td>
+					<td>2 Adventurer</td>
+					<td>5</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+5</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>HP x 5</td>
+					<td>3 Adventurer</td>
+					<td>3</td>
+					<td>3</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+5</td>
+				</tr>
+				<tr class="odd-row">
+					<td>4th</td>
+					<td>HP x 6</td>
+					<td>4 Adventurer</td>
+					<td>&mdash;</td>
+					<td>6</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+4</td>
+					<td>+5</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>HP x 8</td>
+					<td>4 Adventurer<br/>1 Champion</td>
+					<td>&mdash;</td>
+					<td>3</td>
+					<td>4</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+10</td>
+				</tr>
+				<tr class="odd-row">
+					<td>6th</td>
+					<td>HP x 10</td>
+					<td>4 Adventurer<br/>2 Champion</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>7</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+10</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>HP x 12</td>
+					<td>4 Adventurer<br/>3 Champion</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>3</td>
+					<td>5</td>
+					<td>&mdash;</td>
+					<td>+8</td>
+					<td>+10</td>
+				</tr>
+				<tr class="odd-row">
+					<td>8th</td>
+					<td>HP x 16</td>
+					<td>4 Adventurer<br/>3 Champion<br/>1 Epic</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>8</td>
+					<td>&mdash;</td>
+					<td>+12</td>
+					<td>+15</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>HP x 20</td>
+					<td>4 Adventurer<br/>3 Champion<br/>2 Epic</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>3</td>
+					<td>6</td>
+					<td>+12</td>
+					<td>+15</td>
+				</tr>
+				<tr class="odd-row">
+					<td>10th</td>
+					<td>HP x 24</td>
+					<td>4 Adventurer<br/>3 Champion<br/>3 Epic</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>&mdash;</td>
+					<td>9</td>
+					<td>+12</td>
+					<td>+15</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
+			<button class="tablinks" onclick="openTab(this, 'spells')">Spells</button>
+		</div>
+
+		<div id="class-features" class="tabcontent" style="display: block">
+			<h5>Class Features</h5>
+
+			<p class="initial">All necromancers share the following class features.</p>
+
+			<h7>Death's Master</h7>
+			<p>All necromancers must spend at least one relationship point with any necromantic icon. (This may be conflicted or negative.) If your one unique thing somehow suggests that you might be free of this requirement, make a case to your GM that this is a way in which you are unique.</p>
+
+			<h7>Ritual Magic</h7>
+			<p>Take two additional points of backgrounds in a background that has to do with undeath or magical knowledge.</p>
+
+			<h7>Summoning</h7>
+			<p>Your summoning spells use the following rules:</p>
+			<p><b>Standard action spells</b>: Casting a summoning spell generally requires a standard action. The creature(s) you summon appears next to you, though feats or powers might enable you to summon it nearby instead.</p>
+			<p><b>Duration</b>: A summoned creature fights for you until the end of the battle or until it drops to 0 hit points. At 0 hp, summoned creatures are slain and removed from the battle.</p>
+			<p><b>One summoning spell at a time</b>: Each spellcaster can have only a single summoning spell active at a time. If all the creatures from an earlier summoning spell have been slain, you’re free to cast another. Alternatively, you can dismiss your own previously summoned creatures as a quick action to clear the way for a new summoning spell.</p>
+			<p><b>Halfway there</b>: Summoned creatures are not the same as real creatures. They’re partly real, partly magical. Their abilities don’t always match the capabilities of the creatures that the adventurers encounter for real. Sometimes this is reflected in a summoned creature’s attacks or abilities. It’s always reflected in a summoned creature’s hit points.</p>
+			<p><b>Hit points</b>: Each summoned creature stat block indicates its base hit points. Starting hit points for summoned creatures are nearly always lower than hit points for non-summoned versions of the same creature. Some class feats might increase the hit points of summoned creatures.</p>
+			<p><b>Actions on arrival</b>: The turn you summon a creature, that creature takes its turn immediately after your turn in initiative order. During its turn, the summoned creature can act like any other creature, taking a standard, move, and quick action. The summoned creature continues to take its turn immediately after you (even if your initiative order changes) until the end of the battle.</p>
+			<p><b>Escalation die</b>: As a rule, summoned creatures don’t benefit from the escalation die. A summoned creature can add the escalation die to attacks, however, if you use a quick action to give it orders or magical reinforcement. The summoned creature then gets to use the escalation die until the start of your next turn, including for opportunity attacks and other attacks that it gets to make during other creatures’ turns. For example, during the turn you summon the creature, you use a quick action afterward to give it orders, allowing it to use the escalation die bonus. At the start of your next turn, the creature no longer gets to use the escalation die, so you’ll have to use another quick action again during that turn for the creature to keep getting the benefit. If you’ve summoned a mob of mooks, a single quick action lets every member of the mob use the escalation die.</p>
+			<p><b>Allies?</b>: Summoned creatures generally count as your allies. Sometimes that’s bad for you—for example, when an effect is going to heal a random ally and the healing is going to be pretty much wasted on the summoned creature (see no recoveries, bad healing below). Sometimes that’s good for you—for example, when a monster’s attack chooses one of its random enemies and your summoned creature takes the hit.</p>
+			<p><b>No recoveries, bad healing</b>: Summoned creatures don’t have recoveries. If you cast a healing spell on a summoned creature that requires the use of a recovery, the summoned creature heals hit points equal to your level. If you use an effect that would heal a summoned creature without using a recovery, the summoned creature only heals half the normal hit points of the effect. Temporary hit points still work normally.</p>
+			<p><b>No nastier specials</b>: If a creature you’re summoning sometimes has nastier specials when it appears as a monster, that’s not the version of the creature you’re summoning.</p>
+			<p><b>Spell or creature?</b>: When a summoning spell is cast, it’s definitely a spell. After casting the spell, a summoned creature is a creature, though if the GM is feeling puckish they might allow effects that generally only interact with spells to interact with a summoned creature. That seems dicey, but it’s possible.</p>
+			<p>The following feats enable you to improve your summoning powers.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your summoned creatures can add the escalation die to their attacks.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When you summon mooks, increase the number of mooks you summon by 1.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>:The first time one of your non-mook summoned creatures is dropped each battle, roll a normal save. If you succeed, the summoned creature is not slain but instead remains in the battle with 10 hp.</p>
+
+			<h5>Class Talents</h5>
+
+			<p class="initial">Choose three of the following class talents.</p>
+
+			<h7>Cackling Soliloquist</h7>
+			<p>If you spend your move action, your quick action, and your standard action casting a daily spell that ordinarily only requires a standard action—while screaming grandiloquently, cackling maniacally, or megalomaniacally describing the grandeur of your plans and the futility of your enemies’ resistance—the daily spell is recharge 18+ after battle instead of daily, and you can invent a slight improvement to the spell, especially if it’s partly story-oriented, that provides an extra benefit determined by the GM or by you (with GM approval).</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain temporary hit points equal to 1d6 + 3 + your level when you use Cackling Soliloquist (6 + level at 5th level; 9 + level at 8th level).</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Your soliloquized spell is now a recharge 16+ after battle instead of 18+.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per day, you can hog the spotlight when using Cackling Soliloquist. When you do, you heal using a free recovery and steal the escalation die, keeping it all to yourself. Until the end of your next turn, you are the only creature—PC, NPC, or monster—that can use the escalation die, and you treat the escalation die as if it were an 8. At the end of your next turn, return the escalation die to the table, one point higher than it was when you seized it.</p>
+
+			<h7>Dead Wizard</h7>
+			<p>You gain the Cantrips class feature from the wizard class. The talent functions like the wizard’s class feature with the following exceptions:</p>
+			<ul>
+				<li>You can’t cast mending.</li>
+				<li>Your light cantrip has a sickly flicker or a dark edge. Feel free to call it darklight.</li>
+			</ul>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can take a wizard spell in place of one of your necromancer spells of the same level. You can change this spell for a new one whenever you take a full heal-up.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain a bonus wizard spell that is at least two levels below your level, in addition to the spells you can cast as a necromancer. You can change this spell for a new one whenever you take a full heal-up.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain a second bonus wizard spell, but this one can be of your level or lower. You can change this spell for a new one whenever you take a full heal-up.</p>
+
+			<h7>Death Priest</h7>
+			<p>When you have icon relationship advantages you’re waiting to use during a session, you can interpret them as interactions/public discussions with the spirits of the recent or ancient dead in the area, providing information you require (and possibly, when there’s a complication from a 5 roll, also providing that information to your enemies or otherwise getting you into some type of trouble).</p>
+			<p>In addition, once per day while you’re not in battle, you can perform a short rite (1–2 minutes) to call upon a spirit of the dead that’s related to a random icon other than a necromantic icon. The spirit will speak to you, relaying information helpfully, or under protest if it’s related to an icon that considers you an enemy or with which you have a negative relationship.</p>
+			<p>You can’t always rely on the dead to speak the truth, or to know what they are talking about. Whenever you use the power above, the GM secretly rolls a d20 before the discussion. On a 3+, the spirit knows what it is talking about. On a 1–2, the information is outdated, sabotaged, or just erroneous. (Note that this roll is not for spirits you talk to thanks to icon advantages mentioned above.)</p>
+			<p>At 5th level you can use this power twice per day. At 8th level you can use it three times per day.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain a bonus cleric spell that is at least two levels below your level, in addition to the spells you can cast as a necromancer. You can change this spell for a new one whenever you take a full heal-up. In addition, you gain a +1 to attack rolls and +1/tier to damage rolls with this spell</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain the lowest-tier feat, if any, associated with your bonus cleric spell.</p>
+
+			<h7>Deathknell</h7>
+			<p>As a quick action, you can drop a nearby enemy that has 5 hp or fewer down to 0 hp. When you drop an enemy using Deathknell, you heal 1d6 hit points.</p>
+			<p>You can use Deathknell to drop a mook, but only if it’s the last mook in its mob and the mob has 5 hp or fewer left.</p>
+			<p>3rd level: Drop an enemy with 10 hp or fewer. Heal 1d10 hit points.</p>
+			<p>5th level: Drop an enemy with 15 hp or fewer. Heal 2d8 hit points.</p>
+			<p>7th level: Drop an enemy with 20 hp or fewer. Heal 4d6 hit points.</p>
+			<p>9th level: Drop an enemy with 25 hp or fewer. Heal 4d8 hit points.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When you use Deathknell, one of your nearby conscious allies can gain the healing instead of you.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Double the healing gained from Deathknell when you drop an enemy.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>:You can increase the escalation die by 1 instead of healing when you kill a non-mook enemy with Deathknell.</p>
+
+			<h7>It’s Complicated</h7>
+			<p>When you roll icon relationship dice, the first 6 you roll is a 5 instead.</p>
+			<p>You gain an extra necromancer spell at the highest spell level you can normally cast (as shown under spells known on the necromancer level progression chart). For example, you would gain an extra 3rd level spell if you’re 4th level, or an extra 5th level spell if you’re 5th level.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: All 6s you roll with relationship dice count as 5s. You gain another extra necromancer spell, but it must be at least two levels lower than your level.</p>
+
+			<h7>Redeemer</h7>
+			<p>Undead you summon release holy energy bursts as they drop to 0 hp, dealing a small amount of damage to each enemy engaged with them.</p>
+			<p>Mooks you summon deal 3 holy damage (6 at 5th level; 9 at 8th level).</p>
+			<p>Non-mooks you summon deal 3d4 holy damage (3d8 at 5th level; 6d6 at 8th level).</p>
+			<p>In story terms, you’re not likely to have a positive relationship with any necromantic icons if you take the Redeemer talent.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The first time each battle an undead creature you have summoned attacks, it gains a +3 attack bonus.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: When one of your summoned undead creatures drops to 0 hp, instead of having it deal holy damage to engaged enemies, you can heal hit points equal to that damage instead.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can memorize a single spell that summons undead twice.</p>
+
+			<h7>Skeletal Minion</h7>
+			<p>You have a skeleton minion the same level as you that acts as a servant, fights alongside you in battle, and is replaced by a new skeletal minion when it inevitably collapses or is destroyed. It is not a summoned creature; summoning rules don’t apply.</p>
+			<p>Your minion acts on your initiative, taking a standard action, a move action, and (if applicable) a quick action. You decide whether it takes its turn before or after you.</p>
+			<p>The listed attack and damage values are for melee attacks. Your skeletal minion can’t heal. When it drops to 0 hp, it’s destroyed for that battle. When you take a quick rest, a new (or patched up) skeletal minion will take its place.</p>
+
+			<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+				<tbody>
+					<tr>
+						<th>Level</th>
+						<th>Attack</th>
+						<th>Damage</th>
+						<th>AC</th>
+						<th>PD</th>
+						<th>MD</th>
+						<th>HP</th>
+					</tr>
+					<tr>
+						<td>1st</td>
+						<td>+6 vs. AC</td>
+						<td>1d6</td>
+						<td>17</td>
+						<td>15</td>
+						<td>11</td>
+						<td>14</td>
+					</tr>
+					<tr class="odd-row">
+						<td>2nd</td>
+						<td>+7 vs. AC</td>
+						<td>1d8</td>
+						<td>18</td>
+						<td>16</td>
+						<td>12</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>3rd</td>
+						<td>+9 vs. AC</td>
+						<td>1d12</td>
+						<td>19</td>
+						<td>17</td>
+						<td>13</td>
+						<td>22</td>
+					</tr>
+					<tr class="odd-row">
+						<td>4th</td>
+						<td>+10 vs. AC</td>
+						<td>2d6</td>
+						<td>21</td>
+						<td>19</td>
+						<td>15</td>
+						<td>27</td>
+					</tr>
+					<tr>
+						<td>5th</td>
+						<td>+11 vs. AC</td>
+						<td>2d8</td>
+						<td>22</td>
+						<td>20</td>
+						<td>16</td>
+						<td>36</td>
+					</tr>
+					<tr class="odd-row">
+						<td>6th</td>
+						<td>+13 vs. AC</td>
+						<td>3d6</td>
+						<td>23</td>
+						<td>21</td>
+						<td>17</td>
+						<td>45</td>
+					</tr>
+					<tr>
+						<td>7th</td>
+						<td>+14 vs. AC</td>
+						<td>3d8</td>
+						<td>25</td>
+						<td>23</td>
+						<td>19</td>
+						<td>54</td>
+					</tr>
+					<tr class="odd-row">
+						<td>8th</td>
+						<td>+15 vs. AC</td>
+						<td>4d6</td>
+						<td>26</td>
+						<td>24</td>
+						<td>20</td>
+						<td>72</td>
+					</tr>
+					<tr>
+						<td>9th</td>
+						<td>+17 vs. AC</td>
+						<td>4d8</td>
+						<td>27</td>
+						<td>25</td>
+						<td>21</td>
+						<td>90</td>
+					</tr>
+					<tr class="odd-row">
+						<td>10th</td>
+						<td>+18 vs. AC</td>
+						<td>5d6</td>
+						<td>28</td>
+						<td>26</td>
+						<td>22</td>
+						<td>108</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><b>Skeletal Minion Feats</b></p>
+			<p>Like animal companion feats, skeletal minion feats don’t build on each other. You don’t have to take them in a particular order, as long as you qualify for the tier.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your skeletal minion now adds the escalation die to its attack rolls.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When an enemy attempts to disengage from the skeletal minion, it takes a penalty to the check equal to the escalation die.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: As a quick action, you can set your skeletal minion ablaze, or extinguish the blaze. While it’s flaming, your skeleton minion’s damage dice increase by one size, and it deals fire damage with its melee attacks, but it takes damage equal to your level each time its natural attack roll is odd.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Add a damage die of the same size to your skeletal minion’s damage rolls (for example, 3d6 becomes 4d6).</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Add 10 to your skeletal minion’s hit points. At 8th level, add 15.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Add a damage die of the same size to your skeletal minion’s damage rolls (for example, 4d6 becomes 5d6, and this is cumulative with the champion feat).</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Your skeletal minion gains a +2 bonus to all defenses.</p>
+
+			<h7>Sorta Dead</h7>
+			<p>In some ways, you’re dead already. You don’t need to eat or sleep or breathe. You can’t drown in normal water/liquid, though magical gas will still affect you.</p>
+			<p>When a spell or effect targets or applies to undead, you can decide whether you want to count as undead for that specific effect. (For example, you could count as undead to take advantage of a target’s vulnerability created by the ripping claws attack of a starving ghoul mook you summoned via summon undead.)</p>
+			<p>The first time you die each level, roll a normal save, adding a +3 modifier. If you succeed, you heal using a free recovery instead of dying. If you were dying because of last gasp saves, consider yourself saved from the last gasp problem also.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain resist poison 16+ and resist negative energy 16+.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The spells zombie form, ghoul form, ghost form, and vampiric form all function as recharge 16+ after battle spells for you, though you still memorize them as daily spells.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: No undead creature that is not under the direct command of a necromantic icon can attack you unless you attack it or cast a spell against it first.</p>
+		</div>
+
+		<div id="spells" class="tabcontent">
+			<h5>1st Level Spells</h5>
+			<p>
+				<h7>Channel Life</h7><br/>
+				Ranged spell<br/>
+				Once per battle<br/>
+				<b>Healing Target</b>: One nearby ally<br/>
+				<b>Attack Target</b>: One random nearby creature other than the healing target<br/>
+				<b>Attack</b>: 5 + Level vs. MD (you only make an against the attack target)<br/>
+				<b>Hit</b>: 2d6 + (5 x tier) negative energy damage, and the healing target can heal using a recovery.<br/>
+				<b>Special</b>: If your attack target is an ally, this spell instead deals 5 negative energy damage.<br/>
+				<b>Miss</b>: The spell is not expended.<br/>
+				<p>3rd level spell: 5d6 damage vs. enemy, 10 damage vs. ally.</p>
+				<p>5th level spell: 5d10 damage vs. enemy, 15 damage vs. ally.</p>
+				<p>7th level spell: 4d10 x 2 damage vs. enemy, 20 damage vs. ally.</p>
+				<p>9th level spell: 5d12 x 2 damage vs. enemy, 30 damage vs. ally.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can now cast this spell twice per battle.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Staggered allies can no longer be an attack target of the spell.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: On a miss, the spell now deals half damage to the target, but there is still no effect on the healing target.</p>
+			</p>
+			<p>
+				<h7>Chant of Endings</h7><br/>
+				Ranged spell<br/>
+				At-Will<br/>
+				<b>Target</b>: The nearby enemy with the fewest hit points (you choose if there’s a tie; you don’t have to be able to see that enemy)<br/>
+				<b>Attack</b>: 5 + Level vs. MD<br/>
+				<b>Hit</b>: 1d10 + (5 x tier) negative energy damage.<br/>
+				<p>3rd level spell: 4d6 damage.</p>
+				<p>5th level spell: 3d6 x 2 damage.</p>
+				<p>7th level spell: 3d10 x 2 damage.</p>
+				<p>9th level spell: 4d10 x 2 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You can now choose whether or not you want to ignore mooks as targets when you cast the spell.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: On a miss, the spell now deals damage equal to your level.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: While the escalation die is 4+, you can now target two nearby enemies with the fewest hit points with this spell.</p>
+			</p>
+			<p>
+				<h7>Command Undead</h7><br/>
+				Ranged spell<br/>
+				Once per battle<br/>
+				<b>Target</b>: One nearby undead creature with 64 hp or fewer<br/>
+				<b>Attack</b>: 5 + Level vs. MD<br/>
+				<b>Hit</b>: The target is confused (hard save ends, 16+).<br/>
+				<p>3rd level spell: Target with 96 hp or fewer.</p>
+				<p>5th level spell: Target with 160 hp or fewer.</p>
+				<p>7th level spell: Target with 266 hp or fewer.</p>
+				<p>9th level spell: Target with 460 hp or fewer.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: A miss doesn’t expend the spell.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: If you wish, the target doesn’t make any attacks while confused. Instead it becomes compliant, answers short questions if possible, and follows other suggestions that don’t lead directly to damaging itself or other creatures. Basically, while confused it becomes a slightly puzzled friend, which may wonder why your other friends are hurting it while it’s trying to be helpful.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The target now adds the escalation die to its attacks while confused by this spell.</p>
+			</p>
+			<p>
+				<h7>Death’s Gauntlet</h7><br/>
+				Ranged spell<br/>
+				At-Will<br/>
+				<b>Target</b>: One nearby creature<br/>
+				<b>Attack</b>: 5 + Level vs. PD<br/>
+				<b>Hit</b>: 1d4 + (5 x tier) ongoing negative energy damage.<br/>
+				<b>Special</b>: During its turn, the target can use its standard action to strike out at the skeletal limbs or spectral arms that are flailing at it. When it does, the ongoing damage ends and you can’t use death’s gauntlet again until the end of your next turn.<br/>
+				<b>Miss</b>: Damage equal to your level.<br/>
+				<p>3rd level spell: 2d8 damage.</p>
+				<p>5th level spell: 4d6 damage.</p>
+				<p>7th level spell: 3d6 x 2 damage.</p>
+				<p>9th level spell: 3d10 x 2 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When a target uses a standard action to end death’s gauntlet ongoing damage, it takes negative energy damage equal to your level.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: When you roll a natural even hit against a target with this spell, the ongoing negative energy damage has a hard save (16+).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The spell can also target MD instead of PD.</p>
+			</p>
+			<p>
+				<h7>Summon Undead</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Effect</b>: You summon a mob of 1d3 + 1 crumbling skeleton mooks, as per the summoning rules. These skeletons fight for you until the end of the battle or until they drop to 0 hp, whichever comes first.<br/>
+				<p>3rd level spell: 1d3 + 1 putrid zombie mooks.</p>
+				<p>5th level spell: 1d3 + 1 starving ghoul mooks.</p>
+				<p>7th level spell: 1d3 + 1 masterless vampire spawn mooks.</p>
+				<p>9th level spell: 1d3 + 1 Blackamber skeletal warrior mooks.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: You now summon 1d4 + 1 mooks when you cast this spell instead of 1d3 + 1.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If one or more mooks summoned by the spell survive the battle, you can keep one mook with you until the next battle. Or until someone in the party or the world gets sick of it and slays the thing.</p>
+			</p>
+			<p>
+				<b>Crumbling Skeleton</b><br/>
+				<i>1st level mook</i> [UNDEAD]<br/>
+				Initiative: +6<br/>
+				Vulnerability: holy<br/>
+				<b>Sword +6 vs. AC</b> &mdash; 3 damage<br/>
+				<i>Resist weapons 16+</i>: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage<br/>
+				<b>AC 16</b><br/>
+				PD 14<br/>
+				MD 10<br/>
+				HP 6 (mook)<br/>
+			</p>
+
+			<h5>3rd Level Spells</h5>
+			<p>
+				<h7>Cause Fear</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: One nearby enemy with 75 hp or fewer<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: The target is weakened until the end of its next turn. On its next turn, if it’s unengaged, it does not attack and moves away from you. If it’s engaged, the target attempts to disengage as its first action, and moves away if it succeeds. If it fails, it moves away as its second action (drawing opportunity attacks). In either case, it will not attack unless it has no options for escape.<br/>
+				<b>Miss</b>: The target hates you for having tried to scare it, and it wants to hurt you most of all, but it won’t be any stupider than usual in pursuing that goal.<br/>
+				<p>5th level spell: Target with 120 hp or fewer.</p>
+				<p>7th level spell: Target with 190 hp or fewer.</p>
+				<p>9th level spell: Target with 300 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Combat Boon</h7><br/>
+				Close-quarters spell<br/>
+				At-Will<br/>
+				<b>Effect</b>: Make a basic melee attack. If the attack hits, you or one conscious nearby ally can roll a save against a save ends effect.<br/>
+				<p>5th level spell: The save gains a +1 bonus.</p>
+				<p>7th level spell: If the attack hits, you and your nearby conscious allies can roll a total of two saves (one per character).</p>
+				<p>9th level spell: The save bonus increases to +2.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If you score a critical hit with the combat boon attack, the save (or saves) automatically succeeds.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: One nearby conscious ally can roll a save even if your attack misses.</p>
+			</p>
+			<p>
+				<h7>Divine Endurance</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally gains 40 temporary hit points.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target gains 20 temporary hit points.<br/>
+				<p>5th level spell: Temporary hp = 60/30.</p>
+				<p>7th level spell: Temporary hp = 80/40.</p>
+				<p>9th level spell: Temporary hp = 100/50.</p>
+			</p>
+			<p>
+				<h7>Judgment</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Target</b>: All nearby staggered enemies<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: 5d10 + (4 x tier) holy damage.<br/>
+				<b>Miss</b>: Holy damage equal to your level.<br/>
+				<p>5th level spell: 4d10 x 2 damage.</p>
+				<p>7th level spell: 2d6 x 10 damage.</p>
+				<p>9th level spell: 2d10 x 10 damage.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The spell now deals half damage on a miss.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The spell is now recharge 16+ after battle instead of daily.</p>
+			</p>
+			<p>
+				<h7>Mighty Healing</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally can heal using a single recovery and regain double the usual number of hit points.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target can heal using a recovery.<br/>
+				<b>5th level spell</b>: The spell can now target far away allies.<br/>
+				<b>7th level spell</b>: Power equals triple the usual hp for one recovery; broad equals 1.5 times the usual hp per recovery.<br/>
+				<b>9th level spell</b>: Recoveries provided by the spell are now free.<br/>
+				<p class="feat"><b><i>Champion Feat</i></b>: This spell is now a close-quarters spell.<br/>
+			</p>
+			<p>
+				<h7>Strength of the Gods</h7><br/>
+				Ranged spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: You can cast this spell for power or for broad effect.<br/>
+				<b>Cast for power</b>: One nearby ally deals +2d8 damage with melee attacks this battle.<br/>
+				<b>Cast for broad effect</b>: Choose up to three nearby creatures (including you); each target deals +1d8 damage with melee attacks this battle.<br/>
+				<p>5th level spell: Power +4d6, Broad +2d6.</p>
+				<p>7th level spell: Power +4d10, Broad +2d10.</p>
+				<p>9th level spell: Power +6d10, Broad +3d10.</p>
+			</p>
+
+			<h5>5th Level Spells</h5>
+			<p>
+				<h7>Crisis of Faith</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: For the rest of this battle, all enemies near you with 100 hp or fewer take a -3 penalty to their Mental Defense. Whenever one of those enemies misses with an attack roll, it takes holy damage equal to double your level.<br/>
+				<p>7th level spell: 160 hp or fewer.</p>
+				<p>9th level spell: 250 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Sanctuary</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Effect</b>: Choose yourself or a nearby ally. Enemies with 100 hp or fewer cannot attack the chosen target until that creature attacks or the escalation die reaches 6+.<br/>
+				<p>7th level spell: 160 hp or fewer.</p>
+				<p>9th level spell: 250 hp or fewer.</p>
+			</p>
+			<p>
+				<h7>Sphere of Radiance</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Effect</b>: You or one nearby ally can heal using a free recovery. Then make the following attack.<br/>
+				<b>Target</b>: Up to two nearby enemies<br/>
+				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Hit</b>: 7d8 + (4 x tier) holy damage.<br/>
+				<b>Miss</b>: Half damage.<br/>
+				<p>7th level spell: 4d6 x 4 damage.</p>
+				<p>9th level spell: 4d8 x 5 damage.</p>
+			</p>
+
+			<h5>7th Level Spells</h5>
+			<p>
+				<h7>Circle of Protection</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				Quick action to cast<br/>
+				<b>Effect</b>: Choose a defense: AC, PD, or MD. For the rest of the battle while you are conscious, you and each ally near you gains a +1 bonus to that defense. Each enemy that misses you or one of your nearby allies with an attack against the defense you chose is hampered until the end of its next turn.<br/>
+				<p>9th level spell: Attacks against the chosen defense cannot score critical hits.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The spell is now (recharge 16+) after battle instead of daily.</p>
+			</p>
+			<p>
+				<h7>Resurrection</h7><br/>
+				Ranged spell<br/>
+				<b>Special</b>: You can cast this spell only once per level, and a limited number of times in your life. You must have most of the corpse available to cast the spell. There’s no time limit on resurrecting a dead PC, so long as you have the corpse.<br/>
+				<b>Effect</b>: You can bring a creature back to life in more or less normal condition, with varying levels of recovery.<br/>
+				<b>Limited Casting</b>: The first time in your life that you use the spell, you can cast it with a single standard action. Using the spell removes one of your spell slots until you gain a level. (You get one less spell per full heal-up.) The person you are resurrecting comes back at roughly half strength, e.g. expending half their recoveries, being dazed (save ends), and, for each ability, having a 50% chance that it is expended.<br/>
+				&emsp;The second time in your life you cast the spell, it takes at least three or four rounds and costs you roughly half your hit points and daily powers/spells. The person you are resurrecting comes back at something like one-quarter strength.<br/>
+				&emsp;The third time you cast the spell it has to be as a ritual. The spell chews you up and leaves you with only a few hit points, then gnaws at the person you have resurrected, who takes days to recover well enough to qualify as an adventurer or combatant.<br/>
+				&emsp;The fourth time you cast the spell it nearly kills you. The resurrection succeeds but the person you’ve resurrected is going to be a mess for a month or more, regardless of any other magic you use.<br/>
+				&emsp;The fifth time you resurrect someone, that’s the end of your story and you die. There’s only a 50% chance that the resurrection spell works on the target. You’ve used up your quota of resurrection magic. You’re not coming back via this spell, either.<br/>
+				<b>Special</b>: If the target of your resurrection spell has been resurrected more times than you have cast the spell, there is a 50% chance that the experience will play out using their higher number of resurrections instead of the number of times you have cast the spell.<br/>
+				<p>9th level spell: You no longer need to have most of the corpse to perform this spell.</p>
+			</p>
+
+			<h5>9th Level Spells</h5>
+			<p>
+				<h7>Overworld Travel</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Special</b>: You must cast this spell outdoors. It enables you and a group of nearby allies to travel to most any location in the world that you can name. Travel takes between an hour and a day, depending on distance and the amount of effort the exerted. The destination can be anywhere above ground, underground locations are off limits.<br/>
+			</p>
+			<p>
+				<h7>Prayer for Readiness</h7><br/>
+				Close-quarters spell<br/>
+				Daily<br/>
+				<b>Targets</b>: Up to 5 nearby allies<br/>
+				<b>Effect</b>: You utter a powerful prayer upon your comrades, giving each a special blessing. At any point later this battle, each blessed ally can acknowledge the blessing by saying ‘thank you’ to your god, gods, or pantheon as a free action to reroll a d20 roll. That ally must take the reroll result. Note that you are giving the blessing and don’t receive it yourself.<br/>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: This spell is now a quick action to cast.</p>
+			</p>
+		</div>
+      </td>
+</div>
+</body>
+</html>
