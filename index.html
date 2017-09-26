@@ -38,13 +38,11 @@
 			updateContent();
 		});
 
-		var clone;
-
 		function changeContents(target) {
 			location.hash = target;
 		}
 		function updateContent() {
-			var i, hash, doc, tabs, selected, withChild, link;
+			var i, hash, clone, doc, tabs, selected, withChild, link;
 
 			hash = location.hash;
 			hash = hash.replace(/#/g, '');
@@ -75,26 +73,6 @@
 			if (!(link.parentElement.parentElement.parentElement.tagName == "DIV")) {
 				link.parentElement.parentElement.parentElement.classList.add('selectedChild');
 			}
-		}
-
-		function openTab(obj, tabName) {
-			var i, tabcontent, tablinks;
-
-			tabcontent = document.querySelectorAll(".tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				if ( tabcontent[i].id == tabName) {
-					tabcontent[i].style.display = "block";
-				} else	{
-					tabcontent[i].style.display = "none";
-				}
-			}
-
-			tablinks = document.querySelectorAll(".tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-
-			obj.className += " active";
 		}
 
 		window.onhashchange = updateContent;

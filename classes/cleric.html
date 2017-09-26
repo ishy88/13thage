@@ -5,11 +5,11 @@
 	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<script>
-		thisDoc = document.currentScript.ownerDocument;
+		
 		function openTab(obj, tabName) {
 			var i, tabcontent, tablinks;
 
-			tabcontent = clone.getElementsByClassName("tabcontent");
+			tabcontent = document.querySelectorAll(".tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 				if ( tabcontent[i].id == tabName) {
 					tabcontent[i].style.display = "block";
@@ -18,7 +18,7 @@
 				}
 			}
 
-			tablinks = clone.getElementsByClassName("tablinks");
+			tablinks = document.querySelectorAll(".tablinks");
 			for (i = 0; i < tablinks.length; i++) {
 				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			}
@@ -33,7 +33,6 @@
 </head>
 <body>
 <div class="main">
-	<td>
 	<!-- main contents -->
 		<h2>CLERIC</h2>
 		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
@@ -739,7 +738,6 @@
 				<p class="odd-row feat"><b><i>Epic Feat</i></b>: This spell is now a quick action to cast.</p>
 			</p>
 		</div>
-      </td>
 </div>
 </body>
 </html>
