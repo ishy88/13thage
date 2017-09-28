@@ -9,7 +9,7 @@
 		function openTab(obj, tabName) {
 			var i, tabcontent, tablinks;
 
-			tabcontent = thisDoc.getElementsByClassName("tabcontent");
+			tabcontent = document.querySelectorAll(".tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 				if ( tabcontent[i].id == tabName) {
 					tabcontent[i].style.display = "block";
@@ -18,7 +18,7 @@
 				}
 			}
 
-			tablinks = thisDoc.getElementsByClassName("tablinks");
+			tablinks = document.querySelectorAll(".tablinks");
 			for (i = 0; i < tablinks.length; i++) {
 				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			}
@@ -39,14 +39,19 @@
 		<p class="initial">These rules are for the character you create, your PC (player character).</p>
 
 		<div class="tab">
-			<button class="tablinks active" onclick="openTab(this, 'race')" id="defaultOpen">Choose a Race</button>
-			<button class="tablinks" onclick="openTab(this, 'class')">Choose a Class</button>
-			<button class="tablinks" onclick="openTab(this, 'unique')">Choose Your Unique</button>
-			<button class="tablinks" onclick="openTab(this, 'backgrounds')">Assign Background Points</button>
-			<button class="tablinks" onclick="openTab(this, 'approaches')">Choose Your Approaches</button>
-			<button class="tablinks" onclick="openTab(this, 'combat-stats')">Determine Your Combat Stats</button>
-			<button class="tablinks" onclick="openTab(this, 'icons')">Assign Your Relationships</button>
-
+			<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+				<tbody>
+					<tr>
+						<td><button class="tablinks active" onclick="openTab(this, 'race')" id="defaultOpen">Choose a Race</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'class')">Choose a Class</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'unique')">Choose Your Unique</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'backgrounds')">Assign Background Points</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'approaches')">Choose Your Approaches</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'combat-stats')">Determine Your Combat Stats</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'icon')">Assign Your Relationships</button></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
 		<div id="race" class="tabcontent">
@@ -59,7 +64,7 @@
 		<div id="class" class="tabcontent">
 			<h3>Choose a Class</h3>
 			<p>Every character has a class (see <a href="#classes">Classes</a>). Pick one of these too.</p>
-			<p>The classes are <a href="#barbarian">Barbarian</a>, <a href="#bard">Bard</a>, <a href="#cleric">Cleric</a>, <a href="#commander">Commander</a>, <a href="#fighter">Fighter</a>, <a href="#monk">Monk</a>, <a href="#necromancer">Necromancer</a>, <a href="#occultist">Occultist</a>, <a href="#paladin">Paladin</a>, <a href="#ranger">Ranger</a>, <a href="#rogue">Rogue</a>, <a href="#seeker">Seeker</a>, <a href="#sorceror">Sorceror</a>, <a href="#swordmage">Swordmage</a>, <a href="#warden">Warden</a>, and <a href="#wizard">Wizard</a>.</p>
+			<p>The classes are <a href="#barbarian">Barbarian</a>, <a href="#bard">Bard</a>, <a href="#cleric">Cleric</a>, <a href="#commander">Commander</a>, <a href="#fighter">Fighter</a>, <a href="#monk">Monk</a>, <a href="#necromancer">Necromancer</a>, <a href="#occultist">Occultist</a>, <a href="#paladin">Paladin</a>, <a href="#ranger">Ranger</a>, <a href="#rogue">Rogue</a>, <a href="#sorcerer">Sorcerer</a>, <a href="#swordmage">Swordmage</a>, <a href="#warden">Warden</a>, and <a href="#wizard">Wizard</a>.</p>
 		</div>
 
 		<div id="unique" class="tabcontent">
@@ -145,7 +150,7 @@
 			<p>You calculate attack and damage rolls based on your class or by the specific powers you choose within your class. Attack bonuses are usually equal to some number + your level, and damage bonuses are usually equal to some number x your tier. See <a href="#classes">Classes</a> for more information.</p>
 		</div>
 
-		<div id="icons" class="tabcontent">
+		<div id="icon" class="tabcontent">
 			<h3>Assign Your Relationship Points</h3>
 			<p>At 1st level, each character gets 3 relationship points. Each point represents one d6 to be used when trying to leverage your connection to the <a href="#icons">icon</a>.</p>
 			<p>The number of points you invest in a relationship with an icon doesn’t necessarily correlate with the closeness of the connection or the strength of the relationship. It does correlate with the utility of the relationship. It’s not necessarily about how well the icon knows you or how strong the icon feels about you. Instead, the points reflect the chance that your relationship will be helpful to you.</p>
