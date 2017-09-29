@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		
+		function openTab(obj, tabName) {
+			var i, tabcontent, tablinks;
+
+			tabcontent = document.querySelectorAll(".tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				if ( tabcontent[i].id == tabName) {
+					tabcontent[i].style.display = "block";
+				} else	{
+					tabcontent[i].style.display = "none";
+				}
+			}
+
+			tablinks = document.querySelectorAll(".tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			obj.className += " active";
+		}
+	</script>
+	<title>
+		13th Age - Barbarian
+	</title>
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<div class="main">
+	<!-- main contents -->
+		<h2>Barbarian</h2>
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+			<tbody>
+				<tr>
+					<td class="line"> </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src="img/barbarian.jpg" alt="Barbarian" class="sidebar"></img>
+
+		<p class="initial subtitle">
+			"The fury of the wild flows through my veins."
+		</p>
+
+		<p>
+			<b>Overview</b>: Barbarians are savage warriors who deal out powerful blows from their mighty weapons. They charge from foe to foe and seldom feel the pain of an enemy's strike. For barbarians' foes, the moments of greatest terror come when barbarians call upon primal forces to lend power to their raging spirits. These rages, although temporary, give a barbarian incredible powers, a combination of skill, willpower, and a legacy of ancient tribal rituals.<br/>
+			&emsp;As a barbarian, you have a link to powerful nature spirits and other primal forces bound to the warriors of your tribe by the songs and totems of your legacy. These spirits lend energy to your rages, transforming you into a devastating force on the battlefield. As you become more experienced, these rages transcend mortal limitations, manifesting directly as waves of spiritual power or gifting you with supernatural recuperative powers.<br/>
+			&emsp;When the heat of battle is upon you, will you respond with a sudden charge that fells with one mighty swing of your weapon, or with a prolonged rage that leaves destroyed foes in your wake?<br/>
+			<b>Play Style</b>: A barbarian character is straightforward and easy to play. It's a good class for a new player or the player who wants to have fun without worrying much about rules getting in the way of awesome attacks.<br/>
+			&emsp;Unlike most of the other classes, barbarians don't gain powers every level. Instead, most of their extra oomph comes from their class talents. Decisions are kept to a minimum while allowing barbarians to contribute with mighty attacks and awesome bravado<br/>
+			<b>Backgrounds</b>: Possible backgrounds include: clan champion, caravan outrider, fur trapper, mountain tribeswoman, wasteland survivalist, and gladiator.
+		</p>
+
+		<p><b><a id="stats"></a>Stats</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" class="stat-table">
+			<tbody>
+				<tr class="odd-row">
+					<th style="width: 30%">Initiative</th>
+					<td>4 + level</td>
+				</tr>
+				<tr>
+					<th>Armor Class</th>
+					<td>Base AC + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Physical Defense</th>
+					<td>13 + level</td>
+				</tr>
+				<tr>
+					<th>Mental Defense</th>
+					<td>12 + level</td>
+				</tr>
+				<tr class="odd-row">
+					<th>HP Value</th>
+					<td>12</td>
+				</tr>
+				<tr>
+					<th>Recoveries</th>
+					<td>8</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Recovery Value</th>
+					<td>10 x level</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5><a id="gear"></a>Gear</h5>
+		<p class="initial">
+			At 1st level, barbarians start with a big, nasty, well-used blade of some kind, some light armor made of hide or fur, a small totem or trophy from their clan, and perhaps a heavy bow.
+		</p>
+		<p><b>Gold Pieces</b>: Barbarians may start with either 25 gp or 1d6 x 10 gp.</p>
+		<p><b><a></a>Armor</b></p>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 40%; text-align: center">
+			<tbody>
+				<tr valign="bottom">
+					<th>Armor Type</th>
+					<th>Base AC</th>
+					<th>Attack Penalty</th>
+				</tr>
+				<tr class="odd-row">
+					<th>None</th>
+					<td>12</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<th>Light</th>
+					<td>14</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr class="odd-row">
+					<th>Heavy</th>
+					<td>15</td>
+					<td>-2</td>
+				</tr>
+				<tr>
+					<th class="last-row">Shield</th>
+					<td class="last-row">+1</td>
+					<td class="last-row">&mdash;</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">
+			<tr>
+				<th style="width: 60%"><p><b>Melee Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Melee Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>One-Handed</th>
+								<th>Two-Handed</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d8 club</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 hand-axe, warclub</td>
+								<td>1d10 spear</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>1d8 longsword, battleaxe</td>
+								<td>1d12 greatsword, greataxe</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 5 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (5 x tier) damage<br/>
+					<b>Miss</b>: Damage equal to your level
+				</th>
+			</tr>
+		</table>
+		<br/>
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 70%">	
+			<tr>
+				<th style="width: 60%"><p><b>Ranged Weapons</b></p></th>
+				<th style="width: 10%"></th>
+				<th style="text-align:left"><b>Ranged Attack</b></th>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+						<tbody>
+							<tr valign="bottom">
+								<th></th>
+								<th>Thrown</th>
+								<th>Crossbow</th>
+								<th>Bow</th>
+							</tr>
+							<tr class="odd-row">
+								<th>Small</th>
+								<td>1d4 dagger</td>
+								<td>1d4 (-5 atk) hand crossbow</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<th>Light</th>
+								<td>1d6 javelin, axe, spear</td>
+								<td>1d6 (-5 atk) light crossbow</td>
+								<td>1d8 shortbow</td>
+							</tr>
+							<tr class="odd-row">
+								<th>Heavy</th>
+								<td>&mdash;</td>
+								<td>1d8 (-5 atk) heavy crossbow</td>
+								<td>1d10 longbow</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<th></th>
+				<th style="text-align:left; font-weight: normal">
+					At-Will<br/>
+					<b>Target</b>: One Enemy<br/>
+					<b>Attack</b>: 4 + Level vs. AC<br/>
+					<b>Hit</b>: WEAPON + (4 x tier) damage<br/>
+					<b>Miss</b>: &mdash;
+				</th>
+			</tr>
+		</table>
+		<br/>
+
+		<table border="0" cellpadding="1" cellspacing="0" style="width: 100%; text-align: center">
+			<tbody>
+				<tr>
+					<th colspan="6"><h5>Table: The Barbarian</h5></th>
+				</tr>
+				<tr valign="bottom">
+					<th style="width: 10%">Barbarian Level</th>
+					<th style="width: 20%">Total Hit Points</th>
+					<th>Total Feats</th>
+					<th>Talents</th>
+					<th style="width: 10%">Melee Weapon Damage Bonus</th>
+					<th style="width: 10%">Ranged Weapon Damage Bonus</th>
+				</tr>
+				<tr>
+					<td>1st</td>
+					<td>HP x 3</td>
+					<td>1 Adventurer</td>
+					<td>3 Adventurer</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>2nd</td>
+					<td>HP x 4</td>
+					<td>2 Adventurer</td>
+					<td>3 Adventurer</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td>HP x 5</td>
+					<td>3 Adventurer</td>
+					<td>3 Adventurer</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr class="odd-row">
+					<td>4th</td>
+					<td>HP x 6</td>
+					<td>4 Adventurer</td>
+					<td>3 Adventurer</td>
+					<td>+5</td>
+					<td>+4</td>
+				</tr>
+				<tr>
+					<td>5th</td>
+					<td>HP x 8</td>
+					<td>4 Adventurer<br/>1 Champion</td>
+					<td>3 Adventurer<br/>1 Champion</td>
+					<td>+10</td>
+					<td>+8</td>
+				</tr>
+				<tr class="odd-row">
+					<td>6th</td>
+					<td>Hp x 10</td>
+					<td>4 Adventurer<br/>2 Champion</td>
+					<td>3 Adventurer<br/>1 Champion</td>
+					<td>+10</td>
+					<td>+8</td>
+				</tr>
+				<tr>
+					<td>7th</td>
+					<td>HP x 12</td>
+					<td>4 Adventurer<br/>3 Champion</td>
+					<td>3 Adventurer<br/>1 Champion</td>
+					<td>+10</td>
+					<td>+8</td>
+				</tr>
+				<tr class="odd-row">
+					<td>8th</td>
+					<td>HP x 16</td>
+					<td>4 Adventurer<br/>3 Champion<br/>1 Epic</td>
+					<td>3 Adventurer<br/>1 Champion<br/>1 Epic</td>
+					<td>+15</td>
+					<td>+12</td>
+				</tr>
+				<tr>
+					<td>9th</td>
+					<td>HP x 20</td>
+					<td>4 Adventurer<br/>3 Champion<br/>2 Epic</td>
+					<td>3 Adventurer<br/>1 Champion<br/>1 Epic</td>
+					<td>+15</td>
+					<td>+12</td>
+				</tr>
+				<tr class="odd-row">
+					<td>10th</td>
+					<td>HP x 24</td>
+					<td>4 Adventurer<br/>3 Champion<br/>3 Epic</td>
+					<td>3 Adventurer<br/>1 Champion<br/>1 Epic</td>
+					<td>+15</td>
+					<td>+12</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
+		</div>
+
+		<div id="class-features" class="tabcontent" style="display: block">
+			<h5>Class Features</h5>
+			<p class=initial>All barbarians have the <i>barbarian rage</i> class feature.</p>
+
+			<h7>Barbarian Rage</h7>
+			<p>Once per day, you may use a quick action to start raging. A rage lasts until the end of battle, or about 5 minutes.</p>
+			<p>While raging, you roll 2d20 to hit with your barbarian melee and thrown weapon attacks instead of 1d20. Use the higher roll for the attack. If you roll a natural 11+ with both dice and your highest attack roll is a hit, the attack is a critical hit!</p>
+			<p><i>Recharge 6+</i>: After a battle in which your rage is expended, roll a d20. On an 6+, you can use Barbarian Rage again later in the day.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Whenever the escalation die is 4+, as a quick action, you can start raging for free. (It doesn't count against your normal usage.) This rage lasts until the end of the battle, as normal.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You can now start raging freely when the escalation die is 3+.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now start raging freely when the escalation die is 2+.</p>
+
+			<h5>Adventurer-Tier Talents</h5>
+
+			<p class="initial">Choose three of the following adventurer-tier class talents. You also get an additional barbarian class talent at 5th level and again at 8th level.</p>
+
+			<h7>Barbaric Cleave</h7>
+			<p>Once per battle, as a free action, you can make a standard melee attack after having dropped any enemy to 0 hp with a standard melee attack. Mooks do not count for this, unless the mook you dropped was the last of its mook mob.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain a +2 attack bonus with Barbaric Cleave attacks. If the cleave attack hits, you can heal using a recovery.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: If there is no foe engaged with you to use your Barbaric Cleave attack against, as a free action you can move to a nearby foe before making the attack.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: While raging, you can use Barbaric Cleave as many times as you like during a battle, but only once per round.</p>
+
+			<h7>Building Frenzy</h7>
+			<p>Whenever you miss an attack, gain +1d4 damage to each successful melee attack until the end of the battle. For each missed attack following this, add another +1d4 damage, up to a maximum of +4d4 damage.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Bonus damage dice are now d6s.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Bonus damage dice are now d10s.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Bonus damage dice are now d12s, and you may build a maximum of +6d12 damage</p>
+
+			<h7>Intimidating Presence</h7>
+			<p>You gain a +2 bonus to all skill checks involving intimidating or threatening others. Enemies that intercept you must succeed on a normal save or be prevented from doing so.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: While raging, enemies must instead succeed on a difficult (16+) save to intercept you, and whenever you score a critical hit with a melee attack, the target is subject to Fear until the end of your next turn.</p>
+
+			<h7>Oath of Vengeance</h7>
+			<p>Choose one icon that has wronged you in the past, resulting in a negative relationship. Whenever you face a servant of that icon, or a creature connected to it, you can start raging for free.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your intimate knowledge of your sworn enemies allows you to reroll a natural odd result on a skill check against them once per scene.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You can choose a second icon.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per battle, when you score a critical hit against your sworn enemy, you can increase the escalation die by 1.</p>
+
+			<h7>Strongheart</h7>
+			<p>Your recovery value is now 12 x level instead of 10 x level. Increase your total number of recoveries by one.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You gain a +1 bonus to PD. When you heal using a recovery, you can roll a save against a save ends effect.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Your bonus to PD increases to +2. Increase your total number of recoveries by two (making a total of +3 from this talent).</p>
+
+			<h7>Unstoppable</h7>
+			<p>Once per battle, declare you're using Unstoppable before making a barbarian melee attack. If your attack hits at least one target, you can heal using a recovery.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The Unstoppable recovery is free.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: Add +10 to the healing the recovery provides. This bonus increases to +15 at 8th level.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use Unstoppable twice per battle.</p>
+
+			<h7>War Cry</h7>
+			<p>Choose one 1st level bard battle cry. You gain that battle cry as a class power, except you can only use it to help yourself. You can change out this battle cry on a full rest.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When the escalation die is odd, you can use your battle cries to help your allies. When the escalation die is odd, you may also subtract one from the natural rolls of your battle cries.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: You gain a second battle cry, of 3rd level or lower.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain a third battle cry, of 5th level or lower.</p>
+
+			<h7>Whirlwind</h7>
+			<p>You can make a Whirlwind attack as the first action of your turn when you are engaged by two or more enemies.</p>
+			<p>You take a –4 penalty to your AC and PD until the start of your next turn. Then roll a separate melee attack against each enemy you are engaged with. You deal no miss damage with these attacks.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: You now deal normal miss damage with missed Whirlwind attacks.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The penalty to your AC and PD is reduced to –2. In addition, disengage checks you make the same turn as using Whirlwind automatically succeed.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use Whirlwind anytime during your turn, not just as the first action.</p>
+
+			<h5>Champion-Tier Talents</h5>
+			<p>At 5th level, you gain an additional barbarian class talent. Choose one of these champion-tier talents or take another adventurer-tier talent.</p>
+
+			<h7>Natural Will</h7>
+			<p>While raging, you gain a +2 bonus to MD.</p>
+			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The bonus increases to +3. In addition, you gain psychic damage resistance equal to twice your level.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +4. You may add this bonus to saves to recover from daze, confusion, fear, and hampered.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: The bonus increases to +6, and your psychic damage resistance increases to four times your level.</p>
+
+			<h7>Violence</h7>
+			<p>Once per battle, add a +1d6 bonus to one of your natural attack rolls after finding out whether your attack hit or missed.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +2d6.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Once per battle, when the escalation die is +3, you may use Violence an additional time.</p>
+
+			<h7>Wyrmtooth</h7>
+			<p>Choose a sorcerer dragon breath spell of your level or lower. You gain that spell as a class power. You also gain a +1 bonus to the recharge roll of your dragon breath spell for each point of relationship you have with a draconic icon.</p>
+			<p class="feat"><b><i>Champion Feat</i></b>: While you're raging, your dragon breath spell gains the same benefit as your melee attacks—Roll 2d20 for the spell's attack rolls, and if both natural rolls are 11+, you score a critical hit.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: When you score a critical hit with a melee attack, if the escalation die is 4+ and you have your dragon breath spell available, you can use it as a free action.</p>
+
+			<h5>Epic-Tier Talents</h5>
+			<p>At 8th level, you gain an additional barbarian class talent. Choose one of these epic-tier talents, or take another adventurer-tier or champion-tier talent instead.</p>
+
+			<h7>Ancestral Warband</h7>
+			<p>One battle per day as a quick action, you can call the spirits of your ancestors to fight alongside you. Your ancestors can't be hurt or affected by the creatures of this world.</p>
+			<p>At the end of each of your turns, if you are conscious, roll a d6. If you roll less than or equal to the escalation die, a member of your spirit warband strikes from the spirit realm into the world. Make a melee attack against a nearby enemy as if you were making the attack yourself, using any talents, feats, or magic items as you see fit. This attack doesn't take any of your actions.</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Your Ancestral Warband spirits are always raging, even if you are not (they roll twice for any melee attacks), and continue to fight for a single round while you are unconscious.</p>
+
+			<h7>Relentless</h7>
+			<p>While raging, you have resist damage 12+ (when an attack targets you, the attacker must roll a natural 12 or higher on the attack roll or it only deals half damage).</p>
+			<p class="odd-row feat"><b><i>Epic Feat</i></b>: Whenever you critically hit while raging, increase your damage resistance to 16+ until the start of your next turn.</p>
+		</div>
+</div>
+</body>
+</html>
