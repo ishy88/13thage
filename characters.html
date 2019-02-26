@@ -4,28 +4,6 @@
 <head>
 	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<script>
-		thisDoc = document.currentScript.ownerDocument;
-		function openTab(obj, tabName) {
-			var i, tabcontent, tablinks;
-
-			tabcontent = document.querySelectorAll(".tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				if ( tabcontent[i].id == tabName) {
-					tabcontent[i].style.display = "block";
-				} else	{
-					tabcontent[i].style.display = "none";
-				}
-			}
-
-			tablinks = document.querySelectorAll(".tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-
-			obj.className += " active";
-		}
-	</script>
 	<title>
 		13th Age - Character Creation
 	</title>
@@ -42,34 +20,38 @@
 			<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
 				<tbody>
 					<tr>
-						<td><button class="tablinks active" onclick="openTab(this, 'race')" id="defaultOpen">Choose a Race</button></td>
+						<td><button class="tablinks active" onclick="openTab(this, 'attributes')">Choose Your Attributes</button></td>
 						<td><button class="tablinks" onclick="openTab(this, 'class')">Choose a Class</button></td>
-						<td><button class="tablinks" onclick="openTab(this, 'unique')">Choose Your Unique</button></td>
 						<td><button class="tablinks" onclick="openTab(this, 'backgrounds')">Assign Background Points</button></td>
-						<td><button class="tablinks" onclick="openTab(this, 'approaches')">Choose Your Approaches</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'unique')">Choose Your Unique</button></td>
 						<td><button class="tablinks" onclick="openTab(this, 'combat-stats')">Determine Your Combat Stats</button></td>
 						<td><button class="tablinks" onclick="openTab(this, 'icon')">Assign Your Relationships</button></td>
+						<td><button class="tablinks" onclick="openTab(this, 'other')">Other Considerations</button></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 
-		<div id="race" class="tabcontent">
-			<h3>Choose a Race</h3>
-			<p>Choose your character’s race. This game is less restrictive than other d20 games, and your racial choice won’t limit your class selection.</p>
-			<p>The standard races are <a href="#dwarf">Dwarf</a>, <a href="#gnome">Gnome</a>, <a href="#half-elf">Half-Elf</a>, <a href="#halfling">Halfling</a>, <a href="#high-elf">High Elf</a>, <a href="#human">Human</a>, <a href="#lizardfolk">Lizardfolk</a>, <a href="#orc">Orc</a>, and <a href="#wood-elf">Wood Elf</a>. More information about these races can be found on the <a href="#races">Races</a> page.</p>
-			<p>Nonstandard races: If you want to play a different race from ones listed here, pitch the idea to your GM. You might find your pitch easier to make if your new choice lines up closely to the mechanical features of a supported race even if its flavor is very different. For example, if you want to be a one-off, half-successful experiment in artificial life, you can bolster your case if you say you’ll take the racial features of a supported race. “Half-orc” would be an obvious choice, but it could be anything.</p>
+		<div id="attributes" class="tabcontent" style="display: block">
+			<h3>Choose Your Attributes</h3>
+			<p>Three basic attributes are used to describe a character: <b>Warrior</b>, <b>Rogue</b>, and <b>Mage</b>. Each attribute is usually ranked from 0 to 6, but veteran characters may have higher values.</p>
+			<p>A character with a high rank in Warrior is a born fighter: strong, tough, and fearless. Characters with a low rank in this attribute will be weaker and less daring. Someone with a high Rogue attribute is cunning, stealthy, and quick on their feet, but a low Rogue attribute means the character is clumsy and inept. A highly ranked Mage attribute is a sign of intelligence, strength of will, and mental discipline, whereas a low Mage attribute means the character is dull, flighty, and easily influenced.</p>
+			<p>Each player character starts with 6 attribute levels that may be freely distributed among the three attributes. Starting characters may not raise any of their attributes above 4. While highly specialized characters are possible, a well-rounded character with a few levels in each attribute probably works best for most players.</p>
 		</div>
 
 		<div id="class" class="tabcontent">
 			<h3>Choose a Class</h3>
-			<p>Every character has a class (see <a href="#classes">Classes</a>). Pick one of these too.</p>
-			<p>The classes are <a href="#barbarian">Barbarian</a>, <a href="#bard">Bard</a>, <a href="#cleric">Cleric</a>, <a href="#commander">Commander</a>, <a href="#fighter">Fighter</a>, <a href="#monk">Monk</a>, <a href="#necromancer">Necromancer</a>, <a href="#paladin">Paladin</a>, <a href="#ranger">Ranger</a>, <a href="#rogue">Rogue</a>, <a href="#sorcerer">Sorcerer</a>, <a href="#swordmage">Swordmage</a>, <a href="#warden">Warden</a>, and <a href="#wizard">Wizard</a>.</p>
-		</div>
+			<p>Every character has a class (see <a href="#classes">Classes</a>). Pick one.</p>
+			<p>The classes are <a href="#classes/ardent">Ardent</a>, <a href="#classes/battlemind">Battlemind</a>, <a href="#classes/berserker">Berserker</a>, <a href="#classes/commander">Commander</a>, <a href="#classes/druid">Druid</a>, <a href="#classes/fighter">Fighter</a>, <a href="#classes/monk">Monk</a>, <a href="#classes/psion">Psion</a>, <a href="#classes/rogue">Rogue</a>, <a href="#classes/runepriest">Runepriest</a>, <a href="#classes/sentinel">Sentinel</a>, <a href="#classes/shaman">Shaman</a>, <a href="#classes/warden">Warden</a>, and <a href="#classes/tempest">Tempest</a>.</p>
 
-		<div id="unique" class="tabcontent">
-			<h3>Choose Your One Unique Thing</h3>
-			<p>Your character’s One Unique Thing (their <i>unique</i>) is a special feature invented by you, the player, which sets your character apart from every other hero. It is a unique and special trait to your player, and markedly unusual. The intent is that it provides a special flavor to the campaign and can assist the GM in determining how your character can interact with characters and story in the campaign. Your character’s unique should not provide general practical value in combat. That is not the intent. The intent is to open up story arcs and fun roleplaying opportunities.</p>
+			<h7>Multiclassing</h7>
+			<p>Characters who are full members of multiple classes do not exist in this system. Instead, a few classes have talents that let them borrow from other classes. If you wish to dabble further in the exploits of another class, speak with your GM. They may decide to implement the optional born to battle heritage feat listed below.</p>
+			<div class="indent">
+				<p><b>Born to Battle [Heritage]</b></p>
+				<p class="odd-row feat"><b><i>Adventurer Tier</i></b>: You may give up one of your class’ three talents to gain the use of two powers from another class at your level or lower. You cannot exchange a talent for powers granted by talents. (For example, you can take the rogue’s flying blade and deadly thrust powers, but not the murderous or shadow walk talents.) You can use these powers as if you were a PC of that class at the same level. Any class requirements for using a power come with the talent. For example, if you take rogue powers that require momentum, your character uses momentum rules just as a rogue does. In addition, you may improve your choices by taking feats related to those powers up to your tier.</p>
+				<p class="feat"><b><i>Champion Tier</i></b>: Gain an additional power from the same class.</p>
+				<p class="odd-row feat"><b><i>Epic Tier</i></b>: Gain another power from the same class.</p>
+			</div>
 		</div>
 
 		<div id="backgrounds" class="tabcontent">
@@ -79,39 +61,29 @@
 
 			<h7>Choosing Your Backgrounds</h7>
 			<p>Choose backgrounds that help you make sense of your characters past, jobs, and settings. Background and skill use is meant to be about fun in-character methods of attempting to advance the plot.</p>
-			<p>A few possible backgrounds include: acrobat, alchemist, animal trainer, architect, aristocratic noble, assassin, chef, con-woman, goblin exterminator, hunted outlaw, knight errant, magecraft, priest, refugee, scout, shepherd, soldier, spy, temple acolyte, thief, torturer, transformed animal, traveling martial arts pupil, tribal healer, tunnel scout, wandering minstrel, warrior poet, and so on.</p>
+			<p>A few possible backgrounds include: acrobat, alchemist, animal trainer, architect, aristocratic noble, assassin, chef, con-woman, goblin exterminator, hunted outlaw, knight errant, priest, refugee, scout, shepherd, soldier, spy, temple acolyte, thief, torturer, transformed animal, traveling martial arts pupil, tribal healer, tunnel scout, wandering minstrel, warrior poet, and so on.</p>
+
+			<h7>Making Skill Checks</h7>
+			<p>When you roll a skill check to find out if you succeed at a task or trick, the GM tells you what you are rolling to attempt. Then you choose the background you think is relevant to gain the points you have in that background as a bonus to the skill check. Most skill checks require you to equal or beat a Difficulty Class (DC), set by the environment you are operating in, to succeed. If you beat the DC by less than 5, you succeed, but the DM may choose to impose additional costs.</p>
+			<p>To make a skill check, use this formula:</p>
+			<p>&emsp;<i>D20 + level + relevant background points + relevant attribute + other bonuses</i> vs <i>DC set by the environment</i></p>
+			<p>You can’t apply multiple backgrounds to the same check; the background with the highest (or tied for highest) bonus applies. Additionally, GMs should feel free to allow a player to use some fraction of the points invested in a particular background if it seems as though the background may be related, but not strongly enough to justify using the full bonus.</p>
+
+			<h7>Natural 20s and Fumbles with Skill Checks</h7>
+			<p>When a PC rolls a natural 20 with a skill check, the GM should feel free to give that character much more success than the player expected.</p>
+			<p>When a PC rolls a 1 with a skill check, the skill check fumbles and fails, perhaps, but not always, in a particularly dramatic way.</p>
+
+			<h7>Fail Forward!</h7>
+			<p>Outside of battle, when failure would tend to slow action down rather than move the action along, instead interpret it as a near-success or event that happens to carry unwanted consequences or side effects. The character probably still fails to achieve the desired goal, but that’s because something happens on the way to the goal rather than because nothing happens. In any case, the story and action still keep moving.</p>
 
 			<h7>Background/Skill Advancement</h7>
 			<p>All your skill checks increase by 1 when you level up. If you want even better skill checks, take the Further Backgrounding <a href="#feats">feat</a>.</p>
 			<p>If you just want to move around the bonuses you already have to show how your character is changing, with the GM’s permission you can move one background point around among your current backgrounds each time you gain a level, or swap the point into an entirely new background.</p>
 		</div>
 
-		<div id="approaches" class="tabcontent">
-			<h3>Choose Your Approaches</h3>
-			<p>In addition to your backgrounds, your character's natural aptitudes and inclinations can contribute to how successful you are in your out of combat actions. These additional measures of a character's abilities are represented in-game by approaches. Which approach you apply to any given situation describes both how you perform the action and what is likely to happen if you succeed. The six approaches are as follows:</p>
-			<div class="indent">
-				<p>&bull; <b>Careful</b>: A Careful action is when you pay close attention to detail and take your time to do the job right. Lining up a long-range arrow shot. Attentively standing watch. Disarming a difficult trap.</p>
-				<p>&bull; <b>Clever</b>: A Clever action requires that you think fast, solve problems, or account for complex variables. Finding the weakness in an enemy swordsman’s style. Finding the weak point in a fortress wall. Fixing a broken down wagon.</p>
-				<p>&bull; <b>Flashy</b>: A Flashy action draws attention to you; it’s full of style and panache. Delivering an inspiring speech to your army. Embarrassing your opponent in a duel. Producing a magical fireworks display.</p>
-				<p>&bull; <b>Forceful</b>: A Forceful action isn’t subtle—it’s brute strength. Wrestling a bear. Staring down a thug. Blowing up a farmhouse with a magical spell</p>
-				<p>&bull; <b>Quick</b>: A Quick action requires that you move quickly and with dexterity. Dodging a falling boulder. Warning the king of his impending assassination. Disarming a bomb as it ticks 3... 2... 1...</p>
-				<p>&bull; <b>Sneaky</b>: A Sneaky action is done with an emphasis on misdirection, stealth, or deceit. Talking your way out of getting arrested. Picking a pocket. Feinting in a sword fight.</p>
-			</div>
-			<p>Each approach is rated with a bonus. Choose one at Good (+3), two at Fair (+2), two at Average (+1), and one at Mediocre (+0). You can improve these as you adventure (see <a href="#classes">Leveling Up</a>).</p>
-			<p>Your first instinct is probably to pick the action that gives you the greatest bonus, but it doesn’t always work like that. You have to base your choice of approach on the description of your action, and you can’t describe an action that doesn’t make any sense. Would you Forcefully creep through a dark room, hiding from the guards? No, that’s being Sneaky. Would you Quickly push that big rock out of the way of the wagon? No, that’s being Forceful. Circumstances constrain what approach you can use, so sometimes you have to go with an approach that might not play directly to your strengths.</p>
-			<p>Furthermore, even when you aren't necessarily constrained in your choice of approach, adding one approach to your roll means the other approaches have been pushed to the background. If your roll succeeds, but with a cost, you might fail to accomplish one of those other approaches. For example, if you try to Sneakily get into the Elvish embassy, you go over the wall at night. If you succeed at a cost, you are still in, and you're still Sneaky, but maybe you aren't Careful, and somebody finds your footprints outside the wall. Or maybe you're not Clever, and you get lost.</p>
-
-			<h7>Making Skill Checks</h7>
-			<p>When you roll a skill check to find out if you succeed at a task or trick, the GM tells you what you are rolling to attempt. Then you choose the background you think is relevant to gain the points you have in that background as a bonus to the skill check. Most skill checks require you to equal or beat a Difficulty Class (DC), set by the environment you are operating in, to succeed. If you beat the DC by less than 5, you succeed, but the DM may choose to impose additional costs.</p>
-			<p>To make a skill check, use this formula:</p>
-			<p>&emsp;<i>D20 + + level + relevant background points + relevant approach + other bonuses</i> vs <i>DC set by the environment</i></p>
-			<p>You can’t apply multiple backgrounds to the same check; the background with the highest (or tied for highest) bonus applies.</p>
-
-			<h7>Natural 20s and Fumbles with Skill Checks</h7>
-			<p>When a PC rolls a natural 20 with a skill check, the GM should feel free to give that character much more success than the player expected.</p>
-			<p>When a PC rolls a 1 with a skill check, the skill check fumbles and fails, perhaps, but not always, in a particularly dramatic way.</p>
-			<h7>Fail Forward!</h7>
-			<p>Outside of battle, when failure would tend to slow action down rather than move the action along, instead interpret it as a near-success or event that happens to carry unwanted consequences or side effects. The character probably still fails to achieve the desired goal, but that’s because something happens on the way to the goal rather than because nothing happens. In any case, the story and action still keep moving.</p>
+		<div id="unique" class="tabcontent">
+			<h3>Choose Your One Unique Thing</h3>
+			<p>Your character’s One Unique Thing (their <i>unique</i>) is a special feature invented by you, the player, which sets your character apart from every other hero. It is a unique and special trait to your player, and markedly unusual. The intent is that it provides a special flavor to the campaign and can assist the GM in determining how your character can interact with characters and story in the campaign. Your character’s unique should not provide general practical value in combat. That is not the intent. The intent is to open up story arcs and fun roleplaying opportunities.</p>
 		</div>
 
 		<div id="combat-stats" class="tabcontent">
@@ -121,33 +93,52 @@
 			<h7>Determine Your 1st Level Hit Points</h7>
 			<ol>
 				<li>Find your hitpoint value (HP value) in your class' stats chart.</li>
-				<li>Multiply your hit point value by 3 to get your total hit points at 1st level.</li>
+				<li>Add your Warrior attribtue.</li>
+				<li>Multiply the total by 3 to get your total hit points at 1st level.</li>
 			</ol>
 			<h7>Determine Your Armor Class</h7>
 			<ol>
-				<li>Find the base AC value for your class and armor type (12 to 18) in your class' armor chart.</li>
+				<li>Find the base AC value for your armor type (10, 12, 14, or 17) in the <a href="#equipment">equipment</a> section.</li>
+				<li>If you are wearing light armor or no armor, add your Rogue attribute.</li>
+				<li>If you are wearing medium armor, add +2 or your Rogue attribute, whichever is lower.</li>
+				<li>If you are wielding a shield, add +1.</li>
 				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
 			</ol>
 			<h7>Determine Your Physical Defense</h7>
 			<ol>
-				<li>Find the base PD for your class (12 to 14) in your class' stats chart.</li>
+				<li>Start with a base of 10.</li>
+				<li>Add any bonuses from your class' stats chart.</li>
+				<li>Add your Warrior attribute.</li>
 				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
 			</ol>
 			<h7>Determine Your Mental Defense</h7>
 			<ol>
-				<li>Find the base MD for your class (12 to 14) in your class' stats chart.</li>
+				<li>Start with a base of 10.</li>
+				<li>Add any bonuses from your class' stats chart.</li>
+				<li>Add your Mage attribute.</li>
 				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
 			</ol>
 			<h7>Determine Your Initiative Bonus</h7>
 			<p>Your initiative modifier is added to a d20 check, rather than existing as a static value</p>
 			<ol>
-				<li>Find the base initiative bonus in your class' stats chart.</li>
+				<li>Start with your Rogue attribute.</li>
 				<li>Add +1 at 1st level (and increase by +1 at each additional level).</li>
 			</ol>
 			<h7>Determine Your Recoveries and Recovery Value</h7>
-			<p>Most characters start the game with 8 recoveries. Some classes and talent choices may give you more recoveries. Each class also has a different recovery value, as specified in the class write-up. When you heal using a recovery, you'll add this value to your current HP total.</p>
+			<p>Most characters start the game with 8 recoveries. Some classes and talent choices may give you more recoveries. When you heal using a recovery, you heal hit points equal to one-quarter of your hit points (rounded down).</p>
 			<h7>Determine Your Attacks and Powers</h7>
-			<p>You calculate attack and damage rolls based on your class or by the specific powers you choose within your class. Attack bonuses are usually equal to some number + your level, and damage bonuses are usually equal to some number x your tier. See <a href="#classes">Classes</a> for more information.</p>
+			<p>Each character has access to melee basic attack. Each character with a ranged weapon has access to a ranged basic attack. Basic attack damage dice are of a size determined by your weapon, and you roll a number of these dice equal to your level. Furthermore, you add a number to your damage with basic attacks equal to the attribute you used to make the attack multiplied by your tier (ex: Warrior x 1 at Adventurer tier, Warrior x 2 at Champion, and Warrior x 3 at Epic). Characters proficient in at least one martial weapon deal damage equal to their level on a miss with a melee basic attack, but not a ranged basic attack. Some talents will also allow characters to deal damage equal to their level on a miss with a melee basic attack despite not being proficient in martial weapons.</p>
+			<p>Unless otherwise specified, a basic attack looks something like this:</p>
+			<div class="indent">
+				<p>
+				Melee <i>or</i> Ranged Attack<br/>
+				At-Will<br/>
+				<b>Attack:</b> Basic Attack Stat + Level vs. AC<br/>
+				<b>Hit:</b> WEAPON (Level x Weapon Die) + Basic Attack Stat damage<br/>
+				<b>Miss:</b> Damage equal to your level (Maybe).<br/>
+				</p>
+			</div>
+			<p>You class determines which basic attribute you use for attack and damage rolls, what weapons you are considered proficient in (using a weapon you are not proficient in confers a -2 penalty to attack rolls), and what powers and feats you have access to. Unless your class specifies otherwise, you begin play at first level with two feats, and then gain one feat per additional level.</p>
 		</div>
 
 		<div id="icon" class="tabcontent">
@@ -204,6 +195,14 @@
 			<p>When your character achieves champion tier (5th level), you gain an extra relationship point. Use it to increase an existing relationship by one die or gain a 1-point relationship with a new icon to match your character’s story thus far. You can save the extra relationship die and decide to apply it later.</p>
 			<p>At 5th level, or any time thereafter, you can switch an existing relationship point from one icon to another, including to a new icon. You owe the GM and other players an entertaining explanation of what this big change represents for your character personally, of course.</p>
 			<p>When you reach epic tier (8th level), you gain another relationship point, which you can use to increase an existing icon relationship by one die, including up to 1 point over maximum. As at 5th level, if switching a relationship point from one icon to another makes sense for your 8th level character, go for it.</p>
+		</div>
+
+		<div id="other" class="tabcontent">
+			<h3>Flesh Out Your Character</h3>
+			<h7>Choose a Race</h7>
+			<p>Talk to your GM about what races are available in your setting. Your race has no direct mechanical impact outside of qualifying for heritage feats (see <a href="#feats">Feats</a>), but could be a significant part of your character depending on your backstory and the setting.</p>
+			<h7>Define Your Character's Personality</h7>
+			<p></p> 
 		</div>
 </div>
 </body>

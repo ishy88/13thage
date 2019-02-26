@@ -6,9 +6,60 @@
 	<title>
 	      Potholes & Psions
 	</title>
-	<script type="text/javascript" src="scripts/jquery-3.3.1.js" />
+	<script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
 	<script type="text/javascript">
-		console.log("fuck2");
+		$(function(){
+			changeContents = function(id) {
+				$('title').load(id + '.html title', '', function() {
+					document.title = $(this).text();
+					$(".contentPane").load(id + '.html .main');
+				});
+				selected = document.getElementsByClassName('selected')
+				for (i = 0; i < selected.length; i++) {
+					selected[i].classList.remove('selected');
+				}
+				withChild = document.getElementsByClassName('selectedChild')
+				for (i = 0; i < withChild.length; i++) {
+					withChild[i].classList.remove('selectedChild');
+				}
+				link = jQuery(document.getElementById(id));
+				link.parent().addClass('selected');
+				if (!(link.parent().parent().parent().prop('tagName') == "DIV")) {
+					link.parent().parent().parent().addClass('selectedChild');
+				}
+				window.location.hash = id;
+			};
+
+			openTab = function(obj, tabName) {
+				var i, tabcontent, tablinks;
+
+				tabcontent = document.querySelectorAll(".tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					if ( tabcontent[i].id == tabName) {
+						tabcontent[i].style.display = "block";
+					} else	{
+						tabcontent[i].style.display = "none";
+					}
+				}
+
+				tablinks = document.querySelectorAll(".tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+
+				obj.className += " active";
+			};
+
+			if(window.location.hash) {
+				changeContents(window.location.hash.substr(1));
+			} else {
+				window.location.hash = 'home';
+			}
+
+			window.onhashchange = function() {
+				changeContents(window.location.hash.substr(1));
+			}
+		});
 	</script>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
@@ -27,20 +78,20 @@
 				<li><button id='characters' onclick="changeContents(this.id)">Character Creation</button></li>
 				<li><button id='classes' onclick="changeContents(this.id)">Character Classes</button>
 				 <ul>
-				 <li><button id='ardent' onclick="changeContents(this.id)">&emsp;Ardent</button></li>
-				 <li><button id='battlemind' onclick="changeContents(this.id)">&emsp;Battlemind</button></li>
-				 <li><button id='berserker' onclick="changeContents(this.id)">&emsp;Berserker</button></li>
-				 <li><button id='commander' onclick="changeContents(this.id)">&emsp;Commander</button></li>
-				 <li><button id='druid' onclick="changeContents(this.id)">&emsp;Druid</button></li>
-				 <li><button id='fighter' onclick="changeContents(this.id)">&emsp;Fighter</button></li>
-				 <li><button id='monk' onclick="changeContents(this.id)">&emsp;Monk</button></li>
-				 <li><button id='psion' onclick="changeContents(this.id)">&emsp;Psion</button></li>
-				 <li><button id='rogue' onclick="changeContents(this.id)">&emsp;Rogue</button></li>
-				 <li><button id='runepriest' onclick="changeContents(this.id)">&emsp;Runepriest</button></li>
-				 <li><button id='sentinel' onclick="changeContents(this.id)">&emsp;Sentinel</button></li>
-				 <li><button id='shaman' onclick="changeContents(this.id)">&emsp;Shaman</button></li>
-				 <li><button id='warden' onclick="changeContents(this.id)">&emsp;Warden</button></li>
-				 <li><button id='tempest' onclick="changeContents(this.id)">&emsp;Tempest</button></li>
+				 <li><button id='classes/ardent' onclick="changeContents(this.id)">&emsp;Ardent</button></li>
+				 <li><button id='classes/battlemind' onclick="changeContents(this.id)">&emsp;Battlemind</button></li>
+				 <li><button id='classes/berserker' onclick="changeContents(this.id)">&emsp;Berserker</button></li>
+				 <li><button id='classes/commander' onclick="changeContents(this.id)">&emsp;Commander</button></li>
+				 <li><button id='classes/druid' onclick="changeContents(this.id)">&emsp;Druid</button></li>
+				 <li><button id='classes/fighter' onclick="changeContents(this.id)">&emsp;Fighter</button></li>
+				 <li><button id='classes/monk' onclick="changeContents(this.id)">&emsp;Monk</button></li>
+				 <li><button id='classes/psion' onclick="changeContents(this.id)">&emsp;Psion</button></li>
+				 <li><button id='classes/rogue' onclick="changeContents(this.id)">&emsp;Rogue</button></li>
+				 <li><button id='classes/runepriest' onclick="changeContents(this.id)">&emsp;Runepriest</button></li>
+				 <li><button id='classes/sentinel' onclick="changeContents(this.id)">&emsp;Sentinel</button></li>
+				 <li><button id='classes/shaman' onclick="changeContents(this.id)">&emsp;Shaman</button></li>
+				 <li><button id='classes/warden' onclick="changeContents(this.id)">&emsp;Warden</button></li>
+				 <li><button id='classes/tempest' onclick="changeContents(this.id)">&emsp;Tempest</button></li>
 				 </ul>
 				</li>
 				<li><button id='equipment' onclick="changeContents(this.id)">Equipment</button></li>
