@@ -4,85 +4,13 @@
 <head>
 	<meta content="text/html; charset=windows-1250" http-equiv="content-type" />
 	<title>
-	      13th Age
+	      Potholes & Psions
 	</title>
-	<script src="webcomponentsjs/webcomponents-lite.js"></script>
-	<link rel="import" id="home" href="home.html" />
-	<link rel="import" id="legal" href="legal.html" />
-	<link rel="import" id="characters" href="characters.html" />
-	<link rel="import" id="races" href="races.html" />
-	<link rel="import" id="dwarf" href="races/dwarf.html" />
-	<link rel="import" id="gnome" href="races/gnome.html" />
-	<link rel="import" id="half-elf" href="races/half-elf.html" />
-	<link rel="import" id="halfling" href="races/halfling.html" />
-	<link rel="import" id="high-elf" href="races/high-elf.html" />
-	<link rel="import" id="human" href="races/human.html" />
-	<link rel="import" id="lizardfolk" href="races/lizardfolk.html" />
-	<link rel="import" id="orc" href="races/orc.html" />
-	<link rel="import" id="wood-elf" href="races/wood-elf.html" />
-	<link rel="import" id="classes" href="classes.html" />
-	<link rel="import" id="barbarian" href="classes/barbarian.html" />
-	<link rel="import" id="bard" href="classes/bard.html" />
-	<link rel="import" id="cleric" href="classes/cleric.html" />
-	<link rel="import" id="commander" href="classes/commander.html" />
-	<link rel="import" id="fighter" href="classes/fighter.html" />
-	<link rel="import" id="monk" href="classes/monk.html" />
-	<link rel="import" id="necromancer" href="classes/necromancer.html" />
-	<link rel="import" id="paladin" href="classes/paladin.html" />
-	<link rel="import" id="ranger" href="classes/ranger.html" />
-	<link rel="import" id="rogue" href="classes/rogue.html" />
-	<link rel="import" id="sorcerer" href="classes/sorcerer.html" />
-	<link rel="import" id="swordmage" href="classes/swordmage.html" />
-	<link rel="import" id="warden" href="classes/warden.html" />
-	<link rel="import" id="wizard" href="classes/wizard.html" />
-	<link rel="import" id="equipment" href="equipment.html" />
-	<link rel="import" id="feats" href="feats.html" />
-	<link rel="import" id="combat" href="combat.html" />
-	<link rel="import" id="age" href="setting/13thage.html" />
-	<link rel="import" id="icons" href="setting/icons.html" />
+	<script type="text/javascript" src="scripts/jquery-3.3.1.js" />
 	<script type="text/javascript">
-		window.addEventListener('WebComponentsReady', function(e) {
-			updateContent();
+		$(function(){
+			console.log("help");
 		});
-
-		function changeContents(target) {
-			location.hash = target;
-		}
-		function updateContent() {
-			var i, hash, clone, doc, tabs, selected, withChild, link;
-
-			hash = location.hash;
-			hash = hash.replace(/#/g, '');
-			if (document.getElementById(hash).import == null) {
-				hash = 'home';
-				location.hash = 'home';
-			}
-			clone = document.getElementById(hash).import;
-			doc = document.getElementsByClassName('contentPane')[0];
-			doc.innerHTML = clone.getElementsByClassName('main')[0].innerHTML;
-			document.title = clone.getElementsByTagName('title')[0].innerHTML;
-
-			tabs = document.querySelectorAll('#defaultOpen');
-			for (i = 0; i < tabs.length; i++) {
-				tabs[i].onclick();
-			}
-			selected = document.getElementsByClassName('selected')
-			for (i = 0; i < selected.length; i++) {
-				selected[i].classList.remove('selected');
-			}
-			withChild = document.getElementsByClassName('selectedChild')
-			for (i = 0; i < withChild.length; i++) {
-				withChild[i].classList.remove('selectedChild');
-			}
-
-			link = document.querySelector('button#' + hash);
-			link.parentElement.classList.add('selected');
-			if (!(link.parentElement.parentElement.parentElement.tagName == "DIV")) {
-				link.parentElement.parentElement.parentElement.classList.add('selectedChild');
-			}
-		}
-
-		window.onhashchange = updateContent;
 	</script>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
@@ -90,7 +18,7 @@
 <body>
 	<header>
 		<span>
-			<h1>13th Age</h1>
+			<h1>Potholes & Psions</h1>
 		</span>
 	</header>
 	<!-- left-hand navigation / menu -->
@@ -99,35 +27,22 @@
 				<li><button id='home' onclick="changeContents(this.id)">Home</button></li>
 				<li><button id='legal' onclick="changeContents(this.id)">Legal Information</button></li>
 				<li><button id='characters' onclick="changeContents(this.id)">Character Creation</button></li>
-				<li><button id='races' onclick="changeContents(this.id)">Races</button>
-				 <ul>
-				 <li><button id='dwarf' onclick="changeContents(this.id)">&emsp;Dwarf</button></li>
-				 <li><button id='gnome' onclick="changeContents(this.id)">&emsp;Gnome</button></li>
-				 <li><button id='half-elf' onclick="changeContents(this.id)">&emsp;Half-Elf</button></li>
-				 <li><button id='halfling' onclick="changeContents(this.id)">&emsp;Halfling</button></li>
-				 <li><button id='high-elf' onclick="changeContents(this.id)">&emsp;High Elf</button></li>
-				 <li><button id='human' onclick="changeContents(this.id)">&emsp;Human</button></li>
-				 <li><button id='lizardfolk' onclick="changeContents(this.id)">&emsp;Lizardfolk</button></li>
-				 <li><button id='orc' onclick="changeContents(this.id)">&emsp;Orc</button></li>
-				 <li><button id='wood-elf' onclick="changeContents(this.id)">&emsp;Wood Elf</button></li>
-				 </ul>
-				</li>
 				<li><button id='classes' onclick="changeContents(this.id)">Character Classes</button>
 				 <ul>
-				 <li><button id='barbarian' onclick="changeContents(this.id)">&emsp;Barbarian</button></li>
-				 <li><button id='bard' onclick="changeContents(this.id)">&emsp;Bard</button></li>
-				 <li><button id='cleric' onclick="changeContents(this.id)">&emsp;Cleric</button></li>
+				 <li><button id='ardent' onclick="changeContents(this.id)">&emsp;Ardent</button></li>
+				 <li><button id='battlemind' onclick="changeContents(this.id)">&emsp;Battlemind</button></li>
+				 <li><button id='berserker' onclick="changeContents(this.id)">&emsp;Berserker</button></li>
 				 <li><button id='commander' onclick="changeContents(this.id)">&emsp;Commander</button></li>
+				 <li><button id='druid' onclick="changeContents(this.id)">&emsp;Druid</button></li>
 				 <li><button id='fighter' onclick="changeContents(this.id)">&emsp;Fighter</button></li>
 				 <li><button id='monk' onclick="changeContents(this.id)">&emsp;Monk</button></li>
-				 <li><button id='necromancer' onclick="changeContents(this.id)">&emsp;Necromancer</button></li>
-				 <li><button id='paladin' onclick="changeContents(this.id)">&emsp;Paladin</button></li>
-				 <li><button id='ranger' onclick="changeContents(this.id)">&emsp;Ranger</button></li>
+				 <li><button id='psion' onclick="changeContents(this.id)">&emsp;Psion</button></li>
 				 <li><button id='rogue' onclick="changeContents(this.id)">&emsp;Rogue</button></li>
-				 <li><button id='sorcerer' onclick="changeContents(this.id)">&emsp;Sorcerer</button></li>
-				 <li><button id='swordmage' onclick="changeContents(this.id)">&emsp;Swordmage</button></li>
+				 <li><button id='runepriest' onclick="changeContents(this.id)">&emsp;Runepriest</button></li>
+				 <li><button id='sentinel' onclick="changeContents(this.id)">&emsp;Sentinel</button></li>
+				 <li><button id='shaman' onclick="changeContents(this.id)">&emsp;Shaman</button></li>
 				 <li><button id='warden' onclick="changeContents(this.id)">&emsp;Warden</button></li>
-				 <li><button id='wizard' onclick="changeContents(this.id)">&emsp;Wizard</button></li>
+				 <li><button id='tempest' onclick="changeContents(this.id)">&emsp;Tempest</button></li>
 				 </ul>
 				</li>
 				<li><button id='equipment' onclick="changeContents(this.id)">Equipment</button></li>
