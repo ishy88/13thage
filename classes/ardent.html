@@ -229,8 +229,8 @@
 		<div class="tab">
 			<button class="tablinks active" onclick="openTab(this, 'class-features')" id="defaultOpen">Features and Talents</button>
 			<button class="tablinks" onclick="openTab(this, 'battle-cries')">Battle Cries</button>
-			<button class="tablinks" onclick="openTab(this, 'spells')">Discplines</button>
-			<button class="tablinks" onclick="openTab(this, 'songs')">Mantles</button>
+			<button class="tablinks" onclick="openTab(this, 'mantles')">Mantles</button>
+			<button class="tablinks" onclick="openTab(this, 'disciplines')">Discplines</button>
 		</div>
 
 		<div id="class-features" class="tabcontent" style="display: block">
@@ -308,7 +308,7 @@
 			<p class="odd-row feat"><b><i>Epic Feat</i></b>: You gain a +1 bonus to AC and PD. When the escalation die is 6, you can use your battle cries to help yourself.</p>
 
 			<h7>Siphon</h7>
-			<p>You cannot take this talent if you have taken the Catalyst talent.</p>
+			<p>You cannot take this talent if you have taken the <i>Catalyst</i> talent.</p>
 			<p>Whenever you use a melee attack to hit an enemy who is confused, dazed, stunned, or weakened, you gain a number of temporary hitpoints equal to your Mage attribute (Double your Mage attribute at 5th level; Triple it at 8th level). Remember that temporary hitpoints don’t stack!</p>
 			<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: When a nearby enemy who is confused, dazed, stunned, or weakened dies, you gain a number of temporary hitpoints equal to double your Mage attribute (Quadruple your Mage attribute at 5th level; Sextuple it at 8th level).</p>
 			<p class="feat"><b><i>Champion Feat</i></b>: Once per battle when you gain temporary hit points from this talent, one nearby ally you can see may gain an equal amount of temporary hitpoints.</p>
@@ -319,67 +319,62 @@
 			<p>
 				<h7>Move It!</h7><br/>
 				Flexible Melee Attack<br/>
-				<b>Triggering Roll</b>: Natural even<br/>
-				<b>Effect</b>: Either one of your disengaged allies can move as a free action, or one of your engaged allies can make a disengage check as a free action.<br/>
+				<b>Triggering Roll</b>: Natural even roll<br/>
+				<b>Effect</b>: Either one of your unengaged allies can move as a free action OR one of your engaged allies can make a disengage check as a free action.<br/>
 				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The disengage check gains a +2 bonus.</p>
 				<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +5.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: An engaged ally you target with this battle cry can pop free from one enemy as a free action before making the disengage check.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: An engaged ally you target with the second effect of this battle cry can pop free from one enemy as a free action before making the disengage check.</p>
 			</p>
 			<p>
 				<h7>Pull It Together!</h7><br/>
-				Flexible Melee Attack<br/>
-				<b>Triggering Roll</b>: Natural 11+; use only twice per battle<br/>
+				Flexible melee attack<br/>
+				<b>Special:</b>: You may use this battle cry only twice per battle<br/>
+				<b>Triggering Roll</b>: Natural 11+<br/>
 				<b>Effect</b>: One nearby ally can heal using a recovery.<br/>
-				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The target adds +1d4 healing per point on the escalation die.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>: The attack can now also trigger on any natural even roll; the extra healing is now +1d6 per point.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use pull it together three times per battle; the extra healing is now +1d10 per point.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The target adds +1d4 healing per point on the escalation die (+2d4 per point at 5th level; +3d4 at 8th level).</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The attack can now also trigger on any natural even roll; the extra healing is now +2d6 per point (+3d6 per point at 8th level).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can use pull it together three times per battle; the extra healing is now +3d10 per point.</p>
 			</p>
 			<p>
 				<h7>Stay Strong!</h7><br/>
-				Flexible Melee Attack<br/>
+				Flexible melee attack<br/>
 				<b>Triggering Roll</b>: Natural 16+<br/>
 				<b>Effect</b>: Give a nearby ally a +2 bonus to AC until the start of your next turn.<br/>
 				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Bonus also applies to PD.</p>
 				<p class="feat"><b><i>Champion Feat</i></b>: Bonus also applies to MD.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The bonus is now +4.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Bonus increases to +4.</p>
 			</p>
 			<p>
 				<h7>Take Heart!</h7><br/>
 				Flexible melee attack<br/>
 				<b>Triggering Roll</b>: Any hit<br/>
 				<b>Effect</b>: Choose a nearby ally. That ally can either roll a save against a save ends effect or roll a normal save against a condition that has a duration that lasts until the end or beginning of a turn.<br/>
-				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The ally you targets gains a +1 bonus to save against that effect.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The ally you target gains a +1 bonus to save against that effect (this is not cumulative).</p>
 				<p class="feat"><b><i>Champion Feat</i></b>: The bonus increases to +2.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the escalation die is 3+, two nearby conscious allies (instead of one) can each roll a save (with bonuses).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: If the escalation die is 3+, two nearby allies (instead of one) can each roll a save (with bonuses).</p>
 			</p>
 
 			<h5>3rd Level Battle Cries</h5>
 			<p>
-				<h7>Hang Tough!</h7><br/>
+				<h7>Hang in There!</h7><br/>
 				Flexible melee attack<br/>
-				<b>Triggering Roll</b>: Natural odd<br/>
-				<b>Effect</b>: Give a nearby ally temporary hit points equal to your spell attack bonus. This becomes 2 x your spell attack bonus at level 5 and 3 x your spell attack bonus at level 8.<br/>
+				<b>Triggering Roll</b>: Natural odd roll<br/>
+				<b>Effect</b>: Give a nearby ally temporary hit points equal to your Mage attribute (Double your Mage attribute at 5th level. Triple it at 8th level).<br/>
 				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: If the ally is staggered, double the temporary hit points.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>: Add your level to the temporary hit points given (add before any doubling).</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can choose yourself instead of an ally as the target of the battle cry.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Add your level to the temporary hit points given (double your level if the ally is staggered).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You may divide the total temporary hit points given as you wish between two nearby allies (only one needs to be staggered to double the temporary hitpoints).</p>
 			</p>
 			<p>
 				<h7>It’s All Yours!</h7><br/>
 				Flexible melee attack<br/>
 				<b>Triggering Roll</b>: Natural even miss<br/>
 				<b>Effect</b>: This battle, your next ally to attack the target you missed gains a +2 attack bonus with that attack.<br/>
-				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: That ally’s attack also deals +1d6 damage. In addition, the attack bonus increases to +3.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>: The damage bonus increases to +3d6. The attack bonus increases to +4</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The damage bonus increases to +3d12. The attack bonus increases to +5</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The attack bonus increases to +3. That ally’s attack also deals +1d6 damage. (+2d6 damage at 5th level; +3d6 at 8th level).</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The attack bonus increases to +4. The damage bonus increases to +2d8. (+3d8 damage at 8th level).</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The attack bonus increases to +5. The damage bonus increases to +3d12.</p>
 			</p>
 
 			<h5>5th Level Battle Cries</h5>
-			<p>
-				<h7>Stay True!</h7><br/>
-				Flexible melee attack<br/>
-				<b>Triggering Roll</b>: Natural 16+ if the escalation die is 3+; otherwise natural 20<br/>
-				<b>Effect</b>: A nearby ally regains the use of a once-per-battle racial ability that was expended this battle.<br/>
-			</p>
 			<p>
 				<h7>Victory Is Ours!</h7><br/>
 				Flexible melee attack<br/>
@@ -404,251 +399,234 @@
 				<h7>The Time Is Now!</h7><br/>
 				Flexible melee attack<br/>
 				<b>Triggering Roll</b>: Natural 19+<br/>
-				<b>Effect</b>: Choose one nearby ally. That ally can expend a recovery to regain a daily power or spell.<br/>
+				<b>Effect</b>: Choose one nearby ally. That ally can expend a recovery to regain a daily spell or power.<br/>
 				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The battle cry can now trigger on natural 18+.</p>
 			</p>
 		</div>
 
-		<div id="songs" class="tabcontent">
-			<h5>1st Level Songs</h5>
+		<div id="mantles" class="tabcontent">
+			<h5>1st Level Mantles</h5>
 			<p>
-				<h7>Song of Heroes</h7><br/>
-				Bardic Song<br/>
+				<h7>Mantle of Heroism</h7><br/>
 				Recharge 11+ after battle<br/>
 				Quick action each turn; 11+ to sustain<br/>
-				<b>Opening and sustained effect</b>: You and your nearby allies gain a +1 attack bonus until the start of your next turn.<br/>
-				<b>Final Verse</b>: The effect ends immediately, but one ally of your choice gains a +2 bonus to their next attack roll this battle.<br/>
-				<p>3rd level song: The effect also provides a +1 bonus to saves.</p>
-				<p>5th level song: Sustain the song on a 9+.</p>
-				<p>7th level song: Recharge check is now 6+.</p>
-				<p>9th level song: The effect also provides a +1 bonus to Mental Defense.</p>
+				<b>Opening & Sustained Effect</b>: You and your nearby allies gain a +1 attack bonus until the start of your next turn.<br/>
+				<b>Emotional Burst</b>: The effect ends immediately, but one nearby or far away ally of your choice gains a +2 bonus to their next attack roll this battle.<br/>
+				<p>3rd level mantle: The effect also provides a +1  bonus to saves.</p>
+				<p>5th level mantle: Sustain the mantle on a 9+.</p>
+				<p>7th level mantle: Recharge check is now 6+.</p>
+				<p>9th level mantle: The effect also provides a +1 bonus to MD.</p>
 			</p>
 			<p>
-				<h7>Song of Spilt Blood</h7><br/>
-				Bardic Song<br/>
+				<h7>Mantle of Ire</h7><br/>
 				Daily<br/>
 				Quick action each turn; 6+ to sustain<br/>
-				<b>Opening and sustained effect</b>: Any attack against you takes a penalty equal to the number of your allies in the battle who have more hit points than you.<br/>
-				<b>Final Verse</b>: The effect ends immediately, and you or one ally of your choice can heal using a recovery.<br/>
-				<p>3rd level song: Sustain the song on a 4+.</p>
-				<p>5th level song: Add +5 hp to the recovery.</p>
-				<p>7th level song: Add +10 hp to the recovery.</p>
-				<p>9th level song: Add +15 hp to the recovery.</p>
+				<b>Opening & Sustained Effect</b>: Any attack against you takes a penalty equal to the number of your allies in the battle who have more hit points than you.<br/>
+				<b>Emotional Burst</b>: The effect ends immediately, and you or one ally of your choice can heal using a recovery.<br/>
+				<p>3rd level mantle: Sustain the mantle on a 4+.</p>
+				<p>5th level mantle: The Emotional Burst effect now targets you and one ally of your choice.</p>
+				<p>7th level mantle: Choose you or your ally when you Emotional Burst, the chosen target's recovery is free.</p>
+				<p>9th level mantle: Both target's recoveries are free.</p>
 			</p>
 
-			<h5>3rd Level Songs</h5>
+			<h5>3rd Level Mantles</h5>
 			<p>
-				<h7>Song of Aid</h7><br/>
-				Bardic song<br/>
-				Daily<br/>
-				Quick action each turn; 11+ to sustain<br/>
-				<b>Opening & Sustained Effect</b>: You or a nearby ally gains 3d6 temporary hit points.<br/>
-				<b>Final Verse</b>: One target that gained temporary hit points can also heal using a recovery.<br/>
-				<p>5th level song: 5d6 temporary hit points; sustain the song on a 9+.</p>
-				<p>7th level song: 7d6 temporary hit points, and the recovery from the final verse is free.</p>
-				<p>9th level song: 9d8 temporary hit points; sustain the song on a 7+.</p>
-			</p>
-			<p>
-				<h7>Song of Thunder</h7><br/>
-				Bardic song<br/>
+				<h7>Maelstrom Mantle</h7><br/>
 				Daily<br/>
 				Standard action each turn; 11+ to sustain<br/>
 				<b>Opening & Sustained Effect</b>: Make the following attack against 1d4 + 1 nearby enemies.<br/>
-				<b>Attack</b>: 4 + Level vs. PD<br/>
-				<b>Hit</b>: 5d6 + (4 x tier) thunder damage.<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: 5d6 + Mage psychic damage.<br/>
 				<b>Miss</b>: &mdash;<br/>
-				<b>Final Verse</b>: Make the attack again, but this time it deals half damage on a miss.<br/>
-				<p>5th level song: 7d6 damage.</p>
-				<p>7th level song: 3d8 x 3 damage.</p>
-				<p>9th level song: 3d12 x 4 damage.</p>
-				<p class="feat"><b><i>Champion Feat</b></i>: The number of targets increases to 2d4.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</b></i>: Two of the targets can now be far away instead of nearby.</p>
+				<b>Emotional Burst</b>: Make the attack again, but this time it deals half damage on a miss.<br/>
+				<p>5th level mantle: 7d6 damage.</p>
+				<p>7th level mantle: 9d8 damage.</p>
+				<p>9th level mantle: 10d12 damage.</p>
+				<p class="odd-row feat"><b><i>Champion Feat</i></b>: The number of targets increases to 2d4.</p>
+				<p class="feat"><b><i>Epic Feat</i></b>: Deal psychic damage equal to your level on a miss with the opening and sustained effect.</p>
+			</p>
+			<p>
+				<h7>Mantle of Aid</h7><br/>
+				Daily<br/>
+				Quick action each turn; 11+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: You or a nearby ally gains 3d6 temporary hit points.<br/>
+				<b>Emotional Burst</b>: One target that gained temporary hit points can also heal using a recovery.<br/>
+				<p>5th level mantle: 5d6 temporary hit points; sustain the mantle on a 9+.</p>
+				<p>7th level mantle: 7d6 temporary hit points, and the recovery from the emotional burst is free.</p>
+				<p>9th level mantle: 9d8 temporary hit points; sustain the mantle on a 7+.</p>
 			</p>
 
-			<h5>5th Level Songs</h5>
+			<h5>5th Level Mantles</h5>
 			<p>
-				<h7>Song of Magic</h7><br/>
-				Bardic song<br/>
+				<h7>Mantle of Power</h7><br/>
 				Daily<br/>
 				Quick action each turn; 16+ to sustain<br/>
-				<b>Opening & Sustained Effect</b>: Until the start of your next turn, you and your nearby allies who cast spells that are normally expended by being cast can roll a d20 after casting the spell. On a 16+, the spell is not expended.<br/>
-				<b>Final Verse</b>: All spells you and your allies cast before the start of your next turn gain a +2 attack bonus.<br/>
-				<p>7th level song: Gain a bonus to song of magic’s sustain check equal to the escalation die.</p>
-				<p>9th level song: Rolls to retain expended spells gain a bonus equal to the escalation die.</p>
+				<b>Opening & Sustained Effect</b>: Until the start of your next turn, you and your nearby allies who use spells or disciplines that are normally expended by being used can roll a d20 after using the spell or discipline. On a 16+, the spell or discipline is not expended.<br/>
+				<b>Emotional Burst</b>: All spells or disciplines you and your allies use before the start of your next turn gain a +2 attack bonus.<br/>
+				<p>7th level discipline: Gain a bonus to mantle of power’s sustain check equal to the escalation die.</p>
+				<p>9th level discipline: Rolls to retain expended spells or disciplines gain a bonus equal to the escalation die.</p>
 			</p>
 
-			<h5>7th Level Songs</h5>
+			<h5>7th Level Mantles</h5>
 			<p>
-				<h7>Song of Blood & Legends</h7><br/>
-				Bardic song<br/>
-				Daily<br/>
-				Standard action each turn; 16+ to sustain<br/>
-				<b>Opening & Sustained Effect</b>: Each nearby ally who hits at least one enemy with an attack during their turn can heal using a recovery.<br/>
-				<b>Final Verse</b>: One nearby ally can make a basic attack as a free action and heal using a recovery if the attack hits at least one target.<br/>
-				<p>9th level song: The recovery granted by the final verse attack is free.</p>
-			</p>
-			<p>
-				<h7>Song of Victory</h7><br/>
-				Bardic song<br/>
+				<h7>Enervating Mantle</h7><br/>
 				Daily<br/>
 				Quick action each turn; 16+ to sustain<br/>
 				<b>Opening & Sustained Effect</b>: Each nearby enemy that has fewer hit points than you is dazed until the end of your next turn.<br/>
-				<b>Final Verse</b>: Each nearby enemy takes 5d6 + (4 x tier) psychic damage.<br/>
-				<p>9th level song: 7d6 damage.</p>
+				<b>Emotional Burst</b>: Each nearby enemy takes 5d6 + Mage psychic damage.<br/>
+				<p>9th level mantle: 7d6 damage.</p>
+			</p>
+			<p>
+				<h7>Invigorating Mantle</h7><br/>
+				Daily<br/>
+				Standard action each turn; 16+ to sustain<br/>
+				<b>Opening & Sustained Effect</b>: Each nearby ally who hits at least one enemy with an attack during their turn can heal using a recovery.<br/>
+				<b>Emotional Burst</b>: One nearby ally can make a basic attack as a free action and heal using a recovery if the attack hits at least one target.<br/>
+				<p>9th level mantle: The recovery granted by the emotional burst attack is free.</p>
 			</p>
 
-			<h5>9th Level Songs</h5>
+			<h5>9th Level Mantles</h5>
 			<p>
-				<h7>Song of Destinies</h7><br/>
-				Bardic song<br/>
+				<h7>Mantle of Destiny</h7><br/>
 				Daily<br/>
 				Quick action each turn; 11+ to sustain<br/>
 				<b>Opening & Sustained Effect</b>: Later this turn, you can add 1 to the natural result of one ally’s d20 roll. Then, afterwards, you can subtract 1 from the natural result of an enemy’s d20 roll.<br/>
-				<b>Final Verse</b>: The GM chooses an icon relevant to the situation; you choose the PC who will make an icon relationship check. That player makes the check and joins the GM in a duet of improvisation as to how the icon relationship roll has some impact on the current battle.<br/>
+				<b>Emotional Burst</b>: Later this turn, one ally may reroll any d20 roll and choose which result to use. Then, afterwards, you can make an enemy reroll any d20 roll and take the result you choose.<br/>
 			</p>
 		</div>
 
-		<div id="spells" class="tabcontent">
-			<h5>1st Level Spells</h5>
-			<p>
-				<h7>Battle Chant</h7><br/>
-				Ranged spell<br/>
-				At-Will<br/>
-				<b>Special:</b> When you use battle chant, you can choose any battle cry effect you know as if you were making a basic melee attack, with the battle chant attack roll taking the place of the basic melee attack roll.<br/>
-				<b>Target:</b> One nearby enemy<br/>
-				<b>Attack:</b> 4 + Level vs. MD<br/>
-				<b>Hit:</b> 1d4 + (4 x tier) thunder damage.<br/>
-				<p>3rd level spell: 2d4 damage.</p>
-				<p>5th level spell: 2d4 x 2 damage.</p>
-				<p>7th level spell: 2d4 x 3 damage.</p>
-				<p>9th level spell: 2d4 x 5 damage.</p>
-				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your battle chant damage dice are now d6s instead of d4s.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>:Champion Feat Once per day, you can expend one of your recoveries to reroll a battle chant attack roll.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b> One battle per day, your battle chant damage dice become d10s.</p>
-			</p>
+		<div id="disciplines" class="tabcontent">
+			<h5>1st Level Disciplines</h5>
 			<p>
 				<h7>Befuddle</h7><br/>
-				Ranged spell<br/>
-				Recharge 11+ after battle<br/>
+				Ranged discipline; Recharge 11+ after battle<br/>
 				<b>Target</b>: One nearby creature with 40 hp or fewer<br/>
-				<b>Attack</b>: 4 + Level vs. MD<br/>
-				<b>Hit</b>: The target is confused until the end of your next turn.<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: The target is confused until the end of your next turn. In addition, the target gains a +2 bonus to its next attack roll while confused.<br/>
 				<b>Natural Even Miss</b>: The target is dazed until the end of your next turn.<br/>
-				<p>3rd level spell: Target with 64 hp or fewer.</p>
-				<p>5th level spell: Target with 96 hp or fewer.</p>
-				<p>7th level spell: Target with 160 hp or fewer.</p>
-				<p>9th level spell: Target with 266 hp or fewer.</p>
+				<p>3rd level discipline: Target with 64 hp or fewer.</p>
+				<p>5th level discipline: Target with 96 hp or fewer.</p>
+				<p>7th level discipline: Target with 160 hp or fewer.</p>
+				<p>9th level discipline: Target with 266 hp or fewer.</p>
 				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Recharge check is now 6+.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>: The target of the spell doesn’t have to be nearby, just in line of sight.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The target of the discipline doesn’t have to be nearby, just in line of sight.</p>
 				<p class="odd-row feat"><b><i>Epic Feat</i></b>: On a hit, the confusion effect is now save ends.</p>
 			</p>
 			<p>
-				<h7>Charm Person</h7><br/>
-				Ranged spell<br/>
-				Daily<br/>
+				<h7>Bend Will</h7><br/>
+				Ranged discipline; Daily<br/>
 				<b>Target</b>: One nearby creature with 40 hp or fewer<br/>
-				<b>Special</b>: This spell cannot be cast during combat or on a target that has rolled initiative to fight.<br/>
-				<b>Attack</b>: 4 + Level vs. MD<br/>
-				<b>Hit</b>: The target believes you are their friend until you or your allies take hostile action against them. (Attacking their normal allies is okay.) If you or your allies attack the target or order the target to attack its normal allies, the target can roll a normal save to break the charm effect during its turn each round.<br/>
-				<b>Special</b>: On a miss, the spell is not detectible by most others unless you miss by 4+ or roll a natural 1, in which case the target and its allies knows what you tried to do and will usually be angry about it.<br/>
+				<b>Special</b>: This discipline cannot be used during combat or on a target that has rolled initiative to fight.<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: The target believes you are their friend until you or your allies take hostile action against them. (Attacking their normal allies is okay.) If you or your allies attack the target or order the target to attack its normal allies, the target can roll a normal save to break the bend will effect during its turn each round.<br/>
+				<b>Special</b>: On a miss, the discipline is not detectable by most others unless you miss by 4+ or roll a natural 1, in which case the target and its allies knows what you tried to do and will usually be angry about it.<br/>
 				<p>3rd level spell: Target with 64 hp or fewer.</p>
 				<p>5th level spell: Target with 96 hp or fewer.</p>
 				<p>7th level spell: Target with 160 hp or fewer.</p>
 				<p>9th level spell: Target with 266 hp or fewer.</p>
 			</p>
 			<p>
-				<h7>Soundburst</h7><br/>
-				Ranged spell<br/>
-				Daily<br/>
+				<h7>Emotions Unbound</h7><br/>
+				Ranged discipline; Daily<br/>
 				<b>Target</b>: 1d4 nearby enemies in a group<br/>
-				<b>Attack</b>: 4 + Level vs. PD<br/>
-				<b>Hit</b>: 5d6 + (4 x tier) thunder damage, and the target is dazed until end of your next turn.<br/>
-				<b>Miss</b>: Half damage, and deal thunder damage equal to your level to each of your allies engaged with the target.<br/>
-				<p>3rd level spell: 3d8 x 2 damage.</p>
-				<p>5th level spell: 2d10 x 4 damage.</p>
-				<p>7th level spell: 2d6 x 10 damage.</p>
-				<p>9th level spell: 3d6 x 10 damage.</p>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: 5d6 + Mage psychic damage, and the target is dazed until end of your next turn.<br/>
+				<b>Miss</b>: Half damage, and deal psychic damage equal to your level to each of your allies engaged with the target. Each ally may only take this damage once per use of this discipline.<br/>
+				<p>3rd level discipline: 6d8 damage.</p>
+				<p>5th level discipline: 8d10 damage.</p>
+				<p>7th level discipline: 2d6 x 10 damage.</p>
+				<p>9th level discipline: 3d6 x 10 damage.</p>
 				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: On a natural even hit, the dazed effect is now save ends.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>: The spell is now recharge 16+ after battle instead of daily.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now target 1d4 + 1 enemies in a group with the spell.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: The discipline is now recharge 16+ after battle instead of daily.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The discipline can now target 2d4 nearby enemies in a group.</p>
+			</p>
+			<p>
+				<h7>Empath's Trick</h7><br/>
+				Ranged discipline; At-Will<br/>
+				<b>Special</b>: When you use empath's trick, you can trigger any battle cry effect you know as if you were making a flexible melee attack, with the empath's trick attack roll taking the place of the flexible melee attack roll.<br/>
+				<b>Target</b>: One nearby enemy<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: 1d4 + Mage psychic damage.<br/>
+				<p>3rd level discipline: 2d4 damage.</p>
+				<p>5th level discipline: 4d4 damage.</p>
+				<p>7th level discipline: 6d4 damage.</p>
+				<p>9th level discipline: 10d4 damage.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: Your empath’s trick damage dice are now d6s instead of d4s.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Once per day, you can expend one of your recoveries to reroll an empath’s trick attack roll.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: One battle per day, your empath’s trick damage dice become d10s.</p>
 			</p>
 
-			<h5>3rd Level Spells</h5>
+			<h5>3rd Level Disciplines</h5>
 			<p>
-				<h7>Vicious Mockery</h7><br/>
-				Ranged spell<br/>
-				Recharge 11+ after battle<br/>
+				<h7>Echo of Pain</h7><br/>
+				Ranged discipline; Recharge 11+ after battle<br/>
 				<b>Target</b>: One nearby enemy<br/>
-				<b>Attack</b>: 4 + Level vs. MD<br/>
-				<b>Hit</b>: (3d6 x 2) + (4 x tier) psychic damage, and until the end of your next turn, when the target misses with one of its attacks, it takes half the damage its attack would have dealt.<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: 6d6 + Mage psychic damage, and until the end of your next turn, when the target misses with one of its attacks, it takes half the damage its attack would have dealt as additional psychic damage.<br/>
 				<b>Miss</b>: Damage equal to your level.<br/>
-				<p>5th level spell: 3d6 x 3 damage.</p>
-				<p>7th level spell: 2d8 x 5 damage.</p>
-				<p>9th level spell: 2d8 x 10 damage.</p>
+				<p>5th level discipline: 9d6 damage.</p>
+				<p>7th level discipline: 10d8 damage.</p>
+				<p>9th level discipline: 2d8 x 10 damage.</p>
 				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: On a hit, the effect that damages the target when it misses is now save ends.</p>
 				<p class="feat"><b><i>Champion Feat</i></b>: Recharge check is now 6+.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: A natural even miss does not expend the spell.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: A natural even miss does not expend the discipline.</p>
 			</p>
 			<p>
-				<h7>Wild Heal</h7><br/>
-				Ranged spell<br/>
-				Daily<br/>
-				Quick action to cast<br/>
-				<b>Targets</b>: Two random nearby allies. Choose the targets randomly from all nearby allies (including you) who are damaged.<br/>
-				<b>Effect</b>: Each target can heal using a recovery.<br/>
-				<p>5th level spell: Add +5 hp to the recovery.</p>
-				<p>7th level spell: Add +15 hp to the recovery.</p>
-				<p>9th level spell: Add +25 hp to the recovery.</p>
-				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The spell is now recharge 16+ after battle instead of daily.</p>
-				<p class="feat"><b><i>Champion Feat</i></b>: Add a third random target.</p>
+				<h7>Energizing Surge</h7><br/>
+				Close-quarters discipline; Daily<br/>
+				Quick action<br/>
+				<b>Target</b>: You or one nearby ally, and one randomly chosen nearby ally that has taken damage<br/>
+				<b>Effect</b>: Each target heals using one of its recoveries.<br/>
+				<p>5th level discipline: Add +5 hp to the recovery.</p>
+				<p>7th level discipline: Add +15 hp to the recovery.</p>
+				<p>9th level discipline: Add +25 hp to the recovery.</p>
+				<p class="odd-row feat"><b><i>Adventurer Feat</i></b>: The discipline is now recharge 16+ after battle instead of daily.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Add a second random target (three targets in total).</p>
 				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The recoveries the targets use are now free.</p>
 			</p>
 
-			<h5>5th Level Spells</h5>
+			<h5>5th Level Disciplines</h5>
 			<p>
-				<h7>Arrow of Verse</h7><br/>
-				Ranged spell<br/>
-				Recharge 16+ after battle<br/>
+				<h7>Unchecked Aggression</h7><br/>
+				Ranged discipline; Recharge 16+ after battle<br/>
 				<b>Target</b>: One nearby enemy<br/>
-				<b>Attack</b>: 4 + Level vs. MD<br/>
-				<b>Hit</b>: (2d8 x 4) + (4 x tier) psychic damage + Xd6 bonus damage, where X = escalation die.<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
+				<b>Hit</b>: 8d8 + Mage + Xd6 bonus psychic damage, where X = escalation die.<br/>
 				<b>Miss</b>: Xd6 psychic damage, where X = escalation die.<br/>
-				<p>7th level spell: 2d10 x 5 damage.</p>
-				<p>9th level spell: 2d10 x 10 damage.</p>
-				<p class="feat"><b><i>Champion Feat</b></i>: Recharge check is now 11+. Bonus dice and miss dice are now d8s. Recharge check is now 11+.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</b></i>: Recharge check is now 6+. Bonus dice and miss dice are now d12s.</p>
+				<p>7th level discipline: 10d10 damage.</p>
+				<p>9th level discipline: 2d10 x 10 damage.</p>
+				<p class="feat"><b><i>Champion Feat</i></b>: Bonus dice and miss dice are now d8s. Recharge check is now 11+.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: Bonus dice and miss dice are now d12s. Recharge check is now 6+.</p>
 			</p>
 			<p>
 				<h7>Discombobulate</h7><br/>
-				Ranged spell<br/>
-				Daily<br/>
+				Ranged discipline; Daily<br/>
 				<b>Target</b>: One nearby creature with 100 hp or fewer<br/>
-				<b>Attack</b>: 4 + Level vs. MD<br/>
+				<b>Attack</b>: Mage + Level vs. MD<br/>
 				<b>Hit</b>: The target is confused until it rolls two successful saves.<br/>
 				<b>Miss</b>: The target is dazed until the end of your next turn.<br/>
 				<p>7th level spell: Target with 140 hp or fewer.</p>
 				<p>9th level spell: Target with 240 hp or fewer.</p>
 			</p>
 
-			<h5>7th Level Spells</h5>
+			<h5>7th Level Disciplines</h5>
 			<p>
-				<h7>The Overworld Two-Step</h7><br/>
-				Close-quarters spell<br/>
-				Quick action to cast<br/>
-				Recharge 16+ after battle<br/>
-				<b>Effect</b>: You can swap your position and the positions of all your nearby allies, even if you can’t see them when you cast the spell. Each position presently occupied by you or an ally must end up occupied after the swap, but otherwise you can swap freely.<br/>
+				<h7>Speed of Thought</h7><br/>
+				Close-quarters discipline; Recharge 16+ after battle<br/>
+				Quick action<br/>
+				<b>Target</b>: You and up to 9 nearby allies, whether you can see them or not.<br/>
+				<b>Effect</b>: Each target may move as a free action. Any disengage checks that would be made as part of this movement automatically succeed.<br/>
 				<p class="feat"><b><i>Champion Feat</i></b>: Recharge check is now 11+.</p>
-				<p class="odd-row feat"><b><i>Epic Feat</i></b>: You can now also swap the positions of far-away allies you can see, up to a maximum of 9 creatures.</p>
+				<p class="odd-row feat"><b><i>Epic Feat</i></b>: The discipline can now also target far-away allies you can see.</p>
 			</p>
 
-			<h5>9th Level Spells</h5>
+			<h5>9th Level Disciplines</h5>
 			<p>
-				<h7>Inspire Legends</h7><br/>
-				Close-quarters spell<br/>
+				<h7>Font of Inspiration</h7><br/>
+				Close-quarters discipline; Daily<br/>
 				<b>Special</b>: Escalation die must be 4+.<br/>
-				Daily<br/>
 				<b>Targets</b>: You and all nearby allies<br/>
-				<b>Effect</b>: Each target can roll a d20 for each of its expended daily, recharge, and per battle powers and spells other than inspire legends. If the roll is 11+, the character regains the use of that power or spell.<br/>
+				<b>Effect</b>: Each target can roll a d20 for each of its expended daily, recharge, and per battle spells and powers other than font of inspiration. If the roll is 11+, the character regains the use of that spell or power.<br/>
 			</p>
 		</div>
 </div>
